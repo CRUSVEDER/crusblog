@@ -170,9 +170,8 @@ Password reuse is like leaving your front door key under the mat—it’s an ope
 &lt;p&gt;&lt;strong&gt;Cybersecurity Essentials&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Cybersecurity is more critical than ever in today’s digital world. This section will cover key concepts such as data protection, threat detection, vulnerability management, and cybersecurity best practices. Learn how to stay safe online and understand the strategies used to protect data and networks from cyberattacks.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Machine Learning &amp;amp; AI Projects&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Dive into the world of machine learning and artificial intelligence, where innovation meets problem-solving. Here, we’ll explore popular ML algorithms, frameworks, and practical applications that are shaping industries. Expect clear breakdowns of AI concepts, tips for building projects, and updates on the latest advancements in the field.
-!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/7bo861wblef71.png&#34;&gt;
-&lt;strong&gt;Gaming Tips and Insights&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Dive into the world of machine learning and artificial intelligence, where innovation meets problem-solving. Here, we’ll explore popular ML algorithms, frameworks, and practical applications that are shaping industries. Expect clear breakdowns of AI concepts, tips for building projects, and updates on the latest advancements in the field.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Gaming Tips and Insights&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;For those who enjoy gaming, this blog will feature strategies and tips for popular titles, helping you improve your gameplay. Whether it’s tackling challenging levels in Genshin Impact or exploring the universe of Honkai Star Rail, you’ll find useful insights to enhance your gaming experience.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Why This Blog?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This space is created to help enthusiasts, beginners, and experts stay informed and engaged with these fast-paced industries. Whether you’re looking to improve your cybersecurity knowledge, gain insights into AI and ML, or find strategies to elevate your gaming, this blog aims to be a helpful and interesting read.&lt;/p&gt;
@@ -316,7 +315,7 @@ Password reuse is like leaving your front door key under the mat—it’s an ope
       
       <guid>/posts/blog-5-cyber-atk-cmds/</guid>
       <description>&lt;hr&gt;
-&lt;p&gt;*note: its my personal research so there can be errors or more fast and powerful method to do same attacks&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;note: its my personal research so there can be errors or more fast and powerful method to do same attacks&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;packet-sniffing--airodump-ng-monitor-mode-interface&#34;&gt;packet sniffing : airodump-ng [monitor mode interface]&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;first enable monitor mode; then&lt;/em&gt;&lt;/p&gt;
@@ -345,7 +344,7 @@ Password reuse is like leaving your front door key under the mat—it’s an ope
 &lt;/ul&gt;
 &lt;p&gt;&lt;em&gt;sniff and discover 5Ghz networks&lt;/em&gt;&lt;/p&gt;</description>
       <content>&lt;hr&gt;
-&lt;p&gt;*note: its my personal research so there can be errors or more fast and powerful method to do same attacks&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;note: its my personal research so there can be errors or more fast and powerful method to do same attacks&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;packet-sniffing--airodump-ng-monitor-mode-interface&#34;&gt;packet sniffing : airodump-ng [monitor mode interface]&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;first enable monitor mode; then&lt;/em&gt;&lt;/p&gt;
