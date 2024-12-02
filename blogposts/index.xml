@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogposts on Terminal</title>
+    <link>//localhost:1313/blogposts/</link>
+    <description>Recent content in Blogposts on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/blogposts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Awesome First Blog</title>
+      <link>//localhost:1313/blogposts/my-first-blog-test-2/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/blogposts/my-first-blog-test-2/</guid>
+      <description>&lt;p&gt;Welcome to my first blog post! This is where I’ll share my thoughts, experiences, and projects. Stay tuned for more updates.&lt;/p&gt;
+&lt;p&gt;#fafaf
+afafff
+afafafafafffffffffffffff
+fafgggggggggggggggggggggggggggggggg&lt;/p&gt;
+&lt;p&gt;ggggggggggggggggggggggg
+gggggggggggg
+g&lt;/p&gt;</description>
+      <content>&lt;p&gt;Welcome to my first blog post! This is where I’ll share my thoughts, experiences, and projects. Stay tuned for more updates.&lt;/p&gt;
+&lt;p&gt;#fafaf
+afafff
+afafafafafffffffffffffff
+fafgggggggggggggggggggggggggggggggg&lt;/p&gt;
+&lt;p&gt;ggggggggggggggggggggggg
+gggggggggggg
+g&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
