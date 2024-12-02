@@ -52,7 +52,7 @@ note: need monitor mode on
 ---
 
 
-change your mac adresss:
+#  change your mac adresss:
 
 - ifconfig wlan0 down (to make wlan0 down)
 
@@ -183,5 +183,7 @@ http://www.cotse.com/tools/wordlists2.htm
 **Wordlist Project**  
 Use: A SourceForge project offering a variety of wordlists for password cracking and security testing.
 http://wordlist.sourceforge.net/
+
+
 ---
 

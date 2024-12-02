@@ -361,7 +361,7 @@ Password reuse is like leaving your front door key under the mat—it’s an ope
 &lt;li&gt;wireshark ( to lauch wireshark or can open manually to check the xxxx.cap file filled with target data)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;change your mac adresss:&lt;/p&gt;
+&lt;h1 id=&#34;change-your-mac-adresss&#34;&gt;change your mac adresss:&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;ifconfig wlan0 down (to make wlan0 down)&lt;/p&gt;
@@ -483,9 +483,10 @@ Use: Provides wordlists for security testing, including common passwords and use
 &lt;p&gt;&lt;strong&gt;Cotse Wordlists 2&lt;/strong&gt;&lt;br&gt;
 Use: Additional wordlists for password cracking and penetration testing.
 &lt;a href=&#34;http://www.cotse.com/tools/wordlists2.htm&#34;&gt;http://www.cotse.com/tools/wordlists2.htm&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;httpwordlistsourceforgenet&#34;&gt;&lt;strong&gt;Wordlist Project&lt;/strong&gt;&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Wordlist Project&lt;/strong&gt;&lt;br&gt;
 Use: A SourceForge project offering a variety of wordlists for password cracking and security testing.
-&lt;a href=&#34;http://wordlist.sourceforge.net/&#34;&gt;http://wordlist.sourceforge.net/&lt;/a&gt;&lt;/h2&gt;
+&lt;a href=&#34;http://wordlist.sourceforge.net/&#34;&gt;http://wordlist.sourceforge.net/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
 </content>
     </item>
     
