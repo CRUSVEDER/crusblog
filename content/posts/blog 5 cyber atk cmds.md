@@ -8,7 +8,7 @@ tags:
 ---
 ---
 
-*note: its my personal research so there can be errors or more fast and powerful method to do same attacks
+*note: its my personal research so there can be errors or more fast and powerful method to do same attacks*
 
 ---
 
