@@ -11,6 +11,7 @@ tags:
   - hsr
   - leaks
 ---
+---
 **Welcome to My Blog!**
 
 Hello and welcome!
@@ -30,3 +31,5 @@ Thank you for stopping by, and I look forward to seeing where this journey takes
 
 Until next time,  
 [Crusveder]
+
+---
