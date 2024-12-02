@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Terminal</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Terminal</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cybersec</title>
+      <link>/tags/cybersec/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/cybersec/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Firsrblog</title>
+      <link>/tags/firsrblog/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/firsrblog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Games</title>
+      <link>/tags/games/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/games/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Genshin</title>
+      <link>/tags/genshin/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/tags/genshin/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Afafaa on Terminal</title>
+    <link>//localhost:1313/tags/afafaa/</link>
+    <description>Recent content in Afafaa on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/afafaa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Awesome First Blog</title>
+      <link>//localhost:1313/posts/my-first-blog-test-2/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/my-first-blog-test-2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Welcome to My Blog!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Hello and welcome!&lt;/p&gt;
+&lt;p&gt;This is the beginning of an exciting journey, and I’m thrilled to have you here. Whether you stumbled upon this blog by chance or came here intentionally, I hope you find something that resonates with you.&lt;/p&gt;
+&lt;p&gt;In this space, I’ll share my thoughts, experiences, and projects. Here’s a sneak peek of what’s to come:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Insights from my learning journey&lt;/li&gt;
+&lt;li&gt;Fun projects, tips, and guides&lt;/li&gt;
+&lt;li&gt;My interests, from gaming (Spiral Abyss, anyone?) to creative pursuits
+![[Pasted image 20241202073049.png]]
+Why start a blog? For me, it’s all about sharing and connecting. It’s a way to document my growth, contribute to communities I love, and hopefully inspire or help others along the way.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank you for stopping by, and I look forward to seeing where this journey takes us. Don’t hesitate to share your thoughts—I’d love to hear from you!&lt;/p&gt;</description>
+      <content>&lt;p&gt;&lt;strong&gt;Welcome to My Blog!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Hello and welcome!&lt;/p&gt;
+&lt;p&gt;This is the beginning of an exciting journey, and I’m thrilled to have you here. Whether you stumbled upon this blog by chance or came here intentionally, I hope you find something that resonates with you.&lt;/p&gt;
+&lt;p&gt;In this space, I’ll share my thoughts, experiences, and projects. Here’s a sneak peek of what’s to come:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Insights from my learning journey&lt;/li&gt;
+&lt;li&gt;Fun projects, tips, and guides&lt;/li&gt;
+&lt;li&gt;My interests, from gaming (Spiral Abyss, anyone?) to creative pursuits
+![[Pasted image 20241202073049.png]]
+Why start a blog? For me, it’s all about sharing and connecting. It’s a way to document my growth, contribute to communities I love, and hopefully inspire or help others along the way.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thank you for stopping by, and I look forward to seeing where this journey takes us. Don’t hesitate to share your thoughts—I’d love to hear from you!&lt;/p&gt;
+&lt;p&gt;Until next time,&lt;br&gt;
+[Crusveder]&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
