@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tips_tricks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>cybersec tips &amp; tricks</title>
-      <link>/posts/blog-3-cybersec/</link>
+      <link>/posts/blog-3-cybersecurity/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/blog-3-cybersec/</guid>
+      <guid>/posts/blog-3-cybersecurity/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;cybersecurity-tips-and-tools-for-beginners-hackers-hate-these-simple-tricks&#34;&gt;&lt;strong&gt;Cybersecurity Tips and Tools for Beginners: Hackers Hate These Simple Tricks&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;So, you’ve stumbled into the world of cybersecurity, huh? Good choice! Whether you&amp;rsquo;re here to keep your personal data safe or dreaming of becoming the internet&amp;rsquo;s Batman, you&amp;rsquo;re in the right place. This blog is your crash course—no fluff, just actionable tips and beginner-friendly tools. Let’s jump in!&lt;/p&gt;
@@ -251,7 +251,8 @@ Password reuse is like leaving your front door key under the mat—it’s an ope
       
       <guid>/posts/blog-5-cyber-atk-cmds/</guid>
       <description>&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;note: its my personal research so there can be errors or more fast and powerful method to do same attacks&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;note: its my personal research so there can be errors or more fast and powerful method available
+to do same attacks&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;packet-sniffing--airodump-ng-monitor-mode-interface&#34;&gt;packet sniffing : airodump-ng [monitor mode interface]&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;first enable monitor mode; then&lt;/em&gt;&lt;/p&gt;
@@ -280,7 +281,8 @@ Password reuse is like leaving your front door key under the mat—it’s an ope
 &lt;/ul&gt;
 &lt;p&gt;&lt;em&gt;sniff and discover 5Ghz networks&lt;/em&gt;&lt;/p&gt;</description>
       <content>&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;note: its my personal research so there can be errors or more fast and powerful method to do same attacks&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;note: its my personal research so there can be errors or more fast and powerful method available
+to do same attacks&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;packet-sniffing--airodump-ng-monitor-mode-interface&#34;&gt;packet sniffing : airodump-ng [monitor mode interface]&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;first enable monitor mode; then&lt;/em&gt;&lt;/p&gt;
