@@ -1,5 +1,5 @@
 ---
-title: my cyber attack commands
+title: cyber attack commands
 date: 
 draft: 
 tags:
