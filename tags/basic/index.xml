@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basic on Terminal</title>
+    <link>/tags/basic/</link>
+    <description>Recent content in Basic on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/basic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>7. Kali, linux Commands</title>
+      <link>/posts/blog-7-kali-linux-commands/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-7-kali-linux-commands/</guid>
+      <description>&lt;hr&gt;
+&lt;hr&gt;</description>
+      <content>&lt;hr&gt;
+&lt;hr&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

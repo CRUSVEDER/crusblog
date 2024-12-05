@@ -6,7 +6,47 @@
     <description>Recent content in Tags on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic</title>
+      <link>/tags/basic/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/basic/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Setup</title>
+      <link>/tags/setup/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/setup/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Starting</title>
+      <link>/tags/starting/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/starting/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Tips_tricks</title>
+      <link>/tags/tips_tricks/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tips_tricks/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
     <item>
       <title>AI_ML</title>
       <link>/tags/ai_ml/</link>
@@ -93,16 +133,6 @@
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>/tags/reactions/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Tips_tricks</title>
-      <link>/tags/tips_tricks/</link>
-      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/tips_tricks/</guid>
       <description></description>
       <content></content>
     </item>
