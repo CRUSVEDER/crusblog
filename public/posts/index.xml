@@ -6,15 +6,28 @@
     <description>Recent content in Posts on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>6. Setting up hacking enviroment</title>
-      <link>/posts/blog-6/</link>
+      <title>6. Setting up hacking Environment</title>
+      <link>/posts/blog-6-hacking-environment-setup/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/blog-6/</guid>
+      <guid>/posts/blog-6-hacking-environment-setup/</guid>
       <description>&lt;hr&gt;</description>
       <content>&lt;hr&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>7. Kali, linux Commands</title>
+      <link>/posts/blog-7-kali-linux-commands/</link>
+      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-7-kali-linux-commands/</guid>
+      <description>&lt;hr&gt;
+&lt;hr&gt;</description>
+      <content>&lt;hr&gt;
+&lt;hr&gt;
 </content>
     </item>
     
@@ -208,8 +221,8 @@ For an Aggravate reaction, trigger Quicken and follow up with a strong Electro a
 &lt;li&gt;&lt;strong&gt;Step 3&lt;/strong&gt;: Apply filters (e.g., &lt;code&gt;http&lt;/code&gt; or &lt;code&gt;tcp.port==443&lt;/code&gt;) to focus on specific traffic types.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Step 4&lt;/strong&gt;: Look for anomalies, like traffic to unknown IPs or repeated failed login attempts.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Pro Tip&lt;/strong&gt;: Use Wireshark’s color coding to quickly identify different types of traffic—green for TCP, blue for DNS, etc. It’s like having a cheat sheet built right in.
-!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/wireshark-live-capture.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pro Tip&lt;/strong&gt;: Use Wireshark’s color coding to quickly identify different types of traffic—green for TCP, blue for DNS, etc. It’s like having a cheat sheet built right in.&lt;/p&gt;
+&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/wireshark-live-capture.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;2-nmap-the-network-scanner-everyone-loves&#34;&gt;&lt;strong&gt;2. Nmap: The Network Scanner Everyone Loves&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Nmap is a command-line tool that scans networks to identify devices, open ports, and potential vulnerabilities. It’s a must-have for beginners learning about penetration testing.&lt;/p&gt;

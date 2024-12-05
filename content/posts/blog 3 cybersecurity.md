@@ -45,6 +45,7 @@ Wireshark is like Google Maps for your internet traffic. It lets you see everyth
 - **Step 4**: Look for anomalies, like traffic to unknown IPs or repeated failed login attempts.
 
 **Pro Tip**: Use Wireshark’s color coding to quickly identify different types of traffic—green for TCP, blue for DNS, etc. It’s like having a cheat sheet built right in.
+
 !![Image Description](/images/wireshark-live-capture.png)
 
 
