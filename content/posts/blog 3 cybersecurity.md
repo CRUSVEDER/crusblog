@@ -144,4 +144,4 @@ Cybersecurity isn’t a sprint; it’s a marathon. Start with simple tools like 
 If you’re ready to dive deeper, check out platforms like **TryHackMe** or certifications like **CompTIA Security+** to get serious street cred in the cyber world.
 
 ---
-Author: [Crusveder]
+ [Crusveder]

@@ -18,6 +18,7 @@ Mastering elemental reactions is essential for any Genshin Impact player looking
 
 ## Exploring Each Elemental Reaction
 
+
 !![Image Description](/images/all%20elem%20react.png)
 
 
@@ -174,3 +175,4 @@ Understanding these reactions, their formulas, and their best usage scenarios wi
 
 
 ---
+[Crusveder]

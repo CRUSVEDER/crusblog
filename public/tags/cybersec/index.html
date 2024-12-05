@@ -366,26 +366,26 @@ to do same attacks</em></p>
 <p><em>first enable monitor mode; then</em></p>
 <ul>
 <li>
-<p>ifconfig wlan0 down</p>
+<p><code>ifconfig wlan0 down</code></p>
 </li>
 <li>
-<p>airmon-ng check kill ( to kill the manager)</p>
+<p><code>airmon-ng check kill</code> ( to kill the manager)</p>
 </li>
 <li>
-<p>iwconfig wlan0 mode monitor</p>
+<p><code>iwconfig wlan0 mode monitor</code></p>
 </li>
 <li>
-<p>ifconfig wlan0 up</p>
+<p><code>ifconfig wlan0 up</code></p>
 </li>
 <li>
-<p>iwconfig ( to check)</p>
+<p><code>iwconfig</code> ( to check)</p>
 </li>
 </ul>
 <hr>
 <h1 id="network-preconnection-attacktxt">network preconnection attack.txt</h1>
 <p><em>note: need monitor mode on</em></p>
 <ul>
-<li>airodump-ng wlan0 ( discover all wireless network and info around it)</li>
+<li><code>airodump-ng wlan0 ( discover all wireless network and info around it)</code></li>
 </ul>
 <p><em>sniff and discover 5Ghz networks</em></p>
           

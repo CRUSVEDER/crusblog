@@ -158,3 +158,5 @@ This version adds context to each tool, explaining its use and how it can benefi
 These tools are commonly used by CEH professionals to perform a wide range of ethical hacking tasks, from reconnaissance and vulnerability scanning to penetration testing and exploitation. Knowing how to use them effectively is a critical part of the CEH certification and ethical hacking in general.
 
 
+---
+[Crusveder]

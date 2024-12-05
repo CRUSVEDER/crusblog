@@ -34,6 +34,6 @@ So, here’s to all the ideas we’ll unpack, the tips and tricks we’ll uncove
 
 Until next time, stay curious and keep exploring.
 
-**[Crus]**
+**[Crusveder]**
 
 ---
