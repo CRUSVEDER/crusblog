@@ -16,11 +16,12 @@ tags:
 
 # Welcome to My Blog!
 
-!![Image Description](/images/652873b67bded9c39892fbb2_ilo-network-slide-trace-180.png)
+
 Hello there, and welcome to my corner of the internet!
 
 Whether you stumbled in during a late-night browsing session or deliberately tracked this blog down (major kudos to you for that), I’m thrilled you’re here. This is a space where curiosity meets creativity—a digital lab, journal, and playground all in one.
 
+---
 ## What’s This Blog About?
 
 
@@ -33,6 +34,10 @@ Here’s a glimpse at what you can expect:
 - **Gaming Chronicles with a Twist:** While I’m a huge fan of **Genshin Impact**, I also enjoy exploring how gaming intersects with technology. We’ll dive into the mechanics of **game design**, **data analytics for team optimization**, and how to develop **web tools** to enhance your gaming experience (imagine a tool to simulate Genshin team damage outputs!).
 - **Guides and Tutorials:** Whether you’re navigating **Obsidian for better productivity**, building a **Python-powered AI summarizer**, or creating automation scripts for repetitive tasks, I’ll share step-by-step instructions and code snippets to make learning seamless.
 
+
+!![Image Description](/images/Screenshot%202024-12-05%20175338.png)
+
+---
 ## Why This Blog?
 
 This blog isn’t just a diary—it’s a space to spark creativity, solve problems, and share ideas. It’s about connecting with like-minded folks who enjoy diving into the technical, creative, and geeky aspects of life.
