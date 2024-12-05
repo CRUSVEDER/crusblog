@@ -1,5 +1,5 @@
 ---
-title: The Ultimate Guide to Elemental Reactions in Genshin Impact
+title: 2. The Ultimate Guide to Elemental Reactions in Genshin Impact
 date: 2024-12-02
 draft: false
 tags:

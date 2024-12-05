@@ -1,5 +1,5 @@
 ---
-title: My Awesome First Blog
+title: 1. My Awesome First Blog
 date: 2024-12-02
 draft: false
 tags:
