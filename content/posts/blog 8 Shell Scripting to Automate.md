@@ -1,12 +1,12 @@
 ---
-title: 8. Introduction to Shell Scrip Automation
+title: 8. Shell Scripting to Automate Your Daily Tasks
 date: 2024-12-11
-draft: 
+draft: false
 tags:
-  - tips_tricks
   - basic
 ---
 ---
+
 #  Automating Your Daily Tasks
 
 Automation is a crucial aspect of productivity in the tech world, and shell scripting is a powerful tool to achieve it. This guide introduces the basics of shell scripting on Linux, enabling you to automate repetitive tasks and streamline your workflows.

@@ -1,7 +1,7 @@
 ---
 title: 3. cybersec tips & tricks
 date: 2024-12-02
-draft: 
+draft: false
 tags:
   - cybersec
   - tips_tricks
