@@ -1,6 +1,6 @@
 ---
 title: 10. Linux Networking Essentials
-date: 
+date: 2024-12-12
 draft: 
 tags:
   - basic

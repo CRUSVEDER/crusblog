@@ -1,6 +1,6 @@
 ---
 title: 9. Docker on Linux
-date: 
+date: 2024-12-12
 draft: 
 tags:
   - basic

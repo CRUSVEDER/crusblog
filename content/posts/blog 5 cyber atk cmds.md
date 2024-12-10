@@ -1,6 +1,6 @@
 ---
 title: 5. cyber attack commands
-date: 
+date: 2024-12-04
 draft: 
 tags:
   - cybersec

@@ -577,31 +577,5 @@ Show system uptime.&lt;br&gt;
 </content>
     </item>
     
-    <item>
-      <title>10. Linux Networking Essentials</title>
-      <link>/posts/blog-10-linux-networking-essentials/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/blog-10-linux-networking-essentials/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;Linux Networking Essentials: From IP Addresses to Firewalls [Upcoming&amp;hellip;]&lt;/p&gt;</description>
-      <content>&lt;hr&gt;
-&lt;p&gt;Linux Networking Essentials: From IP Addresses to Firewalls [Upcoming&amp;hellip;]&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>9. Docker on Linux</title>
-      <link>/posts/blog-9-docker-on-linux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/blog-9-docker-on-linux/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;Docker on Linux: Setting Up and Running Your First Container [Upcoming&amp;hellip;]&lt;/p&gt;</description>
-      <content>&lt;hr&gt;
-&lt;p&gt;Docker on Linux: Setting Up and Running Your First Container [Upcoming&amp;hellip;]&lt;/p&gt;
-</content>
-    </item>
-    
   </channel>
 </rss>
