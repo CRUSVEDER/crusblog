@@ -6,7 +6,52 @@
     <description>Recent content on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10. Linux Networking Essentials</title>
+      <link>/posts/blog-10-linux-networking-essentials/</link>
+      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-10-linux-networking-essentials/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Linux Networking Essentials: From IP Addresses to Firewalls [Upcoming&amp;hellip;]&lt;/p&gt;
+&lt;hr&gt;</description>
+      <content>&lt;hr&gt;
+&lt;p&gt;Linux Networking Essentials: From IP Addresses to Firewalls [Upcoming&amp;hellip;]&lt;/p&gt;
+&lt;hr&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>9. Docker on Linux</title>
+      <link>/posts/blog-9-docker-on-linux/</link>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-9-docker-on-linux/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Docker on Linux: Setting Up and Running Your First Container [Upcoming&amp;hellip;]&lt;/p&gt;
+&lt;hr&gt;</description>
+      <content>&lt;hr&gt;
+&lt;p&gt;Docker on Linux: Setting Up and Running Your First Container [Upcoming&amp;hellip;]&lt;/p&gt;
+&lt;hr&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>8. Introduction to Shell Scripting</title>
+      <link>/posts/blog-8-introduction-to-shell-scripting/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-8-introduction-to-shell-scripting/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Introduction to Shell Scripting: Automating Your Daily Tasks [Upcoming&amp;hellip;]&lt;/p&gt;
+&lt;hr&gt;</description>
+      <content>&lt;hr&gt;
+&lt;p&gt;Introduction to Shell Scripting: Automating Your Daily Tasks [Upcoming&amp;hellip;]&lt;/p&gt;
+&lt;hr&gt;
+</content>
+    </item>
+    
     <item>
       <title>6. Setting up hacking Environment...</title>
       <link>/posts/blog-6-hacking-environment-setup/</link>
