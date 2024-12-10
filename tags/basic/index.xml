@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basic on Terminal</title>
-    <link>//localhost:1313/tags/basic/</link>
+    <link>/tags/basic/</link>
     <description>Recent content in Basic on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/basic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/basic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>6. Setting up hacking Environment...</title>
-      <link>//localhost:1313/posts/blog-6-hacking-environment-setup/</link>
+      <link>/posts/blog-6-hacking-environment-setup/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/blog-6-hacking-environment-setup/</guid>
+      <guid>/posts/blog-6-hacking-environment-setup/</guid>
       <description>&lt;hr&gt;
 &lt;h3 id=&#34;setting-up-your-hacking-environment-a-beginners-guide&#34;&gt;Setting Up Your Hacking Environment: A Beginner’s Guide&lt;/h3&gt;
 &lt;p&gt;If you’re curious about ethical hacking or just starting your journey into cybersecurity, the first step is creating a safe and functional environment for your experiments and learning. This guide will walk you through the process in a detailed and technical format, making it easy to understand—even for beginners (yes, you!).&lt;/p&gt;
@@ -228,10 +228,10 @@
     
     <item>
       <title>7. Kali, linux Commands</title>
-      <link>//localhost:1313/posts/blog-7-kali-linux-commands/</link>
+      <link>/posts/blog-7-kali-linux-commands/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/blog-7-kali-linux-commands/</guid>
+      <guid>/posts/blog-7-kali-linux-commands/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;linux-commands-cheat-sheet&#34;&gt;Linux Commands Cheat Sheet&lt;/h1&gt;
 &lt;h2 id=&#34;1-file-and-directory-management&#34;&gt;1. &lt;strong&gt;File and Directory Management&lt;/strong&gt;&lt;/h2&gt;
@@ -574,6 +574,32 @@ Show system uptime.&lt;br&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;[Crusveder]&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>10. Linux Networking Essentials</title>
+      <link>/posts/blog-10-linux-networking-essentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-10-linux-networking-essentials/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Linux Networking Essentials: From IP Addresses to Firewalls [Upcoming&amp;hellip;]&lt;/p&gt;</description>
+      <content>&lt;hr&gt;
+&lt;p&gt;Linux Networking Essentials: From IP Addresses to Firewalls [Upcoming&amp;hellip;]&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>9. Docker on Linux</title>
+      <link>/posts/blog-9-docker-on-linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-9-docker-on-linux/</guid>
+      <description>&lt;hr&gt;
+&lt;p&gt;Docker on Linux: Setting Up and Running Your First Container [Upcoming&amp;hellip;]&lt;/p&gt;</description>
+      <content>&lt;hr&gt;
+&lt;p&gt;Docker on Linux: Setting Up and Running Your First Container [Upcoming&amp;hellip;]&lt;/p&gt;
 </content>
     </item>
     
