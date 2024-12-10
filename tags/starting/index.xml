@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Starting on Terminal</title>
-    <link>/tags/starting/</link>
+    <link>//localhost:1313/tags/starting/</link>
     <description>Recent content in Starting on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/starting/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/starting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>6. Setting up hacking Environment...</title>
-      <link>/posts/blog-6-hacking-environment-setup/</link>
+      <link>//localhost:1313/posts/blog-6-hacking-environment-setup/</link>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/blog-6-hacking-environment-setup/</guid>
+      <guid>//localhost:1313/posts/blog-6-hacking-environment-setup/</guid>
       <description>&lt;hr&gt;
 &lt;h3 id=&#34;setting-up-your-hacking-environment-a-beginners-guide&#34;&gt;Setting Up Your Hacking Environment: A Beginner’s Guide&lt;/h3&gt;
 &lt;p&gt;If you’re curious about ethical hacking or just starting your journey into cybersecurity, the first step is creating a safe and functional environment for your experiments and learning. This guide will walk you through the process in a detailed and technical format, making it easy to understand—even for beginners (yes, you!).&lt;/p&gt;
