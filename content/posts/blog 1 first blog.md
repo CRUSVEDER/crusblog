@@ -35,7 +35,7 @@ Here’s a glimpse at what you can expect:
 - **Guides and Tutorials:** Whether you’re navigating **Obsidian for better productivity**, building a **Python-powered AI summarizer**, or creating automation scripts for repetitive tasks, I’ll share step-by-step instructions and code snippets to make learning seamless.
 
 
-!![Image Description](/images/Screenshot%202024-12-05%20175338.png)
+![Image Description](/images/Screenshot%202024-12-05%20175338.png)
 
 ---
 ## Why This Blog?

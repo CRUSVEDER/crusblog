@@ -612,7 +612,7 @@ Use: A SourceForge project offering a variety of wordlists for password cracking
 &lt;li&gt;&lt;strong&gt;Step 4&lt;/strong&gt;: Look for anomalies, like traffic to unknown IPs or repeated failed login attempts.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Pro Tip&lt;/strong&gt;: Use Wireshark’s color coding to quickly identify different types of traffic—green for TCP, blue for DNS, etc. It’s like having a cheat sheet built right in.&lt;/p&gt;
-&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/wireshark-live-capture.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/wireshark-live-capture.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;2-nmap-the-network-scanner-everyone-loves&#34;&gt;&lt;strong&gt;2. Nmap: The Network Scanner Everyone Loves&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Nmap is a command-line tool that scans networks to identify devices, open ports, and potential vulnerabilities. It’s a must-have for beginners learning about penetration testing.&lt;/p&gt;
@@ -630,7 +630,7 @@ Use: A SourceForge project offering a variety of wordlists for password cracking
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Pro Tip&lt;/strong&gt;: Pair Nmap with &lt;strong&gt;Zenmap&lt;/strong&gt; (a graphical interface) if you’re still warming up to command lines.&lt;/p&gt;
-&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/1_eju_tKQSYYL5MDk0BtWBLg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/1_eju_tKQSYYL5MDk0BtWBLg.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;3-password-managers-the-easiest-security-boost-ever&#34;&gt;&lt;strong&gt;3. Password Managers: The Easiest Security Boost Ever&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Let’s face it, remembering passwords is the worst. A password manager like &lt;strong&gt;Bitwarden&lt;/strong&gt; or &lt;strong&gt;Dashlane&lt;/strong&gt; stores all your login info securely.&lt;/p&gt;

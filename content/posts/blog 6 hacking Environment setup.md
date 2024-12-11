@@ -64,6 +64,9 @@ The most widely used OS for penetration testing is **Kali Linux**, but other alt
 
 For installation, the **VM image** of Kali Linux is a quick way to set up your environment. Download the official Kali Linux image [here](https://www.kali.org/get-kali/), and then import it into VirtualBox or VMware.
 
+![Image Description](/images/Screenshot%202024-12-11%20213435.png)
+
+
 ---
 
 ### 4. **Keep Your Tools Updated**

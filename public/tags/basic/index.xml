@@ -581,6 +581,7 @@ Show system uptime.&lt;br&gt;
 &lt;li&gt;&lt;strong&gt;BlackArch&lt;/strong&gt; is an Arch-based distro for those who prefer the Arch ecosystem and need access to a wide range of security tools.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For installation, the &lt;strong&gt;VM image&lt;/strong&gt; of Kali Linux is a quick way to set up your environment. Download the official Kali Linux image &lt;a href=&#34;https://www.kali.org/get-kali/&#34;&gt;here&lt;/a&gt;, and then import it into VirtualBox or VMware.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Screenshot%202024-12-11%20213435.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;4-keep-your-tools-updated&#34;&gt;4. &lt;strong&gt;Keep Your Tools Updated&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;In cybersecurity, outdated tools are like leaving the back door open for intruders. It’s important to update your system regularly to ensure you have the latest tools and security patches.&lt;/p&gt;

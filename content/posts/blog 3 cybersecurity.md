@@ -46,7 +46,7 @@ Wireshark is like Google Maps for your internet traffic. It lets you see everyth
 
 **Pro Tip**: Use Wireshark’s color coding to quickly identify different types of traffic—green for TCP, blue for DNS, etc. It’s like having a cheat sheet built right in.
 
-!![Image Description](/images/wireshark-live-capture.png)
+![Image Description](/images/wireshark-live-capture.png)
 
 
 ---
@@ -74,7 +74,7 @@ Here’s how to use it:
 
 **Pro Tip**: Pair Nmap with **Zenmap** (a graphical interface) if you’re still warming up to command lines.
 
-!![Image Description](/images/1_eju_tKQSYYL5MDk0BtWBLg.png)
+![Image Description](/images/1_eju_tKQSYYL5MDk0BtWBLg.png)
 
 
 ---

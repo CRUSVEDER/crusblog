@@ -20,7 +20,7 @@ Mastering elemental reactions is essential for any Genshin Impact player looking
 ## Exploring Each Elemental Reaction
 
 
-!![Image Description](/images/all%20elem%20react.png)
+![Image Description](/images/all%20elem%20react.png)
 
 
 ### Swirl (Anemo + Cryo/Electro/Hydro/Pyro)
@@ -34,7 +34,7 @@ Swirl is perfect for teams that need to spread elemental effects and create reac
 ### Melt (Cryo + Pyro / Pyro + Cryo)
 
 
-!![Image Description](/images/meltreact.png)
+![Image Description](/images/meltreact.png)
 
 Melt is a reaction with the highest damage potential, but its effectiveness depends on the order of the elements. Pyro attacks on Cryo enemies increase Pyro DMG by 1.5x, while Cryo attacks on Pyro enemies double the damage (2x). To perform a Melt reaction, use a Cryo attack from a character like Ganyu and then follow up with a Pyro ability from someone like Xiangling or Hu Tao. The formulas for Melt are:
 
