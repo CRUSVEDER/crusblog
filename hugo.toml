@@ -11,7 +11,7 @@ paginate = 5
   contentTypeName = "posts"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 3
 
   # show selector to switch language
   showLanguageSelector = false
@@ -77,12 +77,20 @@ paginate = 5
         logoText = "Terminal"
         logoHomeLink = "/"
 
-      [languages.en.menu]
-        [[languages.en.menu.main]]
-          identifier = "about"
-          name = "About"
-          url = "/about"
-        [[languages.en.menu.main]]
-          identifier = "showcase"
-          name = "Showcase"
-          url = "/showcase"
+     # Menu Configuration
+[languages.en.menu]  # Main menu configuration for English language
+  [[languages.en.menu.main]]  # First menu item
+    identifier = "home"  # Unique identifier for the menu item
+    name = "Home"  # Name displayed in the menu
+    url = "/"  # The URL the menu item links to (home page)
+    weight = 1  # Set a weight to control the order of menu items (optional, lower weight comes first)
+
+  [[languages.en.menu.main]]  # Second menu item
+    identifier = "about"  # Unique identifier for the menu item
+    name = "About"  # Name displayed in the menu
+    url = "/about"  # The URL the menu item links to (about page)s
+
+  [[languages.en.menu.main]]  # Third menu item
+    identifier = "showcase"  # Unique identifier for the menu item
+    name = "Showcase"  # Name displayed in the menu
+    url = "/showcase"  # The URL the menu item links to (showcase page)
