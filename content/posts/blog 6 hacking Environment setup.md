@@ -1,6 +1,6 @@
 ---
 title: 6. Setting up hacking Environment...
-date: 2024-12-05
+date: 2024-12-04
 draft: 
 tags:
   - setup

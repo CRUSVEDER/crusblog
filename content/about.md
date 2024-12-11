@@ -19,18 +19,20 @@ Whether it’s creating an AI summarization site, enhancing my knowledge of Pyth
 ---
 
 **Links:**
-- [My Blog]()  
-- [GitHub](#)  
-- 
+- [My Blog](/)  
+- [GitHub](https://github.com/CRUSVEDER)  
+- [portfolio](https://crusveder.github.io/portfolio/) 
+- [ko-fi](https://ko-fi.com/crusveder)
+- []
 **Key Interests:**
-- Cybersecurity  
+- Cybersecurity / Ethical Hacking  
 - Machine Learning & AI  
-- Python Programming  
+- Exploring Python Programming  
 - Game Development  
 - Gaming Tips & Guides  
 
 **Projects:**
-- **Spiral Abyss Guide**: A detailed site for Spiral Abyss strategies.  
+- **Gacha Guide**: A detailed site for Gacha Games.  
 - **AI Summarization Website**: A project for summarizing documents and interacting with uploaded data.  
 - **Wordle Game Website**: A custom Wordle game featuring Genshin Impact characters and items.  
 

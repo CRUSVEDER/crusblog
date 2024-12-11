@@ -1,6 +1,6 @@
 ---
 title: 1. My Awesome First Blog
-date: 2024-12-02
+date: 2024-12-01
 draft: false
 tags:
   - firsrblog
