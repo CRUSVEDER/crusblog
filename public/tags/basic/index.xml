@@ -44,10 +44,120 @@
       
       <guid>/posts/blog-8-introduction-to-shell-scripting/</guid>
       <description>&lt;hr&gt;
-&lt;p&gt;Introduction to Shell Scripting: Automating Your Daily Tasks [Upcoming&amp;hellip;]&lt;/p&gt;
-&lt;hr&gt;</description>
+&lt;h1 id=&#34;introduction-to-shell-scripting-automating-daily-tasks-bash-and-powershell-edition&#34;&gt;Introduction to Shell Scripting: Automating Daily Tasks (Bash and PowerShell Edition)&lt;/h1&gt;
+&lt;p&gt;Alright, imagine this: you wake up, fire up your computer, and instead of wasting time organizing files or backing up data, you just hit a button, and boom—your computer does all that boring stuff for you. That’s the magic of shell scripting. It’s not just for Linux nerds; even Windows folks can automate tasks like a pro using PowerShell.&lt;/p&gt;</description>
       <content>&lt;hr&gt;
-&lt;p&gt;Introduction to Shell Scripting: Automating Your Daily Tasks [Upcoming&amp;hellip;]&lt;/p&gt;
+&lt;h1 id=&#34;introduction-to-shell-scripting-automating-daily-tasks-bash-and-powershell-edition&#34;&gt;Introduction to Shell Scripting: Automating Daily Tasks (Bash and PowerShell Edition)&lt;/h1&gt;
+&lt;p&gt;Alright, imagine this: you wake up, fire up your computer, and instead of wasting time organizing files or backing up data, you just hit a button, and boom—your computer does all that boring stuff for you. That’s the magic of shell scripting. It’s not just for Linux nerds; even Windows folks can automate tasks like a pro using PowerShell.&lt;/p&gt;
+&lt;p&gt;Let’s break this down step-by-step, keeping things chill and beginner-friendly. We&amp;rsquo;ll cover &lt;strong&gt;Bash&lt;/strong&gt; for Linux/macOS and &lt;strong&gt;PowerShell&lt;/strong&gt; for Windows. No rocket science, just automation magic.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;part-1-whats-a-shell-script&#34;&gt;Part 1: What’s a Shell Script?&lt;/h3&gt;
+&lt;p&gt;A shell script is a set of instructions you write in a text file, and the computer runs them, just like how a playlist makes Spotify play the songs you want.&lt;/p&gt;
+&lt;p&gt;For &lt;strong&gt;Linux/macOS&lt;/strong&gt;, we use &lt;strong&gt;Bash&lt;/strong&gt; (Bourne Again Shell). For &lt;strong&gt;Windows&lt;/strong&gt;, we have &lt;strong&gt;PowerShell&lt;/strong&gt;. Both are built-in tools that make automation super easy once you know the basics.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;part-2-getting-started-with-bash-linuxmacos&#34;&gt;Part 2: Getting Started with Bash (Linux/macOS)&lt;/h3&gt;
+&lt;h4 id=&#34;step-1-open-the-terminal&#34;&gt;Step 1: Open the Terminal&lt;/h4&gt;
+&lt;p&gt;Hit &lt;code&gt;CTRL+ALT+T&lt;/code&gt; (Linux) or search for &lt;strong&gt;Terminal&lt;/strong&gt; (macOS).&lt;/p&gt;
+&lt;h4 id=&#34;step-2-create-your-first-script&#34;&gt;Step 2: Create Your First Script&lt;/h4&gt;
+&lt;p&gt;In your terminal, type:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nano hello.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This opens a text editor. Inside, write:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello from Bash!&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;step-3-save-and-exit&#34;&gt;Step 3: Save and Exit&lt;/h4&gt;
+&lt;p&gt;Press &lt;code&gt;CTRL+O&lt;/code&gt; to save, &lt;code&gt;ENTER&lt;/code&gt; to confirm, then &lt;code&gt;CTRL+X&lt;/code&gt; to exit.&lt;/p&gt;
+&lt;h4 id=&#34;step-4-make-it-executable&#34;&gt;Step 4: Make It Executable&lt;/h4&gt;
+&lt;p&gt;Run this to give your script permission to run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chmod +x hello.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;step-5-execute-the-script&#34;&gt;Step 5: Execute the Script&lt;/h4&gt;
+&lt;p&gt;Run your script by typing:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./hello.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should see:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Hello from Bash!
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h3 id=&#34;part-3-getting-started-with-powershell-windows&#34;&gt;Part 3: Getting Started with PowerShell (Windows)&lt;/h3&gt;
+&lt;h4 id=&#34;step-1-open-powershell&#34;&gt;Step 1: Open PowerShell&lt;/h4&gt;
+&lt;p&gt;Search for &lt;strong&gt;PowerShell&lt;/strong&gt; in the Start menu and open it.&lt;/p&gt;
+&lt;h4 id=&#34;step-2-create-your-first-script-1&#34;&gt;Step 2: Create Your First Script&lt;/h4&gt;
+&lt;p&gt;Open Notepad (yes, Notepad), and type:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Write-Output &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello from PowerShell!&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;step-3-save-as-a-ps1-file&#34;&gt;Step 3: Save as a &lt;code&gt;.ps1&lt;/code&gt; File&lt;/h4&gt;
+&lt;p&gt;Go to &lt;strong&gt;File &amp;gt; Save As&lt;/strong&gt;, name it &lt;code&gt;hello.ps1&lt;/code&gt;, and choose &amp;ldquo;All Files&amp;rdquo; in the save dialog. Make sure it ends with &lt;code&gt;.ps1&lt;/code&gt;, like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hello.ps1
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;step-4-run-the-script&#34;&gt;Step 4: Run the Script&lt;/h4&gt;
+&lt;p&gt;Back in PowerShell, navigate to where you saved the file (use &lt;code&gt;cd&lt;/code&gt; to change directories). Then, run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./hello.ps1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should see:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Hello from PowerShell!
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h3 id=&#34;part-4-real-life-automation-with-shell-scripts&#34;&gt;Part 4: Real-Life Automation with Shell Scripts&lt;/h3&gt;
+&lt;p&gt;Now that you know the basics, let’s tackle some useful scripts.&lt;/p&gt;
+&lt;h4 id=&#34;1-organize-files&#34;&gt;&lt;strong&gt;1. Organize Files&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Bash (Linux/macOS):&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;mkdir -p Pictures
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mv *.jpg Pictures/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;JPG files moved to Pictures!&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;PowerShell (Windows):&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;New-Item -ItemType Directory -Path . -Name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Pictures&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Move-Item *.jpg Pictures/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Write-Output &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;JPG files moved to Pictures!&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;2-automate-backups&#34;&gt;&lt;strong&gt;2. Automate Backups&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Bash (Linux/macOS):&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;rsync -av ~/Documents ~/Backup
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Backup complete!&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;PowerShell (Windows):&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Copy-Item -Path C:\Users\YourName\Documents -Destination D:\Backup -Recurse
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Write-Output &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Backup complete!&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;3-monitor-system-performance&#34;&gt;&lt;strong&gt;3. Monitor System Performance&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Bash (Linux/macOS):&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; true; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;date&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;: &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;top -b -n1 | head -5&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; system.log
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  sleep &lt;span style=&#34;color:#ae81ff&#34;&gt;3600&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;PowerShell (Windows):&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; ($true) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Get-Date | Out-File -Append -FilePath system.log
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Get-Process | Sort-Object CPU -Descending | Select-Object -First &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; | Out-File -Append -FilePath system.log
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  Start-Sleep -Seconds &lt;span style=&#34;color:#ae81ff&#34;&gt;3600&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;part-5-scheduling-scripts&#34;&gt;Part 5: Scheduling Scripts&lt;/h3&gt;
+&lt;h4 id=&#34;on-linuxmacos&#34;&gt;&lt;strong&gt;On Linux/macOS:&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Use &lt;strong&gt;crontab&lt;/strong&gt; to run scripts at specific times:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open crontab:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;crontab -e
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add a line to run your script every day at 8 AM:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; * * * /path/to/your/script.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;on-windows&#34;&gt;&lt;strong&gt;On Windows:&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Use &lt;strong&gt;Task Scheduler&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Task Scheduler (search for it in Start).&lt;/li&gt;
+&lt;li&gt;Create a new task.&lt;/li&gt;
+&lt;li&gt;Set a trigger (e.g., daily at 8 AM).&lt;/li&gt;
+&lt;li&gt;Set an action to run your &lt;code&gt;.ps1&lt;/code&gt; script using PowerShell.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;part-6-tips-for-success&#34;&gt;Part 6: Tips for Success&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Test Small:&lt;/strong&gt; Start with tiny scripts and gradually add more features.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Comments:&lt;/strong&gt; Add &lt;code&gt;#&lt;/code&gt; in Bash or &lt;code&gt;#&lt;/code&gt; in PowerShell to explain what each part does.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Handle Errors:&lt;/strong&gt; Check if files exist before moving them to avoid errors.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Experiment:&lt;/strong&gt; Don’t be afraid to break things (in a safe environment).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;wrapping-up&#34;&gt;Wrapping Up&lt;/h3&gt;
+&lt;p&gt;Whether you’re using Bash or PowerShell, shell scripting is your ticket to automating the boring stuff. It saves time, reduces errors, and makes you look like a tech wizard to your friends.&lt;/p&gt;
+&lt;p&gt;Start small, stay curious, and soon you’ll be automating tasks you never thought possible. Now, go script something awesome!&lt;/p&gt;
+&lt;p&gt;[Crusveder]&lt;/p&gt;
 &lt;hr&gt;
 </content>
     </item>
