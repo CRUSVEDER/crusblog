@@ -6,7 +6,7 @@ hugo server -t themename
 
 
 ## robocopy sourcepath destination path /mir
-robocopy "D:\Obsidian Vault\crus'svault\posts" "C:\Users\USER\Desktop\crusblog\content\posts" /mir
+robocopy "Obsidian Vault path" "Sites content path" /mir
 
 ## image trasnfer from the obsidian
 python image.py
