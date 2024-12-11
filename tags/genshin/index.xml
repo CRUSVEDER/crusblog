@@ -21,13 +21,13 @@
 &lt;p&gt;Mastering elemental reactions is essential for any Genshin Impact player looking to maximize their damage potential. These reactions not only add depth to gameplay but also allow for creative team compositions that can handle even the toughest foes. In this guide, we&amp;rsquo;ll cover every elemental reaction, explain how to trigger them effectively, provide the formulas for their damage increases, and share insights on the best team combinations.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;exploring-each-elemental-reaction&#34;&gt;Exploring Each Elemental Reaction&lt;/h2&gt;
-&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/all%20elem%20react.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/all%20elem%20react.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;swirl-anemo--cryoelectrohydropyro&#34;&gt;Swirl (Anemo + Cryo/Electro/Hydro/Pyro)&lt;/h3&gt;
 &lt;p&gt;Swirl is an Anemo-based reaction that spreads an element to nearby enemies, dealing additional damage and creating opportunities for further reactions. To execute Swirl, hit an enemy with an element like Hydro or Pyro and follow up with an Anemo skill, such as Sucrose&amp;rsquo;s or Venti&amp;rsquo;s abilities. The formula for Swirl damage is given by:&lt;/p&gt;
 &lt;p&gt;DMG=Base DMG+Elemental Mastery scaling&lt;/p&gt;
 &lt;p&gt;Swirl is perfect for teams that need to spread elemental effects and create reactions across multiple targets. The more Elemental Mastery you have, the stronger the spread, making it ideal for support characters focused on boosting reactions.&lt;/p&gt;
 &lt;h3 id=&#34;melt-cryo--pyro--pyro--cryo&#34;&gt;Melt (Cryo + Pyro / Pyro + Cryo)&lt;/h3&gt;
-&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/meltreact.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/meltreact.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Melt is a reaction with the highest damage potential, but its effectiveness depends on the order of the elements. Pyro attacks on Cryo enemies increase Pyro DMG by 1.5x, while Cryo attacks on Pyro enemies double the damage (2x). To perform a Melt reaction, use a Cryo attack from a character like Ganyu and then follow up with a Pyro ability from someone like Xiangling or Hu Tao. The formulas for Melt are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -142,7 +142,7 @@ For an Aggravate reaction, trigger Quicken and follow up with a strong Electro a
 &lt;li&gt;&lt;strong&gt;Gaming Chronicles with a Twist:&lt;/strong&gt; While I’m a huge fan of &lt;strong&gt;Genshin Impact&lt;/strong&gt;, I also enjoy exploring how gaming intersects with technology. We’ll dive into the mechanics of &lt;strong&gt;game design&lt;/strong&gt;, &lt;strong&gt;data analytics for team optimization&lt;/strong&gt;, and how to develop &lt;strong&gt;web tools&lt;/strong&gt; to enhance your gaming experience (imagine a tool to simulate Genshin team damage outputs!).&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Guides and Tutorials:&lt;/strong&gt; Whether you’re navigating &lt;strong&gt;Obsidian for better productivity&lt;/strong&gt;, building a &lt;strong&gt;Python-powered AI summarizer&lt;/strong&gt;, or creating automation scripts for repetitive tasks, I’ll share step-by-step instructions and code snippets to make learning seamless.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Screenshot%202024-12-05%20175338.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Screenshot%202024-12-05%20175338.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;why-this-blog&#34;&gt;Why This Blog?&lt;/h2&gt;
 &lt;p&gt;This blog isn’t just a diary—it’s a space to spark creativity, solve problems, and share ideas. It’s about connecting with like-minded folks who enjoy diving into the technical, creative, and geeky aspects of life.&lt;/p&gt;
