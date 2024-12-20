@@ -6,7 +6,45 @@
     <description>Recent content on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>12. How to CTF</title>
+      <link>/posts/blog-12-capture-the-flag/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-12-capture-the-flag/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;capture-the-flag-guide&#34;&gt;Capture the Flag guide&lt;/h1&gt;</description>
+      <content>&lt;hr&gt;
+&lt;h1 id=&#34;capture-the-flag-guide&#34;&gt;Capture the Flag guide&lt;/h1&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>11. Exploring the Linux File System: A Beginner&#39;s Guide</title>
+      <link>/posts/blog-11-exploring-the-linux-file-system/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-11-exploring-the-linux-file-system/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;overview&#34;&gt;&lt;strong&gt;Overview:&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;explain-the-linux-file-system-hierarchy-and-its-importance&#34;&gt;Explain the Linux file system hierarchy and its importance.&lt;/h2&gt;
+&lt;h2 id=&#34;sections&#34;&gt;&lt;strong&gt;Sections:&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;- What is `/` (Root Directory)?
+- Key Directories: `/bin`, `/etc`, `/home`, `/var`, etc.
+- Navigating and Understanding File Locations.
+&lt;/code&gt;&lt;/pre&gt;</description>
+      <content>&lt;hr&gt;
+&lt;h1 id=&#34;overview&#34;&gt;&lt;strong&gt;Overview:&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;explain-the-linux-file-system-hierarchy-and-its-importance&#34;&gt;Explain the Linux file system hierarchy and its importance.&lt;/h2&gt;
+&lt;h2 id=&#34;sections&#34;&gt;&lt;strong&gt;Sections:&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;- What is `/` (Root Directory)?
+- Key Directories: `/bin`, `/etc`, `/home`, `/var`, etc.
+- Navigating and Understanding File Locations.
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </item>
+    
     <item>
       <title>10. Linux Networking Essentials</title>
       <link>/posts/blog-10-linux-networking-essentials/</link>
@@ -1430,31 +1468,6 @@ An engaging, game-like interactive portfolio showcasing my projects and skills. 
 &lt;li&gt;Collaborating with other developers and designers to bring new ideas to life. If you&amp;rsquo;re interested in working together, don&amp;rsquo;t hesitate to contact me!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Feel free to explore my work and reach out if you have any questions or suggestions!&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>11. Exploring the Linux File System: A Beginner&#39;s Guide</title>
-      <link>/posts/blog-11-exploring-the-linux-file-system/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/blog-11-exploring-the-linux-file-system/</guid>
-      <description>&lt;hr&gt;
-&lt;h1 id=&#34;overview&#34;&gt;&lt;strong&gt;Overview:&lt;/strong&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;explain-the-linux-file-system-hierarchy-and-its-importance&#34;&gt;Explain the Linux file system hierarchy and its importance.&lt;/h2&gt;
-&lt;h2 id=&#34;sections&#34;&gt;&lt;strong&gt;Sections:&lt;/strong&gt;&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;- What is `/` (Root Directory)?
-- Key Directories: `/bin`, `/etc`, `/home`, `/var`, etc.
-- Navigating and Understanding File Locations.
-&lt;/code&gt;&lt;/pre&gt;</description>
-      <content>&lt;hr&gt;
-&lt;h1 id=&#34;overview&#34;&gt;&lt;strong&gt;Overview:&lt;/strong&gt;&lt;/h1&gt;
-&lt;h2 id=&#34;explain-the-linux-file-system-hierarchy-and-its-importance&#34;&gt;Explain the Linux file system hierarchy and its importance.&lt;/h2&gt;
-&lt;h2 id=&#34;sections&#34;&gt;&lt;strong&gt;Sections:&lt;/strong&gt;&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;- What is `/` (Root Directory)?
-- Key Directories: `/bin`, `/etc`, `/home`, `/var`, etc.
-- Navigating and Understanding File Locations.
-&lt;/code&gt;&lt;/pre&gt;
 </content>
     </item>
     

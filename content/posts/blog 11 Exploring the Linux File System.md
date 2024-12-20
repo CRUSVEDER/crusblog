@@ -1,6 +1,6 @@
 ---
 title: "11. Exploring the Linux File System: A Beginner's Guide"
-date: 
+date: 2024-12-09
 draft: 
 tags: 
 aliases:
