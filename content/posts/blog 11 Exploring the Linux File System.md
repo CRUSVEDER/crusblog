@@ -1,5 +1,5 @@
 ---
-title: "Exploring the Linux File System: A Beginner's Guide"
+title: "11. Exploring the Linux File System: A Beginner's Guide"
 date: 
 draft: 
 tags: 
