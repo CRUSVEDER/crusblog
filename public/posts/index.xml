@@ -1335,5 +1335,30 @@ Password reuse is like leaving your front door key under the mat—it’s an ope
 </content>
     </item>
     
+    <item>
+      <title>Exploring the Linux File System: A Beginner&#39;s Guide</title>
+      <link>/posts/blog-11-exploring-the-linux-file-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-11-exploring-the-linux-file-system/</guid>
+      <description>&lt;hr&gt;
+&lt;h1 id=&#34;overview&#34;&gt;&lt;strong&gt;Overview:&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;explain-the-linux-file-system-hierarchy-and-its-importance&#34;&gt;Explain the Linux file system hierarchy and its importance.&lt;/h2&gt;
+&lt;h2 id=&#34;sections&#34;&gt;&lt;strong&gt;Sections:&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;- What is `/` (Root Directory)?
+- Key Directories: `/bin`, `/etc`, `/home`, `/var`, etc.
+- Navigating and Understanding File Locations.
+&lt;/code&gt;&lt;/pre&gt;</description>
+      <content>&lt;hr&gt;
+&lt;h1 id=&#34;overview&#34;&gt;&lt;strong&gt;Overview:&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;explain-the-linux-file-system-hierarchy-and-its-importance&#34;&gt;Explain the Linux file system hierarchy and its importance.&lt;/h2&gt;
+&lt;h2 id=&#34;sections&#34;&gt;&lt;strong&gt;Sections:&lt;/strong&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;- What is `/` (Root Directory)?
+- Key Directories: `/bin`, `/etc`, `/home`, `/var`, etc.
+- Navigating and Understanding File Locations.
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+    </item>
+    
   </channel>
 </rss>

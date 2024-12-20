@@ -22,6 +22,7 @@ Hello there, and welcome to my corner of the internet!
 Whether you stumbled in during a late-night browsing session or deliberately tracked this blog down (major kudos to you for that), I’m thrilled you’re here. This is a space where curiosity meets creativity—a digital lab, journal, and playground all in one.
 
 ---
+
 ## What’s This Blog About?
 
 

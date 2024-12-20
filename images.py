@@ -4,7 +4,7 @@ import shutil
 
 # Paths (using raw strings to handle Windows backslashes correctly)
 posts_dir = r"C:\Users\USER\Desktop\crusblog\content\posts"
-attachments_dir = r"D:\Obsidian Vault\crus'svault\attachments"
+attachments_dir = r"D:\Obsidian Vault\crus vault\attachments"
 static_images_dir = r"C:\Users\USER\Desktop\crusblog\static\images"
 
 # Step 1: Process each markdown file in the posts directory
