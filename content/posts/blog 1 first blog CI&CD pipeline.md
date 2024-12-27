@@ -1,5 +1,5 @@
 ---
-title: 1. My Awesome First Blog
+title: 1. My Awesome First Blog CI/CD Pipeline
 date: 2024-12-01
 draft: false
 tags:
