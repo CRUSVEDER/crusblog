@@ -4,7 +4,7 @@ date: 2024-12-03
 draft: 
 tags:
   - cybersec
-  - tips_tricks
+  - tips/tricks
 ---
 
 ---

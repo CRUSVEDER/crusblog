@@ -7,9 +7,9 @@ tags:
   - genshin
   - games
   - cybersec
-  - AI_ML
   - hsr
   - leaks
+  - AIML
 ---
 
 ---
