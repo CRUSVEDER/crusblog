@@ -8,11 +8,11 @@
     <language>en</language>
     <lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/firsrblog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1. My Awesome First Blog</title>
-      <link>/posts/blog-1-first-blog/</link>
+      <title>1. My Awesome First Blog CI/CD Pipeline</title>
+      <link>/posts/blog-1-first-blog-cicd-pipeline/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/blog-1-first-blog/</guid>
+      <guid>/posts/blog-1-first-blog-cicd-pipeline/</guid>
       <description>&lt;hr&gt;
 &lt;h1 id=&#34;welcome-to-my-blog&#34;&gt;Welcome to My Blog!&lt;/h1&gt;
 &lt;p&gt;Hello there, and welcome to my corner of the internet!&lt;/p&gt;
