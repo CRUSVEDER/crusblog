@@ -6,33 +6,43 @@
     <description>Recent content in Tags on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Basic</title>
-      <link>/tags/basic/</link>
-      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/basic/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Tips_tricks</title>
-      <link>/tags/tips_tricks/</link>
-      <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/tips_tricks/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
+    <lastBuildDate>Tue, 10 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cybersec</title>
       <link>/tags/cybersec/</link>
-      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>/tags/cybersec/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Tips</title>
+      <link>/tags/tips/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tips/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Tips/Tricks</title>
+      <link>/tags/tips/tricks/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tips/tricks/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Basic</title>
+      <link>/tags/basic/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/basic/</guid>
       <description></description>
       <content></content>
     </item>
@@ -58,11 +68,11 @@
     </item>
     
     <item>
-      <title>AI_ML</title>
-      <link>/tags/ai_ml/</link>
+      <title>AIML</title>
+      <link>/tags/aiml/</link>
       <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ai_ml/</guid>
+      <guid>/tags/aiml/</guid>
       <description></description>
       <content></content>
     </item>

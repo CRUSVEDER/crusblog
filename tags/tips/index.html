@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-    <title>Cybersec :: Terminal</title>
+    <title>Tips :: Terminal</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="/tags/cybersec/" />
+<link rel="canonical" href="/tags/tips/" />
 
 
 
@@ -80,9 +80,9 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Cybersec">
+<meta property="og:title" content="Tips">
 <meta property="og:description" content="" />
-<meta property="og:url" content="/tags/cybersec/" />
+<meta property="og:url" content="/tags/tips/" />
 <meta property="og:site_name" content="Terminal" />
 
   <meta property="og:image" content="/og-image.png">
@@ -94,7 +94,7 @@
 
 
 
-  <link href="/tags/cybersec/index.xml" rel="alternate" type="application/rss+xml" title="Terminal" />
+  <link href="/tags/tips/index.xml" rel="alternate" type="application/rss+xml" title="Terminal" />
 
 
 
@@ -182,7 +182,7 @@
 
   <div class="content">
     
-  <h1>Posts for: #Cybersec</h1>
+  <h1>Posts for: #Tips</h1>
   
   <div class="posts">
     
@@ -239,19 +239,21 @@
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="/posts/blog-11-exploring-the-linux-file-system/"><ol start="11">
-<li>Exploring the Linux File System: A Beginner&rsquo;s Guide</li>
+          <a href="/posts/blog-12-capture-the-flag-guide/"><ol start="12">
+<li>How to CTF</li>
 </ol>
 </a>
         </h1>
-        <div class="post-meta"><time class="post-date">2024-12-09</time></div>
+        <div class="post-meta"><time class="post-date">2024-12-10</time></div>
 
         
           <span class="post-tags">
             
             #<a href="/tags/cybersec/">cybersec</a>&nbsp;
             
-            #<a href="/tags/basic/">basic</a>&nbsp;
+            #<a href="/tags/tips/">tips</a>&nbsp;
+            
+            #<a href="/tags/tips/tricks/">tips/tricks</a>&nbsp;
             
           </span>
         
@@ -262,42 +264,45 @@
         <div class="post-content">
           
             <hr>
-<h1 id="overview"><strong>Overview:</strong></h1>
-<h2 id="explain-the-linux-file-system-hierarchy-and-its-importance">Explain the Linux file system hierarchy and its importance.</h2>
-<h2 id="sections"><strong>Sections:</strong></h2>
-<pre><code>- What is `/` (Root Directory)?
-- Key Directories: `/bin`, `/etc`, `/home`, `/var`, etc.
-- Navigating and Understanding File Locations.
-</code></pre>
+<h1 id="what-it-ctf">What it CTF?</h1>
+<p>CTF, or <strong>Capture The Flag</strong>, is a type of cybersecurity competition where participants solve challenges to find &ldquo;flags&rdquo; (specific pieces of text) hidden within systems, files, or code. These challenges test skills in areas like cryptography, web security, reverse engineering, forensics, and more. CTFs are popular in the cybersecurity community and are used for learning, practice, and fun.</p>
+<h3 id="types-of-ctfs">Types of CTFs</h3>
+<ol>
+<li>
+<p><strong>Jeopardy-Style</strong></p>
+<ul>
+<li>Participants solve challenges organized into categories (e.g., cryptography, forensics, etc.).</li>
+<li>Each solved challenge reveals a flag, earning points.</li>
+<li>Examples: Decoding encrypted messages, analyzing memory dumps, or identifying vulnerabilities.</li>
+</ul>
+</li>
+<li>
+<p><strong>Attack-Defense</strong></p>
           
         </div>
 
         
           <div>
-            <a class="read-more button inline" href="/posts/blog-11-exploring-the-linux-file-system/">Read more</a>
+            <a class="read-more button inline" href="/posts/blog-12-capture-the-flag-guide/">Read more</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h1 class="post-title">
-          <a href="/posts/blog-6-hacking-environment-setup/"><ol start="6">
-<li>Setting up hacking Environment&hellip;</li>
+          <a href="/posts/blog-7-kali-linux-commands/"><ol start="7">
+<li>Kali, linux Commands</li>
 </ol>
 </a>
         </h1>
-        <div class="post-meta"><time class="post-date">2024-12-04</time></div>
+        <div class="post-meta"><time class="post-date">2024-12-05</time></div>
 
         
           <span class="post-tags">
             
-            #<a href="/tags/setup/">setup</a>&nbsp;
-            
-            #<a href="/tags/starting/">starting</a>&nbsp;
-            
-            #<a href="/tags/cybersec/">cybersec</a>&nbsp;
-            
             #<a href="/tags/basic/">basic</a>&nbsp;
+            
+            #<a href="/tags/tips/tricks/">tips/tricks</a>&nbsp;
             
           </span>
         
@@ -308,17 +313,55 @@
         <div class="post-content">
           
             <hr>
-<h3 id="setting-up-your-hacking-environment-a-beginners-guide">Setting Up Your Hacking Environment: A Beginner’s Guide</h3>
-<p>If you’re curious about ethical hacking or just starting your journey into cybersecurity, the first step is creating a safe and functional environment for your experiments and learning. This guide will walk you through the process in a detailed and technical format, making it easy to understand—even for beginners (yes, you!).</p>
-<hr>
-<h3 id="1-start-with-the-right-hardware">1. <strong>Start with the Right Hardware</strong></h3>
-<p>Before you get your hacker on, make sure your computer can handle the demands of hacking tools and virtual machines. A good hacking environment requires hardware that can support multiple virtual machines, networks, and complex tools. Here&rsquo;s a more technical breakdown:</p>
+<h1 id="linux-commands-cheat-sheet">Linux Commands Cheat Sheet</h1>
+<h2 id="1-file-and-directory-management">1. <strong>File and Directory Management</strong></h2>
+<ul>
+<li>
+<p><strong><code>ls</code></strong><br>
+List files and directories.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>ls -l</code></strong><br>
+List files with detailed information.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>mkdir</code></strong><br>
+Create a new directory.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir new_folder
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>rmdir</code></strong><br>
+Remove an empty directory.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rmdir empty_folder
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>rm</code></strong><br>
+Delete files or directories.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm file.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>cp</code></strong><br>
+Copy files or directories.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp source.txt destination.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>mv</code></strong><br>
+Move or rename files.<br>
+<em>Example:</em></p>
           
         </div>
 
         
           <div>
-            <a class="read-more button inline" href="/posts/blog-6-hacking-environment-setup/">Read more</a>
+            <a class="read-more button inline" href="/posts/blog-7-kali-linux-commands/">Read more</a>
           </div>
         
       </article>
@@ -390,6 +433,47 @@ to do same attacks</em></p>
     
       <article class="post on-list">
         <h1 class="post-title">
+          <a href="/posts/blog-2-genshin-elemental-reaction-guide/"><ol start="2">
+<li>The Ultimate Guide to Elemental Reactions in Genshin Impact</li>
+</ol>
+</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2024-12-02</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="/tags/genshin/">genshin</a>&nbsp;
+            
+            #<a href="/tags/gacha/">gacha</a>&nbsp;
+            
+            #<a href="/tags/reactions/">reactions</a>&nbsp;
+            
+            #<a href="/tags/tips/tricks/">tips/tricks</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <hr>
+<h2 id="introduction-understanding-the-power-of-elemental-reactions">Introduction: Understanding the Power of Elemental Reactions</h2>
+<p>Mastering elemental reactions is essential for any Genshin Impact player looking to maximize their damage potential. These reactions not only add depth to gameplay but also allow for creative team compositions that can handle even the toughest foes. In this guide, we&rsquo;ll cover every elemental reaction, explain how to trigger them effectively, provide the formulas for their damage increases, and share insights on the best team combinations.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/blog-2-genshin-elemental-reaction-guide/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
           <a href="/posts/blog-3-cybersecurity/"><ol start="3">
 <li>cybersec tips &amp; tricks</li>
 </ol>
@@ -428,61 +512,12 @@ to do same attacks</em></p>
         
       </article>
     
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="/posts/blog-4-really-useful-tools/"><ol start="4">
-<li>Really useful AI &amp; CEH tools</li>
-</ol>
-</a>
-        </h1>
-        <div class="post-meta"><time class="post-date">2024-12-02</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="/tags/cybersec/">cybersec</a>&nbsp;
-            
-            #<a href="/tags/aiml/">AIML</a>&nbsp;
-            
-            #<a href="/tags/tips/tricks/">tips/tricks</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <hr>
-<h3 id="ai-tools-for-creativity-and-productivity"><strong>AI Tools for Creativity and Productivity</strong></h3>
-<p><strong>Text to Image</strong>:</p>
-<ul>
-<li><strong>Mind Journey</strong>: A tool that uses AI to transform textual descriptions into detailed, creative images. Ideal for visualizing abstract concepts or creative ideas.</li>
-</ul>
-<p><strong>Text to Music</strong>:</p>
-<ul>
-<li><strong>ChatGPT</strong>: An AI language model that can generate lyrics, suggest melodies, or help with music composition based on text input.</li>
-<li><strong>Uberduck AI</strong>: Specializes in converting text into music or vocal synthesis, offering various styles and voices.</li>
-<li><strong>Suno AI</strong>: A tool for generating music compositions from text prompts, helping artists create background scores or thematic music.</li>
-</ul>
-<p><strong>Text to Presentation</strong>:</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/posts/blog-4-really-useful-tools/">Read more</a>
-          </div>
-        
-      </article>
-    
 
     <div class="pagination">
   <div class="pagination__buttons">
     
     
-      <a href="/tags/cybersec/page/2/" class="button next">
+      <a href="/tags/tips/page/2/" class="button next">
         <span class="button__text">Older posts</span>
         <span class="button__icon">→</span>
       </a>
