@@ -6,7 +6,153 @@
     <description>Recent content in AIML on Crusblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/aiml/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/aiml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4. Really useful AI &amp; CEH tools</title>
+      <link>/posts/blog-4-really-useful-tools/</link>
+      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-4-really-useful-tools/</guid>
+      <description>&lt;hr&gt;
+&lt;h3 id=&#34;ai-tools-for-creativity-and-productivity&#34;&gt;&lt;strong&gt;AI Tools for Creativity and Productivity&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Text to Image&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mind Journey&lt;/strong&gt;: A tool that uses AI to transform textual descriptions into detailed, creative images. Ideal for visualizing abstract concepts or creative ideas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Text to Music&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ChatGPT&lt;/strong&gt;: An AI language model that can generate lyrics, suggest melodies, or help with music composition based on text input.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Uberduck AI&lt;/strong&gt;: Specializes in converting text into music or vocal synthesis, offering various styles and voices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Suno AI&lt;/strong&gt;: A tool for generating music compositions from text prompts, helping artists create background scores or thematic music.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Text to Presentation&lt;/strong&gt;:&lt;/p&gt;</description>
+      <content>&lt;hr&gt;
+&lt;h3 id=&#34;ai-tools-for-creativity-and-productivity&#34;&gt;&lt;strong&gt;AI Tools for Creativity and Productivity&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Text to Image&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mind Journey&lt;/strong&gt;: A tool that uses AI to transform textual descriptions into detailed, creative images. Ideal for visualizing abstract concepts or creative ideas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Text to Music&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ChatGPT&lt;/strong&gt;: An AI language model that can generate lyrics, suggest melodies, or help with music composition based on text input.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Uberduck AI&lt;/strong&gt;: Specializes in converting text into music or vocal synthesis, offering various styles and voices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Suno AI&lt;/strong&gt;: A tool for generating music compositions from text prompts, helping artists create background scores or thematic music.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Text to Presentation&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gamma App&lt;/strong&gt;: Converts text into visually appealing presentations by automatically designing slides, handling the layout and content organization for you.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Text to Movies&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Runway ML&lt;/strong&gt;: A creative tool that turns written descriptions into video sequences, animations, or scenes. Perfect for storytellers or content creators who want to generate video content without cameras.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pika Labs&lt;/strong&gt;: Uses AI to create video content from text prompts, making it easy to generate professional-quality videos from written ideas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Text to Code&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ChatGPT&lt;/strong&gt;: Besides being a conversational AI, it can generate code snippets or entire programs based on specific requirements, making coding faster and easier for developers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;AI Avatar Creation&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;HeyGen&lt;/strong&gt;: AI that creates realistic avatars based on text or image inputs, which can be used for personal or professional purposes (such as virtual assistants or digital influencers).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Character.ai&lt;/strong&gt;: Generates interactive AI characters that can hold conversations with users, useful for creating chatbots or virtual personalities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;AI Blueprint &amp;amp; Interview Tools&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Freedom of AI Blueprint&lt;/strong&gt;: A platform for generating AI-driven plans and blueprints, offering insight into creating AI applications or systems.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Z Interview AI&lt;/strong&gt;: A tool that uses AI to conduct mock interviews, providing feedback and improving your interview skills using AI-driven scenarios.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;prompt-engineering&#34;&gt;&lt;strong&gt;Prompt Engineering&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Prompt Format&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Task&lt;/strong&gt;: Define the action or goal you want to achieve with the AI.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Introduction&lt;/strong&gt;: Provide context or background information to guide the AI’s understanding.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Context&lt;/strong&gt;: Detail the environment, situation, or specifics about the problem to be solved.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Parameters&lt;/strong&gt;: Set constraints or boundaries for the AI to operate within.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Input&lt;/strong&gt;: Supply the raw data, query, or text that the AI will process.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;ai-powered-solutions-for-different-areas&#34;&gt;&lt;strong&gt;AI-Powered Solutions for Different Areas&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Book Writing&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ChatGPT + MidJourney + Canva&lt;/strong&gt;: ChatGPT helps with content creation, MidJourney generates imagery for book covers or illustrations, and Canva is used to design and lay out the book. This combination covers the writing, visual, and publishing aspects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Market Agency&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Adcreative.ai + Jasper AI + Playground AI + Flick AI&lt;/strong&gt;: These tools help marketing agencies streamline content creation—Jasper AI generates copy, Adcreative.ai creates ad creatives, Playground AI helps with interactive content, and Flick AI optimizes social media posts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Digital Products Creation&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Etsy + MidJourney + Canva&lt;/strong&gt;: Use Etsy for selling digital products, MidJourney to generate creative product images or mockups, and Canva to design promotional materials or the digital product itself (e.g., ebooks, printables).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Indie Hacking (Building Small Tools &amp;amp; Extensions)&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ChatGPT + Bubble + Airtable&lt;/strong&gt;: ChatGPT assists with generating ideas and providing code, Bubble is used for no-code app development, and Airtable helps manage databases and workflows—ideal for building tools or extensions quickly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;text-prompt-engineering-for-advanced-ai-models&#34;&gt;&lt;strong&gt;Text Prompt Engineering for Advanced AI Models&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;MidJourney + Stable Diffusion + Call. E3 Masteries&lt;/strong&gt;: These tools allow you to generate highly advanced, customized images or concepts from specific prompts. MidJourney and Stable Diffusion are used for art generation, while Call. E3 Masteries helps enhance and refine those creations based on a structured prompt engineering approach.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;This version adds context to each tool, explaining its use and how it can benefit you in various creative and technical processes. Let me know if you want to tweak any further!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;certified-ethical-hacker-ceh-tools&#34;&gt;Certified Ethical Hacker (CEH) Tools&lt;/h1&gt;
+&lt;h3 id=&#34;1-nmap-network-mapper&#34;&gt;1. &lt;strong&gt;Nmap (Network Mapper)&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Network discovery and vulnerability scanning. Nmap is used to scan a network and discover devices, open ports, services, and their versions. It helps identify potential vulnerabilities and exposed services that could be exploited by attackers.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/nmap/nmap&#34;&gt;Nmap GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-wireshark&#34;&gt;2. &lt;strong&gt;Wireshark&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Packet analysis. Wireshark captures and inspects network traffic in real-time. It’s essential for analyzing protocols, identifying security weaknesses, and detecting unusual traffic patterns (such as data exfiltration attempts or malware communications).&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/wireshark/wireshark&#34;&gt;Wireshark GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-metasploit-framework&#34;&gt;3. &lt;strong&gt;Metasploit Framework&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Penetration testing and exploit development. Metasploit is a widely used framework for testing network and system vulnerabilities. It contains exploits, payloads, and auxiliary tools to simulate attacks and verify vulnerabilities in a controlled environment.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/rapid7/metasploit-framework&#34;&gt;Metasploit GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4-burp-suite&#34;&gt;4. &lt;strong&gt;Burp Suite&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Web application security testing. Burp Suite helps identify and exploit vulnerabilities in web applications (such as SQL injection, XSS, etc.). It intercepts and modifies web traffic to test for common web vulnerabilities.&lt;br&gt;
+&lt;strong&gt;Official Site&lt;/strong&gt;: &lt;a href=&#34;https://portswigger.net/burp&#34;&gt;Burp Suite&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;5-john-the-ripper&#34;&gt;5. &lt;strong&gt;John the Ripper&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Password cracking. John the Ripper is used to test password strength by attempting to crack password hashes using different algorithms. It helps ethical hackers evaluate the security of password storage mechanisms.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/openwall/john&#34;&gt;John the Ripper GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;6-netcat&#34;&gt;6. &lt;strong&gt;Netcat&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Network communication. Netcat is used for creating network connections and interacting with remote systems. It’s useful for port scanning, banner grabbing, and setting up reverse shells for testing.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/diegocr/netcat&#34;&gt;Netcat GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;7-nikto&#34;&gt;7. &lt;strong&gt;Nikto&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Web server scanning. Nikto scans web servers for over 6,700 potential vulnerabilities, including outdated software versions, configuration issues, and common security flaws in HTTP headers, cookies, and other web application components.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/sullo/nikto&#34;&gt;Nikto GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;8-aircrack-ng&#34;&gt;8. &lt;strong&gt;Aircrack-ng&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Wireless network security testing. Aircrack-ng is a suite of tools used for monitoring, attacking, testing, and cracking WEP and WPA-PSK (Wi-Fi Protected Access) keys. It helps ethical hackers assess the security of wireless networks.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/aircrack-ng/aircrack-ng&#34;&gt;Aircrack-ng GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;9-hydra&#34;&gt;9. &lt;strong&gt;Hydra&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Brute force password cracking. Hydra is a fast password-cracking tool used to perform brute-force attacks on various network protocols, including FTP, HTTP, SSH, and others, to test for weak authentication.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/vanhauser-thc/thc-hydra&#34;&gt;Hydra GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;10-owasp-zap-zed-attack-proxy&#34;&gt;10. &lt;strong&gt;OWASP ZAP (Zed Attack Proxy)&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Web application penetration testing. OWASP ZAP is an open-source web application security scanner used to find security vulnerabilities in web applications. It includes automated scanners and a variety of tools for manual testing.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/zaproxy/zaproxy&#34;&gt;OWASP ZAP GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;11-social-engineering-toolkit-set&#34;&gt;11. &lt;strong&gt;Social Engineering Toolkit (SET)&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Social engineering attacks. SET is a tool designed for automating social engineering attacks, such as phishing, credential harvesting, and creating fake websites that imitate legitimate services to steal user data.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/trustedsec/social-engineer-toolkit&#34;&gt;SET GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;12-maltego&#34;&gt;12. &lt;strong&gt;Maltego&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Information gathering and OSINT (Open-Source Intelligence). Maltego is used for mapping relationships between people, websites, domains, and networks. It’s useful for performing detailed reconnaissance during penetration testing.&lt;br&gt;
+&lt;strong&gt;Official Site&lt;/strong&gt;: &lt;a href=&#34;https://www.maltego.com/&#34;&gt;Maltego&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;13-hashcat&#34;&gt;13. &lt;strong&gt;Hashcat&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Advanced password cracking. Hashcat is one of the fastest password-cracking tools, supporting many different hashing algorithms and attacks, including dictionary attacks, brute force, and rule-based cracking.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/hashcat/hashcat&#34;&gt;Hashcat GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;14-tcpdump&#34;&gt;14. &lt;strong&gt;TCPdump&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Network traffic capture. TCPdump is a command-line packet analyzer that captures network packets and provides detailed information about the network’s traffic, including the ability to filter and analyze the captured data.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/the-tcpdump-group/tcpdump&#34;&gt;TCPdump GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;15-kismet&#34;&gt;15. &lt;strong&gt;Kismet&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Wireless network sniffing. Kismet is used to detect and monitor wireless networks, capturing packets, and providing detailed information about nearby wireless devices and networks. It’s commonly used for assessing the security of Wi-Fi networks.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/kismetwireless/kismet&#34;&gt;Kismet GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;16-ettercap&#34;&gt;16. &lt;strong&gt;Ettercap&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Use&lt;/strong&gt;: Man-in-the-middle attacks. Ettercap is used for intercepting and manipulating network traffic in real-time during MITM (Man-in-the-Middle) attacks. It supports features like DNS spoofing and ARP poisoning to redirect or intercept communication.&lt;br&gt;
+&lt;strong&gt;GitHub&lt;/strong&gt;: &lt;a href=&#34;https://github.com/Ettercap/ettercap&#34;&gt;Ettercap GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;These tools are commonly used by CEH professionals to perform a wide range of ethical hacking tasks, from reconnaissance and vulnerability scanning to penetration testing and exploitation. You can visit their GitHub repositories to explore the source code, download the tools, or contribute to the development of these essential cybersecurity resources.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[Crusveder]&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>1. My Awesome First Blog CI/CD Pipeline</title>
       <link>/posts/blog-1-first-blog-cicd-pipeline/</link>

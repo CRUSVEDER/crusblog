@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>7. Kali, linux Commands :: Crusblog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content=" Top 60 Linux Commands Cheat Sheet in one line
+A. File and Directory Management Commands
+ssh: Secure Shell, used for secure remote access to a system. ls: List directory contents. pwd: Print the current working directory. cd: Change directory to a different folder. touch: Create an empty file or update the modified timestamp of an existing file. echo: Print a message or the value of a variable. nano: A simple text editor. vim: A more advanced text editor with many features. cat: Print the contents of a file to the console. shred: Securely delete a file by overwriting its contents. mkdir: Create a new directory. cp: Copy a file from one location to another. mv: Move a file from one location to another, or rename a file. rm: Remove a file. rmdir: Remove a directory if it is empty. ln: Create a link to a file or directory. head: Display the first lines of a file. tail: Display the last lines of a file. cmp: Compare two files byte by byte. diff: Display the differences between two files. sort: Sort the lines of a file. find: Search for files in a directory hierarchy. chmod: Change the permissions of a file or directory. chown: Change the owner of a file or directory. B. System Management Commands
+" />
+<meta name="keywords" content="Cybersecurity, AI, Gaming, Crusblog " />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/blog-7-kali-linux-commands/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.fe8dc560fccb53a458b0db19ccb7b265764ac46b68596b7e099c6793054dd457.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.dd0bf9c7cacb24c1b0184f52f1869b274e06689557468cc7030ccf632328eb97.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="7. Kali, linux Commands">
+<meta property="og:description" content=" Top 60 Linux Commands Cheat Sheet in one line
+A. File and Directory Management Commands
+ssh: Secure Shell, used for secure remote access to a system. ls: List directory contents. pwd: Print the current working directory. cd: Change directory to a different folder. touch: Create an empty file or update the modified timestamp of an existing file. echo: Print a message or the value of a variable. nano: A simple text editor. vim: A more advanced text editor with many features. cat: Print the contents of a file to the console. shred: Securely delete a file by overwriting its contents. mkdir: Create a new directory. cp: Copy a file from one location to another. mv: Move a file from one location to another, or rename a file. rm: Remove a file. rmdir: Remove a directory if it is empty. ln: Create a link to a file or directory. head: Display the first lines of a file. tail: Display the last lines of a file. cmp: Compare two files byte by byte. diff: Display the differences between two files. sort: Sort the lines of a file. find: Search for files in a directory hierarchy. chmod: Change the permissions of a file or directory. chown: Change the owner of a file or directory. B. System Management Commands
+" />
+<meta property="og:url" content="/posts/blog-7-kali-linux-commands/" />
+<meta property="og:site_name" content="Crusblog" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-12-05 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Crusblog
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/">Home</a></li>
+        
+      
+        
+          <li><a href="/titles">Blogs</a></li>
+        
+      
+        
+          <li><a href="/tags">Tags</a></li>
+        
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/" >Home</a></li>
+        
+      
+        
+          <li><a href="/titles" >Blogs</a></li>
+        
+      
+        
+          <li><a href="/tags" >Tags</a></li>
+        
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/blog-7-kali-linux-commands/"><ol start="7">
+<li>Kali, linux Commands</li>
+</ol>
+</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-12-05&nbsp;[Updated 2024-12-05]</time><span class="post-reading-time">5 min read (1027 words)</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/basic/">basic</a>&nbsp;
+      
+      #<a href="/tags/tips/tricks/">tips/tricks</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+  
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-file-and-directory-management">1. <strong>File and Directory Management</strong></a></li>
+    <li><a href="#2-file-viewing">2. <strong>File Viewing</strong></a></li>
+    <li><a href="#3-file-permissions-and-ownership">3. <strong>File Permissions and Ownership</strong></a></li>
+    <li><a href="#4-searching">4. <strong>Searching</strong></a></li>
+    <li><a href="#5-disk-usage">5. <strong>Disk Usage</strong></a></li>
+    <li><a href="#6-networking">6. <strong>Networking</strong></a></li>
+    <li><a href="#7-user-management">7. <strong>User Management</strong></a></li>
+    <li><a href="#8-process-management">8. <strong>Process Management</strong></a></li>
+    <li><a href="#9-package-management-debian-based-systems">9. <strong>Package Management (Debian-based Systems)</strong></a></li>
+    <li><a href="#10-system-monitoring">10. <strong>System Monitoring</strong></a></li>
+  </ul>
+</nav>
+    </div>
+  
+
+  <div class="post-content"><div>
+        <hr>
+<p><strong>Top 60 Linux Commands Cheat Sheet in one line</strong></p>
+<hr>
+<p><strong>A. File and Directory Management Commands</strong></p>
+<ul>
+<li><code>ssh</code>: Secure Shell, used for secure remote access to a system.</li>
+<li><code>ls</code>: List directory contents.</li>
+<li><code>pwd</code>: Print the current working directory.</li>
+<li><code>cd</code>: Change directory to a different folder.</li>
+<li><code>touch</code>: Create an empty file or update the modified timestamp of an existing file.</li>
+<li><code>echo</code>: Print a message or the value of a variable.</li>
+<li><code>nano</code>: A simple text editor.</li>
+<li><code>vim</code>: A more advanced text editor with many features.</li>
+<li><code>cat</code>: Print the contents of a file to the console.</li>
+<li><code>shred</code>: Securely delete a file by overwriting its contents.</li>
+<li><code>mkdir</code>: Create a new directory.</li>
+<li><code>cp</code>: Copy a file from one location to another.</li>
+<li><code>mv</code>: Move a file from one location to another, or rename a file.</li>
+<li><code>rm</code>: Remove a file.</li>
+<li><code>rmdir</code>: Remove a directory if it is empty.</li>
+<li><code>ln</code>: Create a link to a file or directory.</li>
+<li><code>head</code>: Display the first lines of a file.</li>
+<li><code>tail</code>: Display the last lines of a file.</li>
+<li><code>cmp</code>: Compare two files byte by byte.</li>
+<li><code>diff</code>: Display the differences between two files.</li>
+<li><code>sort</code>: Sort the lines of a file.</li>
+<li><code>find</code>: Search for files in a directory hierarchy.</li>
+<li><code>chmod</code>: Change the permissions of a file or directory.</li>
+<li><code>chown</code>: Change the owner of a file or directory.</li>
+</ul>
+<hr>
+<p><strong>B. System Management Commands</strong></p>
+<ul>
+<li><code>clear</code>: Clear the console.</li>
+<li><code>useradd</code>: Add a new user to the system.</li>
+<li><code>sudo</code>: Run a command with administrative privileges.</li>
+<li><code>adduser</code>: Add a new user to the system with more options than <code>useradd</code>.</li>
+<li><code>su</code>: Switch to another user account.</li>
+<li><code>exit</code>: Close the current terminal or log out of the current user account.</li>
+<li><code>sudo passwd</code>: Change the password for the current user.</li>
+<li><code>sudo passwd [username]</code>: Change the password for another user.</li>
+<li><code>sudo apt</code>: A package manager used to install, update, and remove software packages on Debian-based systems.</li>
+<li><code>sudo apt update &amp; install</code>: Update package lists and install packages.</li>
+<li><code>finger</code>: Display information about a user.</li>
+<li><code>man</code>: Display the manual page of a command.</li>
+<li><code>whatis</code>: Display a brief description of a command.</li>
+<li><code>which</code>: Locate a command and display its path.</li>
+<li><code>whereis</code>: Locate the binary, source, and manual page files for a command.</li>
+<li><code>wget</code>: Download files from the web.</li>
+<li><code>curl</code>: Transfer data to or from a server.</li>
+<li><code>zip</code>: Compress files into a zip archive.</li>
+<li><code>unzip</code>: Extract files from a zip archive.</li>
+<li><code>less</code>: View a file one page at a time.</li>
+</ul>
+<hr>
+<p><strong>C. File Comparison &amp; Manipulation Commands</strong></p>
+<ul>
+<li><code>ifconfig</code>: Configure network interfaces.</li>
+<li><code>ip address</code>: Display IP address information.</li>
+<li><code>ping</code>: Test network connectivity by sending packets to a host.</li>
+<li><code>resolvectl status</code>: Display the current DNS resolver configuration.</li>
+<li><code>netstat</code>: Display network connections, routing tables, and interface statistics.</li>
+<li><code>iptables</code>: Configure and administer the netfilter firewall.</li>
+<li><code>ufw</code>: A user-friendly interface to manage iptables firewall rules.</li>
+</ul>
+<hr>
+<p><strong>D. Networking Management &amp; Monitoring Commands</strong></p>
+<ul>
+<li>
+<p><code>uname</code>: Print system information, including kernel name, network node hostname, kernel release, and kernel version.</p>
+</li>
+<li>
+<p><code>neofetch</code>: Display system information in a colorful and visually appealing way.</p>
+</li>
+<li>
+<p><code>cal</code>: Display a calendar of the current month or year.</p>
+</li>
+<li>
+<p><code>free</code>: Display the amount of free and used system memory.</p>
+</li>
+<li>
+<p><code>df</code> and <code>df -h</code>: Display disk usage statistics for a file system.</p>
+</li>
+<li>
+<p><code>ps</code>: Report a snapshot of current processes.</p>
+</li>
+<li>
+<p><code>top</code>: Display dynamic real-time information about running processes.</p>
+</li>
+<li>
+<p><code>kill</code>: Send a signal to terminate a process.</p>
+</li>
+<li>
+<p><code>pkill</code>: Send a signal to terminate one or more processes based on their name.</p>
+</li>
+<li>
+<p><code>systemctl</code>: Control the system and service manager.</p>
+</li>
+<li>
+<p><code>history</code>: Display previously executed commands.</p>
+</li>
+<li>
+<p><code>sudo reboot</code>: Reboot the system with administrative privileges.</p>
+</li>
+<li>
+<p><code>shutdown</code>: Shutdown or reboot the system.</p>
+<p>credits: [NetworkChuck]</p>
+</li>
+</ul>
+<hr>
+<h1 id="linux-commands-cheat-sheet-with-examples-">Linux Commands Cheat Sheet with Examples :<a href="#linux-commands-cheat-sheet-with-examples-" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="1-file-and-directory-management">1. <strong>File and Directory Management</strong><a href="#1-file-and-directory-management" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>
+<p><strong><code>ls</code></strong><br>
+List files and directories.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>ls -l</code></strong><br>
+List files with detailed information.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>mkdir</code></strong><br>
+Create a new directory.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir new_folder
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>rmdir</code></strong><br>
+Remove an empty directory.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rmdir empty_folder
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>rm</code></strong><br>
+Delete files or directories.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm file.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>cp</code></strong><br>
+Copy files or directories.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp source.txt destination.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>mv</code></strong><br>
+Move or rename files.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv old_name.txt new_name.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>pwd</code></strong><br>
+Show the current directory.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pwd
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="2-file-viewing">2. <strong>File Viewing</strong><a href="#2-file-viewing" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>
+<p><strong><code>cat</code></strong><br>
+Display file contents.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat file.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>less</code></strong><br>
+View file with pagination.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>less file.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>head</code></strong><br>
+Display the first 10 lines of a file.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>head file.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>tail</code></strong><br>
+Display the last 10 lines of a file.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tail file.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>tail -f</code></strong><br>
+Follow updates to a file (e.g., log file).<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tail -f log.txt
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="3-file-permissions-and-ownership">3. <strong>File Permissions and Ownership</strong><a href="#3-file-permissions-and-ownership" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>
+<p><strong><code>chmod</code></strong><br>
+Change file permissions.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chmod <span style="color:#ae81ff">755</span> script.sh
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>chown</code></strong><br>
+Change file ownership.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chown user:group file.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>ls -l</code></strong><br>
+View file permissions and ownership.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -l
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="4-searching">4. <strong>Searching</strong><a href="#4-searching" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>
+<p><strong><code>grep</code></strong><br>
+Search for a pattern in a file.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep <span style="color:#e6db74">&#34;search_term&#34;</span> file.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>grep -r</code></strong><br>
+Search recursively in directories.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -r <span style="color:#e6db74">&#34;search_term&#34;</span> directory/
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>find</code></strong><br>
+Locate files by name or criteria.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find /path -name <span style="color:#e6db74">&#34;file.txt&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>locate</code></strong><br>
+Search files quickly using a pre-built database.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>locate file.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>updatedb</code></strong><br>
+Update the database for <code>locate</code>.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo updatedb
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="5-disk-usage">5. <strong>Disk Usage</strong><a href="#5-disk-usage" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>
+<p><strong><code>df -h</code></strong><br>
+Show free disk space in human-readable format.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>df -h
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>du -h</code></strong><br>
+Show disk usage of files/directories.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>du -h directory/
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="6-networking">6. <strong>Networking</strong><a href="#6-networking" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>
+<p><strong><code>ip addr</code></strong><br>
+Display network interfaces and IP addresses.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ip addr
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>ping</code></strong><br>
+Test connectivity to a host.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ping google.com
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>netstat</code></strong><br>
+View network connections.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>netstat -tuln
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>nslookup</code></strong><br>
+Query DNS records for a domain.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nslookup example.com
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>traceroute</code></strong><br>
+Trace the route to a host.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>traceroute google.com
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="7-user-management">7. <strong>User Management</strong><a href="#7-user-management" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>
+<p><strong><code>adduser</code></strong><br>
+Add a new user.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo adduser username
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>deluser</code></strong><br>
+Remove a user.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo deluser username
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>whoami</code></strong><br>
+Show the current logged-in user.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>whoami
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>who</code></strong><br>
+Show logged-in users.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>who
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="8-process-management">8. <strong>Process Management</strong><a href="#8-process-management" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>
+<p><strong><code>ps aux</code></strong><br>
+List all running processes.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ps aux
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>top</code></strong><br>
+Display real-time process usage.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>top
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>kill</code></strong><br>
+Terminate a process by PID.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kill <span style="color:#ae81ff">1234</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>killall</code></strong><br>
+Terminate processes by name.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>killall firefox
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="9-package-management-debian-based-systems">9. <strong>Package Management (Debian-based Systems)</strong><a href="#9-package-management-debian-based-systems" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>
+<p><strong><code>apt update</code></strong><br>
+Update package lists.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>apt upgrade</code></strong><br>
+Upgrade installed packages.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt upgrade
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>apt install</code></strong><br>
+Install a package.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install curl
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>apt remove</code></strong><br>
+Remove a package.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt remove package_name
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>apt search</code></strong><br>
+Search for a package.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt search package_name
+</span></span></code></pre></div></li>
+</ul>
+<h2 id="10-system-monitoring">10. <strong>System Monitoring</strong><a href="#10-system-monitoring" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>
+<p><strong><code>uname -a</code></strong><br>
+Display system information.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>uname -a
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>free -h</code></strong><br>
+Show memory usage in human-readable format.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>free -h
+</span></span></code></pre></div></li>
+<li>
+<p><strong><code>uptime</code></strong><br>
+Show system uptime.<br>
+<em>Example:</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>uptime
+</span></span></code></pre></div></li>
+</ul>
+<hr>
+<p>[Crusveder]</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/blog-8-introduction-to-shell-scripting/" class="button inline prev">
+        8. Introduction to Shell Scripting
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/blog-6-hacking-environment-setup/" class="button inline next">
+        6. Setting up hacking Environment...
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://github.com/CRUSVEDER">Crusveder</a></span>
+    
+     
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
