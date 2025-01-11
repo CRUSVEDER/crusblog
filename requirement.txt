@@ -1,0 +1,31 @@
+## manual commands
+
+
+## Verify Hugo works with your theme by running this command
+hugo server -t themename
+
+
+## robocopy sourcepath destination path /mir
+robocopy "D:\Obsidian Vault\crus'svault\posts" "C:\Users\USER\Desktop\crusblog\content\posts" /mir
+
+## image trasnfer from the obsidian
+python image.py
+
+## github commands
+git remote add origin git@github.com:CRUSVEDER/crusblog.git
+hugo
+git add .
+git commit -m "message"
+git push -u origin master
+
+
+##  Push the public folder to the hostinger branch using subtree split and force push
+echo "Deploying to GitHub Host..."
+git subtree split --prefix public -b host-deploy
+git push origin host-deploy:host --force
+git branch -D host-deploy
+
+
+## auto commands
+
+./updateblog.ps1 

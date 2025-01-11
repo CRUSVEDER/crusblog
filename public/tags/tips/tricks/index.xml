@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Crusblog</title>
-    <link>/posts/</link>
-    <description>Recent content in Posts on Crusblog</description>
+    <title>Tips/Tricks on Crusblog</title>
+    <link>/tags/tips/tricks/</link>
+    <description>Recent content in Tips/Tricks on Crusblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tips/tricks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2. The Ultimate Guide to Elemental Reactions in Genshin Impact</title>
       <link>/posts/blog-2-genshin-elemental-reaction-guide/</link>
@@ -112,50 +112,6 @@ For an Aggravate reaction, trigger Quicken and follow up with a strong Electro a
 &lt;p&gt;Understanding these reactions, their formulas, and their best usage scenarios will take your Genshin Impact gameplay to the next level. Master them, practice your rotations, and you&amp;rsquo;ll be well on your way to becoming an elemental reaction expert.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;[Crusveder]&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>1. My Awesome First Blog CI/CD Pipeline</title>
-      <link>/posts/blog-1-first-blog-cicd-pipeline/</link>
-      <pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/blog-1-first-blog-cicd-pipeline/</guid>
-      <description>&lt;hr&gt;
-&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/crus-high-resolution-logo-transformed%201.png&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;welcome-to-my-blog&#34;&gt;Welcome to My Blog!&lt;/h1&gt;
-&lt;p&gt;Hello there, and welcome to my corner of the internet!&lt;/p&gt;
-&lt;p&gt;Whether you stumbled in during a late-night browsing session or deliberately tracked this blog down (major kudos to you for that), I’m thrilled you’re here. This is a space where curiosity meets creativity—a digital lab, journal, and playground all in one.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;whats-this-blog-about&#34;&gt;What’s This Blog About?&lt;/h2&gt;
-&lt;p&gt;At its heart, this blog is about exploration—of ideas, technologies, hobbies, and everything in between. I’ll be sharing insights from my personal and professional journey, diving deep into the topics that light me up and (hopefully) inspire you too.&lt;/p&gt;</description>
-      <content>&lt;hr&gt;
-&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/crus-high-resolution-logo-transformed%201.png&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;welcome-to-my-blog&#34;&gt;Welcome to My Blog!&lt;/h1&gt;
-&lt;p&gt;Hello there, and welcome to my corner of the internet!&lt;/p&gt;
-&lt;p&gt;Whether you stumbled in during a late-night browsing session or deliberately tracked this blog down (major kudos to you for that), I’m thrilled you’re here. This is a space where curiosity meets creativity—a digital lab, journal, and playground all in one.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;whats-this-blog-about&#34;&gt;What’s This Blog About?&lt;/h2&gt;
-&lt;p&gt;At its heart, this blog is about exploration—of ideas, technologies, hobbies, and everything in between. I’ll be sharing insights from my personal and professional journey, diving deep into the topics that light me up and (hopefully) inspire you too.&lt;/p&gt;
-&lt;p&gt;Here’s a glimpse at what you can expect:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Learning Adventures:&lt;/strong&gt; As someone diving into fields like &lt;strong&gt;cybersecurity&lt;/strong&gt;, &lt;strong&gt;machine learning (ML)&lt;/strong&gt;, and &lt;strong&gt;AI&lt;/strong&gt;, I’ll share practical tutorials and in-depth guides. Topics might include &lt;strong&gt;setting up secure workflows&lt;/strong&gt;, exploring &lt;strong&gt;neural network basics&lt;/strong&gt;, or dissecting real-world &lt;strong&gt;cybersecurity case studies.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Project Spotlights:&lt;/strong&gt; From coding a &lt;strong&gt;custom Wordle with Genshin Impact themes&lt;/strong&gt; to building a &lt;strong&gt;Spiral Abyss guide&lt;/strong&gt;, I’ll break down the process into actionable steps. Expect insights into technologies like Flask, Python, and front-end frameworks that make these projects possible.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Gaming Chronicles with a Twist:&lt;/strong&gt; While I’m a huge fan of &lt;strong&gt;Genshin Impact&lt;/strong&gt;, I also enjoy exploring how gaming intersects with technology. We’ll dive into the mechanics of &lt;strong&gt;game design&lt;/strong&gt;, &lt;strong&gt;data analytics for team optimization&lt;/strong&gt;, and how to develop &lt;strong&gt;web tools&lt;/strong&gt; to enhance your gaming experience (imagine a tool to simulate Genshin team damage outputs!).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Guides and Tutorials:&lt;/strong&gt; Whether you’re navigating &lt;strong&gt;Obsidian for better productivity&lt;/strong&gt;, building a &lt;strong&gt;Python-powered AI summarizer&lt;/strong&gt;, or creating automation scripts for repetitive tasks, I’ll share step-by-step instructions and code snippets to make learning seamless.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Screenshot%202024-12-05%20175338.png&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;why-this-blog&#34;&gt;Why This Blog?&lt;/h2&gt;
-&lt;p&gt;This blog isn’t just a diary—it’s a space to spark creativity, solve problems, and share ideas. It’s about connecting with like-minded folks who enjoy diving into the technical, creative, and geeky aspects of life.&lt;/p&gt;
-&lt;p&gt;I believe in breaking down complex topics into digestible insights, especially for beginners. Whether you’re just getting started with programming or exploring the intricacies of elemental reactions in &lt;strong&gt;Genshin Impact&lt;/strong&gt;, I’ve got you covered.&lt;/p&gt;
-&lt;h2 id=&#34;lets-build-and-explore-together&#34;&gt;Let’s Build and Explore Together&lt;/h2&gt;
-&lt;p&gt;This is just the beginning, and the journey ahead is wide open. I’ll be experimenting with content formats—blogs, tutorials, visuals, and maybe even interactive tools. Whatever helps bring ideas to life and makes learning fun and accessible.&lt;/p&gt;
-&lt;p&gt;If any of this resonates, stick around! Engage with the content, leave comments, or suggest topics you’d like to see. This blog is a two-way street, and your input makes it all the better.&lt;/p&gt;
-&lt;p&gt;So, here’s to creativity, curiosity, and community. Let’s explore, learn, and create together.&lt;/p&gt;
-&lt;p&gt;Until next time,&lt;br&gt;
-&lt;strong&gt;[Crusveder]&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;“Stay curious, stay persistent, and keep building. Great things happen when we embrace the process.”&lt;/em&gt;&lt;/p&gt;
 </content>
     </item>
     
