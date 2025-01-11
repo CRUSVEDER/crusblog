@@ -1,0 +1,62 @@
+# Hugo Modules (If you have a module section)
+[module]
+  [module.hugoVersion]
+    extended = true  # Indicates that the extended version of Hugo is used (with additional features like SCSS/Sass support)
+    min = '0.90.0'  # Specifies the minimum required Hugo version to run the site
+
+# Base URL and Site Information
+baseurl = "/"  # Set a relative base URL. This allows the site to be hosted on any domain without needing configuration changes
+languageCode = "en-us"  # Specifies the language code for the site, in this case, English (US)
+theme = "hugo-theme-terminal"  # The theme used for the site, here it is 'hugo-theme-terminal'
+paginate = 5  # Sets the number of posts per page for pagination. 5 posts will be displayed per page
+
+# Goldmark Settings for Rendering
+[markup.goldmark.renderer]
+  unsafe = true  # Allows unsafe HTML tags (like <script>, <style>, etc.) to be rendered from Markdown content
+
+# Site Parameters
+[params]
+  contentTypeName = "posts"  # Defines the content type for the site, here it is set to 'posts'
+  showMenuItems = 3  # Sets the number of menu items to show. Here, it will show 2 items
+  fullWidthTheme = false  # If true, the site will be displayed in full-width mode, otherwise, it uses a default width
+  centerTheme = false  # If true, the site’s content will be centered on the page, else it remains left-aligned
+
+# Language-specific Configuration
+[languages]
+  [languages.en]  # Configuration for the English language (en)
+    title = "Terminal"  # The title of the site (displayed in the browser tab and elsewhere)
+    subtitle = ""  # The subtitle for the site, left empty here
+    keywords = ""  # SEO keywords, empty here, you can fill this with keywords relevant to your content
+    copyright = ""  # Copyright information, left empty here
+    menuMore = "Show more"  # The label text for 'Show more' button in the menu
+    readMore = "Read more"  # The label text for 'Read more' links in posts
+    readOtherPosts = "Read other posts"  # The label for links to read other posts on the site
+
+    # Logo Configuration
+    [languages.en.params.logo]
+      logoText = "Crusblog"  # The text displayed in the logo (this is the site’s name, "Terminal")
+      logoHomeLink = "/"  # The link that the logo points to. In this case, it links to the home page ('/')
+
+# Menu Configuration
+[languages.en.menu]  # Main menu configuration for English language
+  [[languages.en.menu.main]]  # First menu item
+    identifier = "home"  # Unique identifier for the menu item
+    name = "Home"  # Name displayed in the menu
+    url = "/"  # The URL the menu item links to (home page)
+    weight = 1  # Set a weight to control the order of menu items (optional, lower weight comes first)
+
+  [[languages.en.menu.main]]  # Second menu item
+    identifier = "about"  # Unique identifier for the menu item
+    name = "About"  # Name displayed in the menu
+    url = "/about"  # The URL the menu item links to (about page)s
+
+  [[languages.en.menu.main]]  # Third menu item
+    identifier = "showcase"  # Unique identifier for the menu item
+    name = "Showcase"  # Name displayed in the menu
+    url = "/showcase"  # The URL the menu item links to (showcase page)
+
+   [[languages.en.menu.main]] # fifth menu item
+    identifier = "titles" # Unique identifier for the menu item
+    name = "Blogs"  # Name Displayed in the menu
+    url = "/titles" #The URL the menu item links to (Titles page)
+    weight = 2  # Set a weight to control the order of menu items (optional, lower weight comes first)  

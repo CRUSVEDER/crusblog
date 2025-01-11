@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>1. My Awesome First Blog CI/CD Pipeline :: Crusblog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content=" Welcome to My Blog! Hello there, and welcome to my corner of the internet!
+Whether you stumbled in during a late-night browsing session or deliberately tracked this blog down (major kudos to you for that), I’m thrilled you’re here. This is a space where curiosity meets creativity—a digital lab, journal, and playground all in one.
+What’s This Blog About? At its heart, this blog is about exploration—of ideas, technologies, hobbies, and everything in between. I’ll be sharing insights from my personal and professional journey, diving deep into the topics that light me up and (hopefully) inspire you too.
+" />
+<meta name="keywords" content="Cybersecurity, AI, Gaming, Crusblog " />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/blog-1-first-blog-cicd-pipeline/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.fe8dc560fccb53a458b0db19ccb7b265764ac46b68596b7e099c6793054dd457.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.dd0bf9c7cacb24c1b0184f52f1869b274e06689557468cc7030ccf632328eb97.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="1. My Awesome First Blog CI/CD Pipeline">
+<meta property="og:description" content=" Welcome to My Blog! Hello there, and welcome to my corner of the internet!
+Whether you stumbled in during a late-night browsing session or deliberately tracked this blog down (major kudos to you for that), I’m thrilled you’re here. This is a space where curiosity meets creativity—a digital lab, journal, and playground all in one.
+What’s This Blog About? At its heart, this blog is about exploration—of ideas, technologies, hobbies, and everything in between. I’ll be sharing insights from my personal and professional journey, diving deep into the topics that light me up and (hopefully) inspire you too.
+" />
+<meta property="og:url" content="/posts/blog-1-first-blog-cicd-pipeline/" />
+<meta property="og:site_name" content="Crusblog" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-11-29 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Crusblog
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/">Home</a></li>
+        
+      
+        
+          <li><a href="/titles">Blogs</a></li>
+        
+      
+        
+          <li><a href="/tags">Tags</a></li>
+        
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/" >Home</a></li>
+        
+      
+        
+          <li><a href="/titles" >Blogs</a></li>
+        
+      
+        
+          <li><a href="/tags" >Tags</a></li>
+        
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/blog-1-first-blog-cicd-pipeline/"><ol>
+<li>My Awesome First Blog CI/CD Pipeline</li>
+</ol>
+</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-11-29&nbsp;[Updated 2024-11-29]</time><span class="post-reading-time">3 min read (451 words)</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/firsrblog/">firsrblog</a>&nbsp;
+      
+      #<a href="/tags/genshin/">genshin</a>&nbsp;
+      
+      #<a href="/tags/games/">games</a>&nbsp;
+      
+      #<a href="/tags/cybersec/">cybersec</a>&nbsp;
+      
+      #<a href="/tags/hsr/">hsr</a>&nbsp;
+      
+      #<a href="/tags/leaks/">leaks</a>&nbsp;
+      
+      #<a href="/tags/aiml/">AIML</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+  
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#whats-this-blog-about">What’s This Blog About?</a></li>
+    <li><a href="#why-this-blog">Why This Blog?</a></li>
+    <li><a href="#lets-build-and-explore-together">Let’s Build and Explore Together</a></li>
+  </ul>
+</nav>
+    </div>
+  
+
+  <div class="post-content"><div>
+        <hr>
+<p><img alt="Image Description" src="/images/crus-high-resolution-logo-transformed%201.png"></p>
+<h1 id="welcome-to-my-blog">Welcome to My Blog!<a href="#welcome-to-my-blog" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Hello there, and welcome to my corner of the internet!</p>
+<p>Whether you stumbled in during a late-night browsing session or deliberately tracked this blog down (major kudos to you for that), I’m thrilled you’re here. This is a space where curiosity meets creativity—a digital lab, journal, and playground all in one.</p>
+<hr>
+<h2 id="whats-this-blog-about">What’s This Blog About?<a href="#whats-this-blog-about" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>At its heart, this blog is about exploration—of ideas, technologies, hobbies, and everything in between. I’ll be sharing insights from my personal and professional journey, diving deep into the topics that light me up and (hopefully) inspire you too.</p>
+<p>Here’s a glimpse at what you can expect:</p>
+<ul>
+<li><strong>Learning Adventures:</strong> As someone diving into fields like <strong>cybersecurity</strong>, <strong>machine learning (ML)</strong>, and <strong>AI</strong>, I’ll share practical tutorials and in-depth guides. Topics might include <strong>setting up secure workflows</strong>, exploring <strong>neural network basics</strong>, or dissecting real-world <strong>cybersecurity case studies.</strong></li>
+<li><strong>Project Spotlights:</strong> From coding a <strong>custom Wordle with Genshin Impact themes</strong> to building a <strong>Spiral Abyss guide</strong>, I’ll break down the process into actionable steps. Expect insights into technologies like Flask, Python, and front-end frameworks that make these projects possible.</li>
+<li><strong>Gaming Chronicles with a Twist:</strong> While I’m a huge fan of <strong>Genshin Impact</strong>, I also enjoy exploring how gaming intersects with technology. We’ll dive into the mechanics of <strong>game design</strong>, <strong>data analytics for team optimization</strong>, and how to develop <strong>web tools</strong> to enhance your gaming experience (imagine a tool to simulate Genshin team damage outputs!).</li>
+<li><strong>Guides and Tutorials:</strong> Whether you’re navigating <strong>Obsidian for better productivity</strong>, building a <strong>Python-powered AI summarizer</strong>, or creating automation scripts for repetitive tasks, I’ll share step-by-step instructions and code snippets to make learning seamless.</li>
+</ul>
+<p><img alt="Image Description" src="/images/Screenshot%202024-12-05%20175338.png"></p>
+<hr>
+<h2 id="why-this-blog">Why This Blog?<a href="#why-this-blog" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>This blog isn’t just a diary—it’s a space to spark creativity, solve problems, and share ideas. It’s about connecting with like-minded folks who enjoy diving into the technical, creative, and geeky aspects of life.</p>
+<p>I believe in breaking down complex topics into digestible insights, especially for beginners. Whether you’re just getting started with programming or exploring the intricacies of elemental reactions in <strong>Genshin Impact</strong>, I’ve got you covered.</p>
+<h2 id="lets-build-and-explore-together">Let’s Build and Explore Together<a href="#lets-build-and-explore-together" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>This is just the beginning, and the journey ahead is wide open. I’ll be experimenting with content formats—blogs, tutorials, visuals, and maybe even interactive tools. Whatever helps bring ideas to life and makes learning fun and accessible.</p>
+<p>If any of this resonates, stick around! Engage with the content, leave comments, or suggest topics you’d like to see. This blog is a two-way street, and your input makes it all the better.</p>
+<p>So, here’s to creativity, curiosity, and community. Let’s explore, learn, and create together.</p>
+<p>Until next time,<br>
+<strong>[Crusveder]</strong></p>
+<p><em>“Stay curious, stay persistent, and keep building. Great things happen when we embrace the process.”</em></p>
+
+      </div></div>
+
+  
+    
+
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://github.com/CRUSVEDER">Crusveder</a></span>
+    
+     
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

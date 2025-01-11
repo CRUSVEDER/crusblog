@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="titles-page">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Params.description }}</p>
+  <ul>
+    {{ range where .Site.RegularPages "Section" "posts" }}  <!-- Filter by section "posts" -->
+      {{ if .Params.title }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Params.title }}</a>
+          <span class="post-date">({{ .Date.Format "2006-01-02" }})</span>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</article>
+{{ end }}

@@ -1,0 +1,111 @@
+baseurl = "/"
+languageCode = "en-us"
+# Add it only if you keep the theme in the `themes` directory.
+# Remove it if you use the theme as a remote Hugo Module.
+theme = "terminal"
+paginate = 10 #number of pages or posts per page
+
+[params]
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 5
+
+  # show selector to switch language
+  showLanguageSelector = false
+
+  # set theme to full screen width
+  fullWidthTheme = false
+
+  # center theme with default width
+  centerTheme = false
+
+  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
+  # then the file will be used as a cover automatically.
+  # With this option you don't have to put the `cover` param in a front-matter.
+  autoCover = true
+
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = true
+
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  updatedDatePrefix = "Updated"
+
+  # whether to show a page's estimated reading time
+  readingTime = true # default
+
+  # whether to show a table of contents
+  # can be overridden in a page's front-matter
+  Toc = true # default
+
+  # set title for the table of contents
+  # can be overridden in a page's front-matter
+  TocTitle = "Table of Contents" # default
+
+
+[params.twitter]
+  # set Twitter handles for Twitter cards
+  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # do not include @
+  creator = ""
+  site = ""
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Crusblog"
+
+    [languages.en.params]
+      subtitle = "A simple, retro theme for Hugo"
+      owner = "crusveder"
+      keywords = "Cybersecurity, AI, Gaming, Crusblog "
+      copyright = "crus"
+      menuMore = "Show more"
+      readMore = "Read more"
+      readOtherPosts = "Read other posts"
+      newerPosts = "Newer posts"
+      olderPosts = "Older posts"
+      missingContentMessage = "Page not found..."
+      missingBackButtonLabel = "Back to home page"
+      minuteReadingTime = "min read"
+      words = "words"
+
+      [languages.en.params.logo]
+        logoText = "Crusblog"
+        logoHomeLink = "/"
+
+ # Menu Configuration
+[languages.en.menu]  # Main menu configuration for English language
+  [[languages.en.menu.main]]  # First menu item
+    identifier = "home"  # Unique identifier for the menu item
+    name = "Home"  # Name displayed in the menu
+    url = "/"  # The URL the menu item links to (home page)
+    weight = 1  # Set a weight to control the order of menu items (optional, lower weight comes first)
+
+  [[languages.en.menu.main]] # 2nd menu item
+    identifier = "titles" # Unique identifier for the menu item
+    name = "Blogs"  # Name Displayed in the menu
+    url = "/titles" #The URL the menu item links to (Titles page)
+    weight = 2  # Set a weight to control the order of menu items (optional, lower weight comes first)  
+
+  [[languages.en.menu.main]]  # 3rd menu item
+    identifier = "tags"  # Unique identifier for the menu item
+    name = "Tags"  # Name displayed in the menu
+    url = "/tags"  # The URL the menu item links to (tags page)
+    weight = 3  # Set a weight to control the order of menu items (optional, lower weight comes first)
+
+  [[languages.en.menu.main]]  # 4th menu item
+    identifier = "about"  # Unique identifier for the menu item
+    name = "About"  # Name displayed in the menu
+    url = "/about"  # The URL the menu item links to (about page)
+    weight = 4  # Set a weight to control the order of menu items (optional, lower weight comes first)
+
+  [[languages.en.menu.main]]  # 5th menu item
+    identifier = "showcase"  # Unique identifier for the menu item
+    name = "Showcase"  # Name displayed in the menu
+    url = "/showcase"  # The URL the menu item links to (showcase page)
+    weight = 5  # Set a weight to control the order of menu items (optional, lower weight comes first)
+
