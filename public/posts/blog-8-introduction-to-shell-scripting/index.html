@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>8. Introduction to Shell Scripting :: Crusblog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content=" Introduction to Shell Scripting: Automating Daily Tasks (Bash and PowerShell Edition) Alright, imagine this: you wake up, fire up your computer, and instead of wasting time organizing files or backing up data, you just hit a button, and boom—your computer does all that boring stuff for you. That’s the magic of shell scripting. It’s not just for Linux nerds; even Windows folks can automate tasks like a pro using PowerShell.
+" />
+<meta name="keywords" content="Cybersecurity, AI, Gaming, Crusblog " />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/blog-8-introduction-to-shell-scripting/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.fe8dc560fccb53a458b0db19ccb7b265764ac46b68596b7e099c6793054dd457.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.dd0bf9c7cacb24c1b0184f52f1869b274e06689557468cc7030ccf632328eb97.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="8. Introduction to Shell Scripting">
+<meta property="og:description" content=" Introduction to Shell Scripting: Automating Daily Tasks (Bash and PowerShell Edition) Alright, imagine this: you wake up, fire up your computer, and instead of wasting time organizing files or backing up data, you just hit a button, and boom—your computer does all that boring stuff for you. That’s the magic of shell scripting. It’s not just for Linux nerds; even Windows folks can automate tasks like a pro using PowerShell.
+" />
+<meta property="og:url" content="/posts/blog-8-introduction-to-shell-scripting/" />
+<meta property="og:site_name" content="Crusblog" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-12-06 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Crusblog
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/">Home</a></li>
+        
+      
+        
+          <li><a href="/titles">Blogs</a></li>
+        
+      
+        
+          <li><a href="/tags">Tags</a></li>
+        
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/" >Home</a></li>
+        
+      
+        
+          <li><a href="/titles" >Blogs</a></li>
+        
+      
+        
+          <li><a href="/tags" >Tags</a></li>
+        
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/blog-8-introduction-to-shell-scripting/"><ol start="8">
+<li>Introduction to Shell Scripting</li>
+</ol>
+</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-12-06&nbsp;[Updated 2024-12-06]</time><span class="post-reading-time">4 min read (662 words)</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/basic/">basic</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+  
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#part-1-whats-a-shell-script">Part 1: What’s a Shell Script?</a></li>
+        <li><a href="#part-2-getting-started-with-bash-linuxmacos">Part 2: Getting Started with Bash (Linux/macOS)</a></li>
+        <li><a href="#part-3-getting-started-with-powershell-windows">Part 3: Getting Started with PowerShell (Windows)</a></li>
+        <li><a href="#part-4-real-life-automation-with-shell-scripts">Part 4: Real-Life Automation with Shell Scripts</a></li>
+        <li><a href="#part-5-scheduling-scripts">Part 5: Scheduling Scripts</a></li>
+        <li><a href="#part-6-tips-for-success">Part 6: Tips for Success</a></li>
+        <li><a href="#wrapping-up">Wrapping Up</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  
+
+  <div class="post-content"><div>
+        <hr>
+<h1 id="introduction-to-shell-scripting-automating-daily-tasks-bash-and-powershell-edition">Introduction to Shell Scripting: Automating Daily Tasks (Bash and PowerShell Edition)<a href="#introduction-to-shell-scripting-automating-daily-tasks-bash-and-powershell-edition" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Alright, imagine this: you wake up, fire up your computer, and instead of wasting time organizing files or backing up data, you just hit a button, and boom—your computer does all that boring stuff for you. That’s the magic of shell scripting. It’s not just for Linux nerds; even Windows folks can automate tasks like a pro using PowerShell.</p>
+<p>Let’s break this down step-by-step, keeping things chill and beginner-friendly. We&rsquo;ll cover <strong>Bash</strong> for Linux/macOS and <strong>PowerShell</strong> for Windows. No rocket science, just automation magic.</p>
+<hr>
+<h3 id="part-1-whats-a-shell-script">Part 1: What’s a Shell Script?<a href="#part-1-whats-a-shell-script" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>A shell script is a set of instructions you write in a text file, and the computer runs them, just like how a playlist makes Spotify play the songs you want.</p>
+<p>For <strong>Linux/macOS</strong>, we use <strong>Bash</strong> (Bourne Again Shell). For <strong>Windows</strong>, we have <strong>PowerShell</strong>. Both are built-in tools that make automation super easy once you know the basics.</p>
+<hr>
+<h3 id="part-2-getting-started-with-bash-linuxmacos">Part 2: Getting Started with Bash (Linux/macOS)<a href="#part-2-getting-started-with-bash-linuxmacos" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h4 id="step-1-open-the-terminal">Step 1: Open the Terminal<a href="#step-1-open-the-terminal" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Hit <code>CTRL+ALT+T</code> (Linux) or search for <strong>Terminal</strong> (macOS).</p>
+<h4 id="step-2-create-your-first-script">Step 2: Create Your First Script<a href="#step-2-create-your-first-script" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>In your terminal, type:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano hello.sh
+</span></span></code></pre></div><p>This opens a text editor. Inside, write:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>echo <span style="color:#e6db74">&#34;Hello from Bash!&#34;</span>
+</span></span></code></pre></div><h4 id="step-3-save-and-exit">Step 3: Save and Exit<a href="#step-3-save-and-exit" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Press <code>CTRL+O</code> to save, <code>ENTER</code> to confirm, then <code>CTRL+X</code> to exit.</p>
+<h4 id="step-4-make-it-executable">Step 4: Make It Executable<a href="#step-4-make-it-executable" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Run this to give your script permission to run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chmod +x hello.sh
+</span></span></code></pre></div><h4 id="step-5-execute-the-script">Step 5: Execute the Script<a href="#step-5-execute-the-script" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Run your script by typing:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./hello.sh
+</span></span></code></pre></div><p>You should see:</p>
+<pre tabindex="0"><code>Hello from Bash!
+</code></pre><hr>
+<h3 id="part-3-getting-started-with-powershell-windows">Part 3: Getting Started with PowerShell (Windows)<a href="#part-3-getting-started-with-powershell-windows" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h4 id="step-1-open-powershell">Step 1: Open PowerShell<a href="#step-1-open-powershell" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Search for <strong>PowerShell</strong> in the Start menu and open it.</p>
+<h4 id="step-2-create-your-first-script-1">Step 2: Create Your First Script<a href="#step-2-create-your-first-script-1" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Open Notepad (yes, Notepad), and type:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Write-Output <span style="color:#e6db74">&#34;Hello from PowerShell!&#34;</span>
+</span></span></code></pre></div><h4 id="step-3-save-as-a-ps1-file">Step 3: Save as a <code>.ps1</code> File<a href="#step-3-save-as-a-ps1-file" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Go to <strong>File &gt; Save As</strong>, name it <code>hello.ps1</code>, and choose &ldquo;All Files&rdquo; in the save dialog. Make sure it ends with <code>.ps1</code>, like this:</p>
+<pre tabindex="0"><code>hello.ps1
+</code></pre><h4 id="step-4-run-the-script">Step 4: Run the Script<a href="#step-4-run-the-script" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Back in PowerShell, navigate to where you saved the file (use <code>cd</code> to change directories). Then, run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>./hello.ps1
+</span></span></code></pre></div><p>You should see:</p>
+<pre tabindex="0"><code>Hello from PowerShell!
+</code></pre><hr>
+<h3 id="part-4-real-life-automation-with-shell-scripts">Part 4: Real-Life Automation with Shell Scripts<a href="#part-4-real-life-automation-with-shell-scripts" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Now that you know the basics, let’s tackle some useful scripts.</p>
+<h4 id="1-organize-files"><strong>1. Organize Files</strong><a href="#1-organize-files" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p><strong>Bash (Linux/macOS):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>mkdir -p Pictures
+</span></span><span style="display:flex;"><span>mv *.jpg Pictures/
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;JPG files moved to Pictures!&#34;</span>
+</span></span></code></pre></div><p><strong>PowerShell (Windows):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>New-Item -ItemType Directory -Path . -Name <span style="color:#e6db74">&#34;Pictures&#34;</span>
+</span></span><span style="display:flex;"><span>Move-Item *.jpg Pictures/
+</span></span><span style="display:flex;"><span>Write-Output <span style="color:#e6db74">&#34;JPG files moved to Pictures!&#34;</span>
+</span></span></code></pre></div><h4 id="2-automate-backups"><strong>2. Automate Backups</strong><a href="#2-automate-backups" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p><strong>Bash (Linux/macOS):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>rsync -av ~/Documents ~/Backup
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Backup complete!&#34;</span>
+</span></span></code></pre></div><p><strong>PowerShell (Windows):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Copy-Item -Path C:\Users\YourName\Documents -Destination D:\Backup -Recurse
+</span></span><span style="display:flex;"><span>Write-Output <span style="color:#e6db74">&#34;Backup complete!&#34;</span>
+</span></span></code></pre></div><h4 id="3-monitor-system-performance"><strong>3. Monitor System Performance</strong><a href="#3-monitor-system-performance" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p><strong>Bash (Linux/macOS):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">while</span> true; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>date<span style="color:#66d9ef">)</span><span style="color:#e6db74">: </span><span style="color:#66d9ef">$(</span>top -b -n1 | head -5<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> &gt;&gt; system.log
+</span></span><span style="display:flex;"><span>  sleep <span style="color:#ae81ff">3600</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div><p><strong>PowerShell (Windows):</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> ($true) {
+</span></span><span style="display:flex;"><span>  Get-Date | Out-File -Append -FilePath system.log
+</span></span><span style="display:flex;"><span>  Get-Process | Sort-Object CPU -Descending | Select-Object -First <span style="color:#ae81ff">5</span> | Out-File -Append -FilePath system.log
+</span></span><span style="display:flex;"><span>  Start-Sleep -Seconds <span style="color:#ae81ff">3600</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h3 id="part-5-scheduling-scripts">Part 5: Scheduling Scripts<a href="#part-5-scheduling-scripts" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h4 id="on-linuxmacos"><strong>On Linux/macOS:</strong><a href="#on-linuxmacos" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Use <strong>crontab</strong> to run scripts at specific times:</p>
+<ol>
+<li>
+<p>Open crontab:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>crontab -e
+</span></span></code></pre></div></li>
+<li>
+<p>Add a line to run your script every day at 8 AM:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">8</span> * * * /path/to/your/script.sh
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="on-windows"><strong>On Windows:</strong><a href="#on-windows" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>Use <strong>Task Scheduler</strong>:</p>
+<ol>
+<li>Open Task Scheduler (search for it in Start).</li>
+<li>Create a new task.</li>
+<li>Set a trigger (e.g., daily at 8 AM).</li>
+<li>Set an action to run your <code>.ps1</code> script using PowerShell.</li>
+</ol>
+<hr>
+<h3 id="part-6-tips-for-success">Part 6: Tips for Success<a href="#part-6-tips-for-success" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li><strong>Test Small:</strong> Start with tiny scripts and gradually add more features.</li>
+<li><strong>Use Comments:</strong> Add <code>#</code> in Bash or <code>#</code> in PowerShell to explain what each part does.</li>
+<li><strong>Handle Errors:</strong> Check if files exist before moving them to avoid errors.</li>
+<li><strong>Experiment:</strong> Don’t be afraid to break things (in a safe environment).</li>
+</ol>
+<hr>
+<h3 id="wrapping-up">Wrapping Up<a href="#wrapping-up" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Whether you’re using Bash or PowerShell, shell scripting is your ticket to automating the boring stuff. It saves time, reduces errors, and makes you look like a tech wizard to your friends.</p>
+<p>Start small, stay curious, and soon you’ll be automating tasks you never thought possible. Now, go script something awesome!</p>
+<p>[Crusveder]</p>
+<hr>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/blog-9-docker-on-linux/" class="button inline prev">
+        9. Docker on Linux
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/blog-7-kali-linux-commands/" class="button inline next">
+        7. Kali, linux Commands
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://github.com/CRUSVEDER">Crusveder</a></span>
+    
+     
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

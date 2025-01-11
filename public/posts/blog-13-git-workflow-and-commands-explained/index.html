@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>13. Git Workflow and Commands Explained :: Crusblog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Git Workflow and Commands Explained Introduction Git is a distributed version control system for version tracking and collaboration. This guide covers essential Git commands and workflows, applicable to any project or file.
+Interfaces Command Line: Fastest and most versatile option. GUI Options: GitKraken: Free for open-source projects. Sourcetree: Free for Windows and macOS. Initial Setup Check Git Version Verify the Git installation:
+git --version Git Bash Emulates a Linux terminal environment for Windows users, making it easier to use Git commands.
+" />
+<meta name="keywords" content="Cybersecurity, AI, Gaming, Crusblog " />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/blog-13-git-workflow-and-commands-explained/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.fe8dc560fccb53a458b0db19ccb7b265764ac46b68596b7e099c6793054dd457.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.dd0bf9c7cacb24c1b0184f52f1869b274e06689557468cc7030ccf632328eb97.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="13. Git Workflow and Commands Explained">
+<meta property="og:description" content="Git Workflow and Commands Explained Introduction Git is a distributed version control system for version tracking and collaboration. This guide covers essential Git commands and workflows, applicable to any project or file.
+Interfaces Command Line: Fastest and most versatile option. GUI Options: GitKraken: Free for open-source projects. Sourcetree: Free for Windows and macOS. Initial Setup Check Git Version Verify the Git installation:
+git --version Git Bash Emulates a Linux terminal environment for Windows users, making it easier to use Git commands.
+" />
+<meta property="og:url" content="/posts/blog-13-git-workflow-and-commands-explained/" />
+<meta property="og:site_name" content="Crusblog" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-12-12 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Crusblog
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/">Home</a></li>
+        
+      
+        
+          <li><a href="/titles">Blogs</a></li>
+        
+      
+        
+          <li><a href="/tags">Tags</a></li>
+        
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/" >Home</a></li>
+        
+      
+        
+          <li><a href="/titles" >Blogs</a></li>
+        
+      
+        
+          <li><a href="/tags" >Tags</a></li>
+        
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/blog-13-git-workflow-and-commands-explained/"><ol start="13">
+<li>Git Workflow and Commands Explained</li>
+</ol>
+</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-12-12&nbsp;[Updated 2024-12-12]</time><span class="post-reading-time">3 min read (572 words)</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/basic/">basic</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+  
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#interfaces">Interfaces</a></li>
+    <li><a href="#initial-setup">Initial Setup</a>
+      <ul>
+        <li><a href="#check-git-version">Check Git Version</a></li>
+        <li><a href="#git-bash">Git Bash</a></li>
+        <li><a href="#git-configuration-levels">Git Configuration Levels</a></li>
+        <li><a href="#line-ending-compatibility">Line Ending Compatibility</a></li>
+      </ul>
+    </li>
+    <li><a href="#basic-commands">Basic Commands</a>
+      <ul>
+        <li><a href="#initialize-repository">Initialize Repository</a></li>
+        <li><a href="#staging-and-committing-files">Staging and Committing Files</a></li>
+        <li><a href="#commit-message-etiquette">Commit Message Etiquette</a></li>
+      </ul>
+    </li>
+    <li><a href="#file-management">File Management</a>
+      <ul>
+        <li><a href="#remove-files">Remove Files</a></li>
+        <li><a href="#rename-files">Rename Files</a></li>
+      </ul>
+    </li>
+    <li><a href="#ignoring-files">Ignoring Files</a></li>
+    <li><a href="#viewing-history">Viewing History</a></li>
+    <li><a href="#unstaging-and-discarding-changes">Unstaging and Discarding Changes</a></li>
+    <li><a href="#branching-and-merging">Branching and Merging</a>
+      <ul>
+        <li><a href="#create-and-switch-branches">Create and Switch Branches</a></li>
+        <li><a href="#merge-branches">Merge Branches</a></li>
+        <li><a href="#feature-branch-workflow">Feature Branch Workflow</a></li>
+      </ul>
+    </li>
+    <li><a href="#help-commands">Help Commands</a></li>
+  </ul>
+</nav>
+    </div>
+  
+
+  <div class="post-content"><div>
+        <h1 id="git-workflow-and-commands-explained">Git Workflow and Commands Explained<a href="#git-workflow-and-commands-explained" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Git is a <strong>distributed version control system</strong> for version tracking and collaboration. This guide covers essential Git commands and workflows, applicable to any project or file.</p>
+<hr>
+<h2 id="interfaces">Interfaces<a href="#interfaces" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li><strong>Command Line</strong>: Fastest and most versatile option.</li>
+<li><strong>GUI Options</strong>:
+<ul>
+<li><strong>GitKraken</strong>: Free for open-source projects.</li>
+<li><strong>Sourcetree</strong>: Free for Windows and macOS.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="initial-setup">Initial Setup<a href="#initial-setup" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="check-git-version">Check Git Version<a href="#check-git-version" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Verify the Git installation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git --version
+</span></span></code></pre></div><h3 id="git-bash">Git Bash<a href="#git-bash" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Emulates a Linux terminal environment for Windows users, making it easier to use Git commands.</p>
+<h3 id="git-configuration-levels">Git Configuration Levels<a href="#git-configuration-levels" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li><strong>System</strong>: Applies to all users on the computer.</li>
+<li><strong>Global</strong>: Applies to all repositories of the current user.</li>
+<li><strong>Local</strong>: Applies only to the current repository.</li>
+</ol>
+<p>Set user details globally:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global user.name <span style="color:#e6db74">&#34;Your Name&#34;</span>
+</span></span><span style="display:flex;"><span>git config --global user.email your_email@example.com
+</span></span></code></pre></div><blockquote>
+<p>Quotes are only required if there are spaces in the input.</p>
+</blockquote>
+<p>Edit global configurations:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global -e
+</span></span></code></pre></div><h3 id="line-ending-compatibility">Line Ending Compatibility<a href="#line-ending-compatibility" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Set line-ending conversion for cross-platform compatibility:</p>
+<ul>
+<li><strong>Windows</strong>: Use <code>\r\n</code> (Carriage Return + Line Feed).</li>
+<li><strong>Linux/macOS</strong>: Use <code>\n</code> (Line Feed).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global core.autocrlf true    <span style="color:#75715e"># For Windows</span>
+</span></span><span style="display:flex;"><span>git config --global core.autocrlf input   <span style="color:#75715e"># For Linux/macOS</span>
+</span></span></code></pre></div><hr>
+<h2 id="basic-commands">Basic Commands<a href="#basic-commands" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="initialize-repository">Initialize Repository<a href="#initialize-repository" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir <span style="color:#f92672">[</span>project_name<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>cd <span style="color:#f92672">[</span>project_name<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>ls -a  <span style="color:#75715e"># Display hidden files (e.g., .git directory)</span>
+</span></span></code></pre></div><h3 id="staging-and-committing-files">Staging and Committing Files<a href="#staging-and-committing-files" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li><strong>Staging Area</strong>: Prepares changes for a snapshot.</li>
+<li><strong>Commit</strong>: Saves the snapshot to the repository.</li>
+</ol>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Hello World&#34;</span> &gt; file1.txt
+</span></span><span style="display:flex;"><span>git status       <span style="color:#75715e"># Check current status</span>
+</span></span><span style="display:flex;"><span>git add file1.txt  <span style="color:#75715e"># Stage file</span>
+</span></span><span style="display:flex;"><span>git commit        <span style="color:#75715e"># Commit changes</span>
+</span></span></code></pre></div><h3 id="commit-message-etiquette">Commit Message Etiquette<a href="#commit-message-etiquette" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li><strong>Be specific</strong>: Separate commits for specific portions of code.</li>
+<li><strong>Be concise</strong>: Use short, meaningful messages.</li>
+<li><strong>Tense</strong>: Use present or past tense (e.g., &ldquo;Add feature&rdquo; or &ldquo;Added feature&rdquo;).</li>
+</ul>
+<hr>
+<h2 id="file-management">File Management<a href="#file-management" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="remove-files">Remove Files<a href="#remove-files" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm file1.txt
+</span></span><span style="display:flex;"><span>git add file1.txt
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Remove unused file&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Alternatively:</span>
+</span></span><span style="display:flex;"><span>git rm file1.txt
+</span></span></code></pre></div><h3 id="rename-files">Rename Files<a href="#rename-files" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv old_file.txt new_file.txt
+</span></span><span style="display:flex;"><span>git add old_file.txt new_file.txt
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Rename file&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Alternatively:</span>
+</span></span><span style="display:flex;"><span>git mv old_file.txt new_file.txt
+</span></span></code></pre></div><hr>
+<h2 id="ignoring-files">Ignoring Files<a href="#ignoring-files" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>To prevent Git from tracking certain files or directories, create a <code>.gitignore</code> file in the project root:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span># Example .gitignore rules
+</span></span><span style="display:flex;"><span>logs/         # Ignore all files in the &#39;logs&#39; directory
+</span></span><span style="display:flex;"><span>*.log         # Ignore all files with a .log extension
+</span></span><span style="display:flex;"><span>config.json   # Ignore specific file
+</span></span></code></pre></div><p>For files previously committed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm --cached -r <span style="color:#f92672">[</span>file_or_directory<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;[file_or_directory]&#34;</span> &gt;&gt; .gitignore
+</span></span><span style="display:flex;"><span>git add .gitignore
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Update .gitignore to ignore specific files&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="viewing-history">Viewing History<a href="#viewing-history" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log               <span style="color:#75715e"># Full commit history</span>
+</span></span><span style="display:flex;"><span>git log --oneline     <span style="color:#75715e"># Concise commit history</span>
+</span></span><span style="display:flex;"><span>git log --reverse     <span style="color:#75715e"># Show commits from oldest to newest</span>
+</span></span><span style="display:flex;"><span>git log --all --graph <span style="color:#75715e"># Visual representation of branches and commits</span>
+</span></span></code></pre></div><hr>
+<h2 id="unstaging-and-discarding-changes">Unstaging and Discarding Changes<a href="#unstaging-and-discarding-changes" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git restore --staged <span style="color:#f92672">[</span>file<span style="color:#f92672">]</span>   <span style="color:#75715e"># Unstage changes</span>
+</span></span><span style="display:flex;"><span>git restore .                 <span style="color:#75715e"># Discard all local changes (except untracked files)</span>
+</span></span><span style="display:flex;"><span>git clean -fd                 <span style="color:#75715e"># Remove untracked files (f: force, d: directories)</span>
+</span></span></code></pre></div><hr>
+<h2 id="branching-and-merging">Branching and Merging<a href="#branching-and-merging" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="create-and-switch-branches">Create and Switch Branches<a href="#create-and-switch-branches" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch <span style="color:#f92672">[</span>branch_name<span style="color:#f92672">]</span>   <span style="color:#75715e"># Create a branch</span>
+</span></span><span style="display:flex;"><span>git checkout <span style="color:#f92672">[</span>branch_name<span style="color:#f92672">]</span> <span style="color:#75715e"># Switch to the branch</span>
+</span></span></code></pre></div><h3 id="merge-branches">Merge Branches<a href="#merge-branches" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout main          <span style="color:#75715e"># Switch to the main branch</span>
+</span></span><span style="display:flex;"><span>git merge <span style="color:#f92672">[</span>branch_name<span style="color:#f92672">]</span> -m <span style="color:#e6db74">&#34;Merge [branch_name] into main&#34;</span>
+</span></span></code></pre></div><h3 id="feature-branch-workflow">Feature Branch Workflow<a href="#feature-branch-workflow" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p><strong>Create a Feature Branch</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch <span style="color:#f92672">[</span>feature_name<span style="color:#f92672">]</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Push to Remote Repository</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add origin <span style="color:#f92672">[</span>repository_url<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git push origin main          <span style="color:#75715e"># Push main branch</span>
+</span></span><span style="display:flex;"><span>git push origin <span style="color:#f92672">[</span>feature_name<span style="color:#f92672">]</span> <span style="color:#75715e"># Push feature branch</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Pull Request</strong>:</p>
+<ul>
+<li>Create a pull request on GitHub or your Git hosting platform.</li>
+<li>Add a title, description, and submit.</li>
+</ul>
+</li>
+<li>
+<p><strong>Merge Changes</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout main
+</span></span><span style="display:flex;"><span>git pull origin main
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Delete Feature Branch</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -D <span style="color:#f92672">[</span>feature_name<span style="color:#f92672">]</span>
+</span></span></code></pre></div></li>
+</ol>
+<hr>
+<h2 id="help-commands">Help Commands<a href="#help-commands" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>Detailed help: <code>git config --help</code></li>
+<li>Simple help: <code>git config -h</code></li>
+</ul>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/blog-14-windows-commands-cheat-sheet/" class="button inline prev">
+        14. windows command
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/blog-12-capture-the-flag-guide/" class="button inline next">
+        12. How to CTF
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://github.com/CRUSVEDER">Crusveder</a></span>
+    
+     
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

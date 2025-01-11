@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Setup on Crusblog</title>
+    <link>/tags/setup/</link>
+    <description>Recent content in Setup on Crusblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>6. Setting up hacking Environment...</title>
+      <link>/posts/blog-6-hacking-environment-setup/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-6-hacking-environment-setup/</guid>
+      <description>&lt;hr&gt;
+&lt;h3 id=&#34;setting-up-your-hacking-environment-a-beginners-guide&#34;&gt;Setting Up Your Hacking Environment: A Beginner’s Guide&lt;/h3&gt;
+&lt;p&gt;If you’re curious about ethical hacking or just starting your journey into cybersecurity, the first step is creating a safe and functional environment for your experiments and learning. This guide will walk you through the process in a detailed and technical format, making it easy to understand—even for beginners (yes, you!).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;1-start-with-the-right-hardware&#34;&gt;1. &lt;strong&gt;Start with the Right Hardware&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Before you get your hacker on, make sure your computer can handle the demands of hacking tools and virtual machines. A good hacking environment requires hardware that can support multiple virtual machines, networks, and complex tools. Here&amp;rsquo;s a more technical breakdown:&lt;/p&gt;</description>
+      <content>&lt;hr&gt;
+&lt;h3 id=&#34;setting-up-your-hacking-environment-a-beginners-guide&#34;&gt;Setting Up Your Hacking Environment: A Beginner’s Guide&lt;/h3&gt;
+&lt;p&gt;If you’re curious about ethical hacking or just starting your journey into cybersecurity, the first step is creating a safe and functional environment for your experiments and learning. This guide will walk you through the process in a detailed and technical format, making it easy to understand—even for beginners (yes, you!).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;1-start-with-the-right-hardware&#34;&gt;1. &lt;strong&gt;Start with the Right Hardware&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Before you get your hacker on, make sure your computer can handle the demands of hacking tools and virtual machines. A good hacking environment requires hardware that can support multiple virtual machines, networks, and complex tools. Here&amp;rsquo;s a more technical breakdown:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;RAM&lt;/strong&gt;: At least &lt;strong&gt;8GB&lt;/strong&gt; is the minimum, but for better performance and multitasking (especially when running several VMs), aim for &lt;strong&gt;16GB or more&lt;/strong&gt;. Hacking tasks like network scanning, cracking passwords, or running multiple VMs will demand a lot of memory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CPU&lt;/strong&gt;: A &lt;strong&gt;multi-core&lt;/strong&gt; processor is essential. Ideally, your CPU should support virtualization extensions such as &lt;strong&gt;Intel VT-x&lt;/strong&gt; or &lt;strong&gt;AMD-V&lt;/strong&gt;. These features allow you to run virtual machines more efficiently.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;How to enable VT-x/AMD-V&lt;/strong&gt;: Restart your computer, enter BIOS/UEFI settings, and enable the &lt;strong&gt;Intel VT-x&lt;/strong&gt; or &lt;strong&gt;AMD-V&lt;/strong&gt; option in the CPU settings. Without this enabled, you may face issues running virtualization software.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Storage&lt;/strong&gt;: Virtual machines can quickly consume disk space, especially with images of Kali Linux or other OSes. An &lt;strong&gt;SSD&lt;/strong&gt; with at least &lt;strong&gt;100GB of free space&lt;/strong&gt; is essential for faster I/O operations, which helps in VM performance and system responsiveness.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;How to check free space&lt;/strong&gt;: Use &lt;code&gt;df -h&lt;/code&gt; in Linux to check available disk space.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For wireless hacking, invest in a &lt;strong&gt;USB Wi-Fi adapter&lt;/strong&gt; that supports &lt;strong&gt;monitor mode&lt;/strong&gt; and &lt;strong&gt;packet injection&lt;/strong&gt;. The &lt;strong&gt;ALFA AWUS036ACH&lt;/strong&gt; is a popular choice for this purpose.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-install-virtualization-software&#34;&gt;2. &lt;strong&gt;Install Virtualization Software&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Virtualization software allows you to run multiple operating systems on your computer in isolated environments. This is crucial for experimenting without affecting your main operating system. Here are the technical steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VMware Workstation/Player&lt;/strong&gt;: If you prefer a paid solution with additional features.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Download VMware&lt;/strong&gt; &lt;a href=&#34;https://www.vmware.com/products/workstation-player.html&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VirtualBox&lt;/strong&gt;: A free, open-source option that’s beginner-friendly.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Download VirtualBox&lt;/strong&gt; &lt;a href=&#34;https://www.virtualbox.org/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To install VirtualBox on a &lt;strong&gt;Debian-based system&lt;/strong&gt; (like Kali Linux):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install virtualbox
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once you’ve installed the software, make sure to enable virtualization in your BIOS settings. This can be done by checking your system’s &lt;strong&gt;CPU features&lt;/strong&gt; in BIOS/UEFI.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Creating a Virtual Machine&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;When creating a VM, allocate at least &lt;strong&gt;2 CPUs&lt;/strong&gt;, &lt;strong&gt;4GB RAM&lt;/strong&gt;, and &lt;strong&gt;20GB disk space&lt;/strong&gt; for Kali Linux or other pen-testing tools.&lt;/li&gt;
+&lt;li&gt;For networking, configure your VM’s network adapter to use &lt;strong&gt;NAT&lt;/strong&gt; or &lt;strong&gt;Bridged&lt;/strong&gt; networking (for internet access) or &lt;strong&gt;Internal Network&lt;/strong&gt; (for isolated environments).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-choose-your-hacking-operating-system&#34;&gt;3. &lt;strong&gt;Choose Your Hacking Operating System&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The most widely used OS for penetration testing is &lt;strong&gt;Kali Linux&lt;/strong&gt;, but other alternatives like &lt;strong&gt;Parrot Security OS&lt;/strong&gt; or &lt;strong&gt;BlackArch&lt;/strong&gt; might suit your needs depending on your experience.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Kali Linux&lt;/strong&gt; is a Debian-based OS tailored for cybersecurity professionals, packed with tools like &lt;strong&gt;Metasploit&lt;/strong&gt;, &lt;strong&gt;Wireshark&lt;/strong&gt;, and &lt;strong&gt;Nmap&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Parrot Security OS&lt;/strong&gt; is lighter, making it better for older machines or for those who prefer a more streamlined setup.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BlackArch&lt;/strong&gt; is an Arch-based distro for those who prefer the Arch ecosystem and need access to a wide range of security tools.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For installation, the &lt;strong&gt;VM image&lt;/strong&gt; of Kali Linux is a quick way to set up your environment. Download the official Kali Linux image &lt;a href=&#34;https://www.kali.org/get-kali/&#34;&gt;here&lt;/a&gt;, and then import it into VirtualBox or VMware.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Screenshot%202024-12-11%20213435.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;4-keep-your-tools-updated&#34;&gt;4. &lt;strong&gt;Keep Your Tools Updated&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;In cybersecurity, outdated tools are like leaving the back door open for intruders. It’s important to update your system regularly to ensure you have the latest tools and security patches.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Updating Kali Linux&lt;/strong&gt;: Open a terminal and run the following commands:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt upgrade -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command updates the list of available packages and then installs the latest versions of all installed tools.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Installing Specific Tools&lt;/strong&gt;: If you need specific tools like &lt;strong&gt;Nmap&lt;/strong&gt; (for network scanning), use:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install nmap
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can also upgrade individual tools like Metasploit by running:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install metasploit-framework
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;5-set-up-a-safe-practice-environment&#34;&gt;5. &lt;strong&gt;Set Up a Safe Practice Environment&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Ethical hacking means &lt;strong&gt;never&lt;/strong&gt; attacking real systems without permission. To practice safely, create a controlled environment using virtual machines or vulnerable systems that you own.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Metasploitable 2&lt;/strong&gt;: A vulnerable virtual machine that simulates real-world weaknesses and is perfect for penetration testing practice.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Download Metasploitable 2&lt;/strong&gt; &lt;a href=&#34;https://sourceforge.net/projects/metasploitable/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OWASP Juice Shop&lt;/strong&gt;: A web application intentionally vulnerable for testing your web application security skills.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Access OWASP Juice Shop&lt;/strong&gt; &lt;a href=&#34;https://owasp.org/www-project-juice-shop/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For an isolated lab environment, use VirtualBox’s &lt;strong&gt;Internal Network&lt;/strong&gt; or &lt;strong&gt;Host-Only Adapter&lt;/strong&gt; settings to prevent your VMs from accessing the internet unless explicitly allowed.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;6-install-essential-tools&#34;&gt;6. &lt;strong&gt;Install Essential Tools&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;A hacker’s toolkit is nothing without the right tools. Below are some essential ones you’ll need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Wireshark&lt;/strong&gt;: Network packet analyzer used to capture and inspect network traffic.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Installation&lt;/strong&gt;: &lt;code&gt;sudo apt install wireshark&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Metasploit Framework&lt;/strong&gt;: Powerful framework for exploiting vulnerabilities.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Installation&lt;/strong&gt;: &lt;code&gt;sudo apt install metasploit-framework&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nmap&lt;/strong&gt;: A popular network scanner.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Installation&lt;/strong&gt;: &lt;code&gt;sudo apt install nmap&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Burp Suite&lt;/strong&gt;: Web application security testing tool.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Installation&lt;/strong&gt;: Download from the &lt;a href=&#34;https://portswigger.net/burp&#34;&gt;official site&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;John the Ripper&lt;/strong&gt;: Password cracking tool that supports various algorithms.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Installation&lt;/strong&gt;: &lt;code&gt;sudo apt install john&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hydra&lt;/strong&gt;: Used for brute-force attacks on various services.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Installation&lt;/strong&gt;: &lt;code&gt;sudo apt install hydra&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aircrack-ng&lt;/strong&gt;: Suite of tools for wireless network security auditing.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Installation&lt;/strong&gt;: &lt;code&gt;sudo apt install aircrack-ng&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;7-document-your-work&#34;&gt;7. &lt;strong&gt;Document Your Work&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Documentation is vital for tracking your progress and revisiting past techniques. You can use note-taking apps like &lt;strong&gt;Obsidian&lt;/strong&gt; or &lt;strong&gt;Joplin&lt;/strong&gt; to record your findings and the commands you use.&lt;/p&gt;
+&lt;p&gt;Use &lt;strong&gt;Markdown&lt;/strong&gt; for easy formatting and organizing your notes. For instance, when documenting your tests, break down commands like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nmap -sP 192.168.1.0/24
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command performs a ping scan on all devices in the &lt;strong&gt;192.168.1.0/24&lt;/strong&gt; network.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;8-learn-the-basics&#34;&gt;8. &lt;strong&gt;Learn the Basics&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Before diving into complex techniques, it’s important to have a solid grasp of networking and Linux fundamentals. Here’s what you need to know:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Networking&lt;/strong&gt;: Learn about IP addresses, ports, and common protocols (e.g., TCP, UDP).
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Common Ports&lt;/strong&gt;: Port 80 (HTTP), Port 443 (HTTPS), Port 21 (FTP), etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Network Tools&lt;/strong&gt;: Familiarize yourself with tools like &lt;strong&gt;Nmap&lt;/strong&gt;, &lt;strong&gt;netstat&lt;/strong&gt;, and &lt;strong&gt;Wireshark&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Linux Commands&lt;/strong&gt;: These are your primary means of interacting with the OS.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Basic commands&lt;/strong&gt;: &lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;cd&lt;/code&gt;, &lt;code&gt;pwd&lt;/code&gt;, &lt;code&gt;mkdir&lt;/code&gt;, &lt;code&gt;rm&lt;/code&gt;, &lt;code&gt;chmod&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;File permissions&lt;/strong&gt;: Understanding &lt;strong&gt;rwx&lt;/strong&gt; (read, write, execute) permissions and how to change them with &lt;code&gt;chmod&lt;/code&gt; is crucial for securing systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;9-set-up-advanced-tools&#34;&gt;9. &lt;strong&gt;Set Up Advanced Tools&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;As you progress, you may want to experiment with specialized tools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Docker&lt;/strong&gt;: Create isolated environments for testing applications.
+&lt;ul&gt;
+&lt;li&gt;Docker is lightweight and allows for rapid containerized testing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Impacket&lt;/strong&gt;: A collection of Python classes for working with network protocols.
+&lt;ul&gt;
+&lt;li&gt;Useful for attacking network services and protocols.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ghidra&lt;/strong&gt;: A reverse engineering tool developed by the NSA for analyzing malware.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;10-secure-your-hacking-environment&#34;&gt;10. &lt;strong&gt;Secure Your Hacking Environment&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;As important as it is to set up a hacking environment, securing it is equally crucial. Here’s a more technical breakdown of security steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Isolate VMs&lt;/strong&gt;: Ensure VMs don’t have direct access to your host machine. Use &lt;strong&gt;Host-Only&lt;/strong&gt; or &lt;strong&gt;Internal Network&lt;/strong&gt; settings.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Snapshots and Backups&lt;/strong&gt;: Regularly take &lt;strong&gt;snapshots&lt;/strong&gt; in VirtualBox or VMware. If something goes wrong, you can quickly revert.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Firewall Configuration&lt;/strong&gt;: Use &lt;strong&gt;UFW&lt;/strong&gt; (Uncomplicated Firewall) to control network traffic.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;/strong&gt;: &lt;code&gt;sudo ufw enable&lt;/code&gt; to enable UFW.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VPN Usage&lt;/strong&gt;: When accessing the internet from your hacking environment, use a &lt;strong&gt;VPN&lt;/strong&gt; to secure your traffic and mask your IP.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitor Traffic&lt;/strong&gt;: Use &lt;strong&gt;Wireshark&lt;/strong&gt; to capture and analyze any traffic on your virtual machines.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;11-stay-legal-and-ethical&#34;&gt;11. &lt;strong&gt;Stay Legal and Ethical&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The final rule of hacking: &lt;strong&gt;always have permission&lt;/strong&gt;. Make sure you’re testing systems you own or have explicit authorization to attack. Platforms like &lt;strong&gt;Hack The Box&lt;/strong&gt; and &lt;strong&gt;TryHackMe&lt;/strong&gt; provide legal, controlled environments for you to practice.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;12-learn-more&#34;&gt;12. &lt;strong&gt;Learn More&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;To keep expanding your knowledge and skills, the journey doesn’t stop here! Here are a few additional resources to keep you learning:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Books&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;“The Web Application Hacker’s Handbook”&lt;/em&gt; – A comprehensive guide for web security.&lt;/li&gt;
+&lt;li&gt;*“Metasploit: The Penetration Tester’s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Guide”* – A deep dive into Metasploit usage.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Online Platforms&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TryHackMe&lt;/strong&gt;: A platform offering hands-on labs in ethical hacking.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hack The Box&lt;/strong&gt;: Another platform with real-world hacking challenges.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;[Crusveder]&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

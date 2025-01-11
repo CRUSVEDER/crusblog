@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>16. Password Vault Manager :: Crusblog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content=" Building CRUSVAULT: A Secure Password Vault Welcome to this blog post about creating CRUSVAULT, a secure and interactive password vault application using Python. This project leverages encryption, password management techniques, and a user-friendly interface. Let&rsquo;s dive into the details of its features, code explanation, and how to build it. password manager git link
+Features of CRUSVAULT Secure password encryption using the cryptography library. Interactive command-line interface (CLI) with rich for a visually appealing experience. Manage multiple vaults with the ability to add, edit, delete, or retrieve passwords. Password strength checker and generator. Easy vault creation, renaming, and deletion options. ASCII art header for a personalized touch. Prerequisites Before you begin, ensure you have the following installed:
+" />
+<meta name="keywords" content="Cybersecurity, AI, Gaming, Crusblog " />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/blog-16-password-manager/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.4881f0c525f3ce2a1864fb6e96676396cebe1e6fcef1933e8e1dde7041004fb5.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.fe8dc560fccb53a458b0db19ccb7b265764ac46b68596b7e099c6793054dd457.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.dd0bf9c7cacb24c1b0184f52f1869b274e06689557468cc7030ccf632328eb97.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="16. Password Vault Manager">
+<meta property="og:description" content=" Building CRUSVAULT: A Secure Password Vault Welcome to this blog post about creating CRUSVAULT, a secure and interactive password vault application using Python. This project leverages encryption, password management techniques, and a user-friendly interface. Let&rsquo;s dive into the details of its features, code explanation, and how to build it. password manager git link
+Features of CRUSVAULT Secure password encryption using the cryptography library. Interactive command-line interface (CLI) with rich for a visually appealing experience. Manage multiple vaults with the ability to add, edit, delete, or retrieve passwords. Password strength checker and generator. Easy vault creation, renaming, and deletion options. ASCII art header for a personalized touch. Prerequisites Before you begin, ensure you have the following installed:
+" />
+<meta property="og:url" content="/posts/blog-16-password-manager/" />
+<meta property="og:site_name" content="Crusblog" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-12-18 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Crusblog
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/">Home</a></li>
+        
+      
+        
+          <li><a href="/titles">Blogs</a></li>
+        
+      
+        
+          <li><a href="/tags">Tags</a></li>
+        
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/" >Home</a></li>
+        
+      
+        
+          <li><a href="/titles" >Blogs</a></li>
+        
+      
+        
+          <li><a href="/tags" >Tags</a></li>
+        
+      
+        
+          <li><a href="/about" >About</a></li>
+        
+      
+        
+          <li><a href="/showcase" >Showcase</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/blog-16-password-manager/"><ol start="16">
+<li>Password Vault Manager</li>
+</ol>
+</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-12-18&nbsp;[Updated 2024-12-18]</time><span class="post-reading-time">4 min read (718 words)</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/project/">project</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+  
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#features-of-crusvault">Features of CRUSVAULT</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#how-to-build-crusvault">How to Build CRUSVAULT</a>
+      <ul>
+        <li><a href="#ascii-art-header">ASCII Art Header</a></li>
+        <li><a href="#encryption-functions">Encryption Functions</a></li>
+        <li><a href="#vault-operations">Vault Operations</a></li>
+        <li><a href="#adding-and-retrieving-passwords">Adding and Retrieving Passwords</a></li>
+        <li><a href="#password-generator">Password Generator</a></li>
+        <li><a href="#main-menu">Main Menu</a></li>
+      </ul>
+    </li>
+    <li><a href="#running-the-application">Running the Application</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+  
+
+  <div class="post-content"><div>
+        <hr>
+<h1 id="building-crusvault-a-secure-password-vault">Building CRUSVAULT: A Secure Password Vault<a href="#building-crusvault-a-secure-password-vault" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Welcome to this blog post about creating <strong>CRUSVAULT</strong>, a secure and interactive password vault application using Python. This project leverages encryption, password management techniques, and a user-friendly interface. Let&rsquo;s dive into the details of its features, code explanation, and how to build it.
+<img alt="Image Description" src="/images/Pasted%20image%2020250110042304.png"></p>
+<p><a href="https://github.com/CRUSVEDER/PasswordManager">password manager git link</a></p>
+<hr>
+<h2 id="features-of-crusvault">Features of CRUSVAULT<a href="#features-of-crusvault" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>Secure password encryption using the <code>cryptography</code> library.</li>
+<li>Interactive command-line interface (CLI) with <code>rich</code> for a visually appealing experience.</li>
+<li>Manage multiple vaults with the ability to add, edit, delete, or retrieve passwords.</li>
+<li>Password strength checker and generator.</li>
+<li>Easy vault creation, renaming, and deletion options.</li>
+<li>ASCII art header for a personalized touch.</li>
+</ul>
+<hr>
+<h2 id="prerequisites">Prerequisites<a href="#prerequisites" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Before you begin, ensure you have the following installed:</p>
+<ol>
+<li>
+<p>Python 3.7 or higher.</p>
+</li>
+<li>
+<p>The required Python libraries:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install bcrypt cryptography rich pyfiglet
+</span></span></code></pre></div></li>
+</ol>
+<hr>
+<h2 id="how-to-build-crusvault">How to Build CRUSVAULT<a href="#how-to-build-crusvault" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ol>
+<li>
+<p><strong>Set Up Your Project Environment</strong>:</p>
+<ul>
+<li>Create a new folder for the project, e.g., <code>crusvault_project</code>.</li>
+<li>Save the script as <code>crusvault.py</code> inside the folder.</li>
+</ul>
+</li>
+<li>
+<p><strong>Code Explanation</strong>:</p>
+</li>
+</ol>
+<h3 id="ascii-art-header">ASCII Art Header<a href="#ascii-art-header" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pyfiglet
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> pyfiglet<span style="color:#f92672">.</span>figlet_format(<span style="color:#e6db74">&#34;CRUSVAULT&#34;</span>, font<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;slant&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;[bold cyan]</span><span style="color:#e6db74">{</span>result<span style="color:#e6db74">}</span><span style="color:#e6db74">[/bold cyan]&#34;</span>)
+</span></span></code></pre></div><ul>
+<li>Displays an eye-catching ASCII header using the <code>pyfiglet</code> library.</li>
+</ul>
+<h3 id="encryption-functions">Encryption Functions<a href="#encryption-functions" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> cryptography.fernet <span style="color:#f92672">import</span> Fernet
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> cryptography.hazmat.primitives.kdf.pbkdf2 <span style="color:#f92672">import</span> PBKDF2HMAC
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> cryptography.hazmat.primitives.hashes <span style="color:#f92672">import</span> SHA256
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> cryptography.hazmat.backends <span style="color:#f92672">import</span> default_backend
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> base64
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">generate_key</span>(master_password):
+</span></span><span style="display:flex;"><span>    salt <span style="color:#f92672">=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#34;password_vault_salt&#34;</span>
+</span></span><span style="display:flex;"><span>    kdf <span style="color:#f92672">=</span> PBKDF2HMAC(
+</span></span><span style="display:flex;"><span>        algorithm<span style="color:#f92672">=</span>SHA256(),
+</span></span><span style="display:flex;"><span>        length<span style="color:#f92672">=</span><span style="color:#ae81ff">32</span>,
+</span></span><span style="display:flex;"><span>        salt<span style="color:#f92672">=</span>salt,
+</span></span><span style="display:flex;"><span>        iterations<span style="color:#f92672">=</span><span style="color:#ae81ff">100_000</span>,
+</span></span><span style="display:flex;"><span>        backend<span style="color:#f92672">=</span>default_backend()
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    key <span style="color:#f92672">=</span> kdf<span style="color:#f92672">.</span>derive(master_password<span style="color:#f92672">.</span>encode())
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> base64<span style="color:#f92672">.</span>urlsafe_b64encode(key)
+</span></span></code></pre></div><ul>
+<li>Generates a unique key derived from the user&rsquo;s master password and a fixed salt.</li>
+<li>Uses <code>PBKDF2HMAC</code> for secure key derivation.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">encrypt_data</span>(key, data):
+</span></span><span style="display:flex;"><span>    fernet <span style="color:#f92672">=</span> Fernet(key)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> fernet<span style="color:#f92672">.</span>encrypt(data<span style="color:#f92672">.</span>encode())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">decrypt_data</span>(key, encrypted_data):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        fernet <span style="color:#f92672">=</span> Fernet(key)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> fernet<span style="color:#f92672">.</span>decrypt(encrypted_data)<span style="color:#f92672">.</span>decode()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        console<span style="color:#f92672">.</span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;[red]Error decrypting data: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">[/red]&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;Decryption failed. Please check the master password and vault integrity.&#34;</span>)
+</span></span></code></pre></div><ul>
+<li><code>encrypt_data</code> encrypts plain text data using the generated key.</li>
+<li><code>decrypt_data</code> decrypts the encrypted data back into plain text.</li>
+</ul>
+<h3 id="vault-operations">Vault Operations<a href="#vault-operations" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">save_to_file</span>(file_name, encrypted_data):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(file_name, <span style="color:#e6db74">&#39;wb&#39;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>        file<span style="color:#f92672">.</span>write(encrypted_data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_from_file</span>(file_name):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>exists(file_name):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(file_name, <span style="color:#e6db74">&#39;rb&#39;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> file<span style="color:#f92672">.</span>read()
+</span></span></code></pre></div><ul>
+<li>Handles saving and loading vault data from a file securely.</li>
+</ul>
+<h3 id="adding-and-retrieving-passwords">Adding and Retrieving Passwords<a href="#adding-and-retrieving-passwords" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_password</span>(vault_file, master_password, service, password):
+</span></span><span style="display:flex;"><span>    key <span style="color:#f92672">=</span> generate_key(master_password)
+</span></span><span style="display:flex;"><span>    vault_data <span style="color:#f92672">=</span> load_from_file(vault_file)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> vault_data:
+</span></span><span style="display:flex;"><span>            vault <span style="color:#f92672">=</span> decrypt_data(key, vault_data)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            vault <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span>:
+</span></span><span style="display:flex;"><span>        console<span style="color:#f92672">.</span>print(<span style="color:#e6db74">&#34;[bold red]Error decrypting vault data.[/bold red]&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    vault_dict <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads(vault) <span style="color:#66d9ef">if</span> vault <span style="color:#66d9ef">else</span> {}
+</span></span><span style="display:flex;"><span>    encrypted_password <span style="color:#f92672">=</span> encrypt_data(key, password)
+</span></span><span style="display:flex;"><span>    vault_dict[service] <span style="color:#f92672">=</span> encrypted_password<span style="color:#f92672">.</span>decode()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    encrypted_vault <span style="color:#f92672">=</span> encrypt_data(key, json<span style="color:#f92672">.</span>dumps(vault_dict))
+</span></span><span style="display:flex;"><span>    save_to_file(vault_file, encrypted_vault)
+</span></span><span style="display:flex;"><span>    console<span style="color:#f92672">.</span>print(<span style="color:#e6db74">&#34;[green]Password added successfully![/green]&#34;</span>)
+</span></span></code></pre></div><ul>
+<li>Adds an encrypted password for a given service to the vault.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">retrieve_password</span>(vault_file, master_password, service):
+</span></span><span style="display:flex;"><span>    key <span style="color:#f92672">=</span> generate_key(master_password)
+</span></span><span style="display:flex;"><span>    vault_data <span style="color:#f92672">=</span> load_from_file(vault_file)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> vault_data:
+</span></span><span style="display:flex;"><span>        console<span style="color:#f92672">.</span>print(<span style="color:#e6db74">&#34;[bold red]No passwords stored yet.[/bold red]&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        vault <span style="color:#f92672">=</span> decrypt_data(key, vault_data)
+</span></span><span style="display:flex;"><span>        vault_dict <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads(vault)
+</span></span><span style="display:flex;"><span>        encrypted_password <span style="color:#f92672">=</span> vault_dict<span style="color:#f92672">.</span>get(service)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> encrypted_password:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;[yellow]Service not found in vault.[/yellow]&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> decrypt_data(key, encrypted_password)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span>:
+</span></span><span style="display:flex;"><span>        console<span style="color:#f92672">.</span>print(<span style="color:#e6db74">&#34;[bold red]Error retrieving password.[/bold red]&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>
+</span></span></code></pre></div><ul>
+<li>Retrieves and decrypts a stored password for a specified service.</li>
+</ul>
+<h3 id="password-generator">Password Generator<a href="#password-generator" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">generate_password</span>(length<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span>):
+</span></span><span style="display:flex;"><span>    characters <span style="color:#f92672">=</span> string<span style="color:#f92672">.</span>ascii_letters <span style="color:#f92672">+</span> string<span style="color:#f92672">.</span>digits <span style="color:#f92672">+</span> string<span style="color:#f92672">.</span>punctuation
+</span></span><span style="display:flex;"><span>    password <span style="color:#f92672">=</span> [random<span style="color:#f92672">.</span>choice(string<span style="color:#f92672">.</span>ascii_uppercase),
+</span></span><span style="display:flex;"><span>                random<span style="color:#f92672">.</span>choice(string<span style="color:#f92672">.</span>ascii_lowercase),
+</span></span><span style="display:flex;"><span>                random<span style="color:#f92672">.</span>choice(string<span style="color:#f92672">.</span>digits),
+</span></span><span style="display:flex;"><span>                random<span style="color:#f92672">.</span>choice(string<span style="color:#f92672">.</span>punctuation)]
+</span></span><span style="display:flex;"><span>    password <span style="color:#f92672">+=</span> [random<span style="color:#f92672">.</span>choice(characters) <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(length <span style="color:#f92672">-</span> <span style="color:#ae81ff">4</span>)]
+</span></span><span style="display:flex;"><span>    random<span style="color:#f92672">.</span>shuffle(password)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join(password)
+</span></span></code></pre></div><ul>
+<li>Creates a strong, random password with a mix of uppercase, lowercase, digits, and symbols.</li>
+</ul>
+<h3 id="main-menu">Main Menu<a href="#main-menu" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> rich.console <span style="color:#f92672">import</span> Console
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> rich.table <span style="color:#f92672">import</span> Table
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> rich.prompt <span style="color:#f92672">import</span> Prompt
+</span></span><span style="display:flex;"><span>console <span style="color:#f92672">=</span> Console()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># CLI for managing the vault</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main_menu</span>():
+</span></span><span style="display:flex;"><span>    vault_file <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;password_vault.lock&#34;</span>
+</span></span><span style="display:flex;"><span>    master_password <span style="color:#f92672">=</span> Prompt<span style="color:#f92672">.</span>ask(<span style="color:#e6db74">&#34;[bold cyan]Enter your master password[/bold cyan]&#34;</span>, password<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>        console<span style="color:#f92672">.</span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">[bold cyan]Main Menu[/bold cyan]&#34;</span>)
+</span></span><span style="display:flex;"><span>        table <span style="color:#f92672">=</span> Table(show_header<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, header_style<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bold magenta&#34;</span>)
+</span></span><span style="display:flex;"><span>        table<span style="color:#f92672">.</span>add_column(<span style="color:#e6db74">&#34;Option&#34;</span>, style<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dim&#34;</span>, width<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>        table<span style="color:#f92672">.</span>add_column(<span style="color:#e6db74">&#34;Action&#34;</span>, justify<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;left&#34;</span>)
+</span></span><span style="display:flex;"><span>        table<span style="color:#f92672">.</span>add_row(<span style="color:#e6db74">&#34;1&#34;</span>, <span style="color:#e6db74">&#34;Add Password&#34;</span>)
+</span></span><span style="display:flex;"><span>        table<span style="color:#f92672">.</span>add_row(<span style="color:#e6db74">&#34;2&#34;</span>, <span style="color:#e6db74">&#34;Retrieve Password&#34;</span>)
+</span></span><span style="display:flex;"><span>        table<span style="color:#f92672">.</span>add_row(<span style="color:#e6db74">&#34;3&#34;</span>, <span style="color:#e6db74">&#34;View All Services&#34;</span>)
+</span></span><span style="display:flex;"><span>        table<span style="color:#f92672">.</span>add_row(<span style="color:#e6db74">&#34;4&#34;</span>, <span style="color:#e6db74">&#34;Exit&#34;</span>)
+</span></span><span style="display:flex;"><span>        console<span style="color:#f92672">.</span>print(table)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        choice <span style="color:#f92672">=</span> Prompt<span style="color:#f92672">.</span>ask(<span style="color:#e6db74">&#34;[bold green]Choose an option[/bold green]&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> choice <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;1&#34;</span>:
+</span></span><span style="display:flex;"><span>            service <span style="color:#f92672">=</span> Prompt<span style="color:#f92672">.</span>ask(<span style="color:#e6db74">&#34;[bold yellow]Enter the service name[/bold yellow]&#34;</span>)
+</span></span><span style="display:flex;"><span>            password <span style="color:#f92672">=</span> Prompt<span style="color:#f92672">.</span>ask(<span style="color:#e6db74">&#34;[bold yellow]Enter the password[/bold yellow]&#34;</span>, password<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>            add_password(vault_file, master_password, service, password)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> choice <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;2&#34;</span>:
+</span></span><span style="display:flex;"><span>            service <span style="color:#f92672">=</span> Prompt<span style="color:#f92672">.</span>ask(<span style="color:#e6db74">&#34;[bold yellow]Enter the service name[/bold yellow]&#34;</span>)
+</span></span><span style="display:flex;"><span>            password <span style="color:#f92672">=</span> retrieve_password(vault_file, master_password, service)
+</span></span><span style="display:flex;"><span>            console<span style="color:#f92672">.</span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;[bold green]Stored password for </span><span style="color:#e6db74">{</span>service<span style="color:#e6db74">}</span><span style="color:#e6db74">:[/bold green] </span><span style="color:#e6db74">{</span>password<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> choice <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;3&#34;</span>:
+</span></span><span style="display:flex;"><span>            console<span style="color:#f92672">.</span>print(<span style="color:#e6db74">&#34;[cyan]Viewing all services is not implemented in this snippet.[/cyan]&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> choice <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;4&#34;</span>:
+</span></span><span style="display:flex;"><span>            console<span style="color:#f92672">.</span>print(<span style="color:#e6db74">&#34;[bold cyan]Goodbye![/bold cyan]&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            console<span style="color:#f92672">.</span>print(<span style="color:#e6db74">&#34;[bold red]Invalid choice. Please try again.[/bold red]&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    main_menu()
+</span></span></code></pre></div><hr>
+<h2 id="running-the-application">Running the Application<a href="#running-the-application" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ol>
+<li>
+<p>Save the script as <code>crusvault.py</code>.</p>
+</li>
+<li>
+<p>Run the script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python crusvault.py
+</span></span></code></pre></div></li>
+<li>
+<p>Follow the interactive prompts to manage your passwords.</p>
+</li>
+</ol>
+<hr>
+<h2 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>CRUSVAULT is a simple yet powerful example of how Python can be used to create secure and interactive applications. With proper encryption techniques and a user-friendly interface, you can manage your passwords efficiently. Happy coding!</p>
+<hr>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+    
+    
+      <a href="/posts/blog-15-bash-commands-cheat-sheet/" class="button inline next">
+        15. Bash Commands
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+
+
+
+
+
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://github.com/CRUSVEDER">Crusveder</a></span>
+    
+     
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
