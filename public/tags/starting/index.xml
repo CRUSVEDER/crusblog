@@ -228,11 +228,11 @@
     </item>
     
     <item>
-      <title>To-Do List</title>
-      <link>/posts/to-do-list/</link>
+      <title>0. To-Do List</title>
+      <link>/posts/blog-0-to-do-list/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/to-do-list/</guid>
+      <guid>/posts/blog-0-to-do-list/</guid>
       <description>&lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; google cs crtification&lt;/li&gt;

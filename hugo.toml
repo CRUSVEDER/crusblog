@@ -29,7 +29,7 @@ paginate = 10 #number of pages or posts per page
 
   # set post to show the last updated
   # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = true
+  showLastUpdated = false
 
   # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
   updatedDatePrefix = "Updated"
@@ -60,9 +60,9 @@ paginate = 10 #number of pages or posts per page
 
     [languages.en.params]
       subtitle = "A simple, retro theme for Hugo"
-      owner = "crusveder"
+      owner = "Crusveder"
       keywords = "Cybersecurity, AI, Gaming, Crusblog "
-      copyright = "crus"
+      copyright = "Crusveder"
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
