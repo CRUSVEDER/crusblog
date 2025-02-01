@@ -1,8 +1,11 @@
 ---
 title: 18.How to Run Ai locally on Your Pc
-date: 
+date: 2025-01-25
 draft: 
-tags: 
+tags:
+  - AIML
+  - basic
+  - setup
 Toc: true
 ---
 ---
@@ -103,15 +106,6 @@ Fine-tuning lets you adapt a model to your specific tasks. For example, you coul
 - **LangChain**: Build AI workflows (e.g., connect Ollama to a PDF parser).  
 - **Docker**: Containerize your models for deployment.  
 - **Ollama API**: Use `http://localhost:11434` to integrate with apps like Obsidian or VS Code.  
-
----
-
-### **Final Thoughts**  
-Running AI locally isn’t just for tech wizards. Tools like Ollama democratize access to powerful models, letting you experiment without limits. Whether you’re automating tasks, analyzing data, or just having fun, the key is to **start simple** and iterate.  
-
-**Pro Tip**: Join the [Ollama Community](https://ollama.ai/community) to share models and troubleshoot.  
-
-Now go forth and make that AI sing show tunes, write your emails, or whatever else you dream up! 🚀  
 
 ---
 

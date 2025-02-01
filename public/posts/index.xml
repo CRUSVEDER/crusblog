@@ -6,7 +6,231 @@
     <description>Recent content in Posts on Crusblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>18.How to Run Ai locally on Your Pc</title>
+      <link>/posts/blog-18-running-ai-on-your-local-pc-and-finetune-it/</link>
+      <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/blog-18-running-ai-on-your-local-pc-and-finetune-it/</guid>
+      <description>&lt;hr&gt;
+&lt;h3 id=&#34;why-run-ai-locally&#34;&gt;&lt;strong&gt;Why Run AI Locally?&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Privacy&lt;/strong&gt;: Your data stays on your machine.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cost&lt;/strong&gt;: No API fees or subscriptions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Customization&lt;/strong&gt;: Tweak models to solve your unique problems.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Offline Access&lt;/strong&gt;: Use AI even without an internet connection.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;step-1-installing-ollama&#34;&gt;&lt;strong&gt;Step 1: Installing Ollama&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Ollama works on Windows, macOS, and Linux. Here’s how to set it up:&lt;/p&gt;
+&lt;h4 id=&#34;for-windows-preview&#34;&gt;&lt;strong&gt;For Windows (Preview)&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the &lt;a href=&#34;https://ollama.com/download&#34;&gt;Ollama Windows installer&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Run the &lt;code&gt;.exe&lt;/code&gt; file and follow the prompts.&lt;/li&gt;
+&lt;li&gt;Open PowerShell or Command Prompt and test with &lt;code&gt;ollama --version&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;for-macoslinux&#34;&gt;&lt;strong&gt;For macOS/Linux&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Terminal and run this command:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -fsSL https://ollama.ai/install.sh | sh  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Verify the install: &lt;code&gt;ollama --version&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;step-2-running-your-first-ai-model&#34;&gt;&lt;strong&gt;Step 2: Running Your First AI Model&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Ollama has a library of pre-trained models. Let’s start with &lt;strong&gt;Llama 2&lt;/strong&gt; (a popular open-source model by Meta):&lt;/p&gt;</description>
+      <content>&lt;hr&gt;
+&lt;h3 id=&#34;why-run-ai-locally&#34;&gt;&lt;strong&gt;Why Run AI Locally?&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Privacy&lt;/strong&gt;: Your data stays on your machine.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cost&lt;/strong&gt;: No API fees or subscriptions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Customization&lt;/strong&gt;: Tweak models to solve your unique problems.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Offline Access&lt;/strong&gt;: Use AI even without an internet connection.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;step-1-installing-ollama&#34;&gt;&lt;strong&gt;Step 1: Installing Ollama&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Ollama works on Windows, macOS, and Linux. Here’s how to set it up:&lt;/p&gt;
+&lt;h4 id=&#34;for-windows-preview&#34;&gt;&lt;strong&gt;For Windows (Preview)&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the &lt;a href=&#34;https://ollama.com/download&#34;&gt;Ollama Windows installer&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Run the &lt;code&gt;.exe&lt;/code&gt; file and follow the prompts.&lt;/li&gt;
+&lt;li&gt;Open PowerShell or Command Prompt and test with &lt;code&gt;ollama --version&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;for-macoslinux&#34;&gt;&lt;strong&gt;For macOS/Linux&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Terminal and run this command:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -fsSL https://ollama.ai/install.sh | sh  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Verify the install: &lt;code&gt;ollama --version&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;step-2-running-your-first-ai-model&#34;&gt;&lt;strong&gt;Step 2: Running Your First AI Model&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Ollama has a library of pre-trained models. Let’s start with &lt;strong&gt;Llama 2&lt;/strong&gt; (a popular open-source model by Meta):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;In your terminal, run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama run llama2  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;(This downloads the model—it’s ~4GB, so grab a coffee.)&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Chat with the model&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; Write a haiku about pizza  
+Crispy crust whispers,  
+Melting cheese hugs savory dreams—  
+Slice of heaven’s warmth.  
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Other models to try&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mistral&lt;/code&gt;: Fast and lightweight.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;codellama&lt;/code&gt;: Specializes in code generation.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;phi3&lt;/code&gt;: Microsoft’s small but powerful model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;step-3-fine-tuning-your-model&#34;&gt;&lt;strong&gt;Step 3: Fine-Tuning Your Model&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Fine-tuning lets you adapt a model to your specific tasks. For example, you could train it to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write in your brand’s voice.&lt;/li&gt;
+&lt;li&gt;Summarize medical reports.&lt;/li&gt;
+&lt;li&gt;Generate Python code for data analysis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-to-fine-tune-with-ollama&#34;&gt;&lt;strong&gt;How to Fine-Tune with Ollama&lt;/strong&gt;:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Prepare Your Data&lt;/strong&gt;:&lt;br&gt;
+Create a &lt;code&gt;.txt&lt;/code&gt; file with examples. For instance, if training a story-writing AI:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Prompt]: Write a fantasy story about a robot knight  
+[Response]: Sir Clank-a-Lot, a rusted but valiant robot, embarked on a quest to…  
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Create a Modelfile&lt;/strong&gt;:&lt;br&gt;
+This configures the base model and your training data. Save this as &lt;code&gt;modelfile.txt&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;FROM llama2  
+SYSTEM &amp;#34;&amp;#34;&amp;#34;You are a creative fantasy writer.&amp;#34;&amp;#34;&amp;#34;  
+MESSAGE user &amp;#34;Write a story&amp;#34;  
+MESSAGE assistant &amp;#34;Sir Clank-a-Lot...&amp;#34;  
+# Add more examples here  
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Train the Model&lt;/strong&gt;:&lt;br&gt;
+Run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama create my-custom-model -f modelfile.txt  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Use Your Custom Model&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama run my-custom-model  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;tips-for-effective-fine-tuning&#34;&gt;&lt;strong&gt;Tips for Effective Fine-Tuning&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Start Small&lt;/strong&gt;: Fine-tune with 10-20 examples first.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quality Over Quantity&lt;/strong&gt;: Use clear, diverse prompts/responses.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Iterate&lt;/strong&gt;: Test the model, find weaknesses, and add more data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;advanced-integrate-ollama-with-other-tools&#34;&gt;&lt;strong&gt;Advanced: Integrate Ollama with Other Tools&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;LangChain&lt;/strong&gt;: Build AI workflows (e.g., connect Ollama to a PDF parser).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Docker&lt;/strong&gt;: Containerize your models for deployment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ollama API&lt;/strong&gt;: Use &lt;code&gt;http://localhost:11434&lt;/code&gt; to integrate with apps like Obsidian or VS Code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;running-deepseek-r1-locally-with-ollama&#34;&gt;&lt;strong&gt;Running DeepSeek-R1 Locally with Ollama&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;DeepSeek-R1 is a standout model for technical tasks like code generation, debugging, and mathematical problem-solving. Here’s how to run and fine-tune it using Ollama:&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;step-2-updated-running-models-like-deepseek-r1&#34;&gt;&lt;strong&gt;Step 2 (Updated): Running Models like DeepSeek-R1&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;After installing Ollama, you can pull and run DeepSeek-R1 with ease:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Download DeepSeek-R1&lt;/strong&gt;:&lt;br&gt;
+Open your terminal and run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama run deepseek-r1  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; If the model isn’t listed publicly yet, you might need to pull it directly using its full name (e.g., &lt;code&gt;ollama run deepseek-ai/deepseek-r1&lt;/code&gt;). Check the &lt;a href=&#34;https://ollama.ai/library&#34;&gt;Ollama model library&lt;/a&gt; for exact syntax.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Test Its Coding Skills&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; Write a Python function to calculate Fibonacci numbers recursively  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The model should generate:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fibonacci&lt;/span&gt;(n):  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; n &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; n  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; fibonacci(n&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; fibonacci(n&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Why DeepSeek-R1?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Excels at &lt;strong&gt;code generation&lt;/strong&gt; (Python, JavaScript, etc.).&lt;/li&gt;
+&lt;li&gt;Strong at &lt;strong&gt;math/logic problems&lt;/strong&gt; (e.g., SAT questions, algebra).&lt;/li&gt;
+&lt;li&gt;Compact size compared to giants like GPT-4, making it ideal for local use.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;step-3-updated-fine-tuning-deepseek-r1&#34;&gt;&lt;strong&gt;Step 3 (Updated): Fine-Tuning DeepSeek-R1&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Let’s say you want to specialize DeepSeek-R1 for your company’s internal APIs or a niche programming language. Here’s how:&lt;/p&gt;
+&lt;h4 id=&#34;example-training-it-for-internal-code-conventions&#34;&gt;&lt;strong&gt;Example: Training It for Internal Code Conventions&lt;/strong&gt;&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Prepare a Dataset&lt;/strong&gt;:&lt;br&gt;
+Create a &lt;code&gt;deepseek-data.txt&lt;/code&gt; file with examples of code snippets paired with prompts:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Prompt]: Write a Python function to connect to our internal database API  
+[Response]: def connect_db(api_key):  
+                from internal_db import Client  
+                return Client(api_key, timeout=30)  
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Create a Modelfile&lt;/strong&gt;:&lt;br&gt;
+Save this as &lt;code&gt;deepseek-modelfile.txt&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;FROM deepseek-r1  
+SYSTEM &amp;#34;&amp;#34;&amp;#34;You are a senior Python developer for Acme Corp. Follow PEP8 and use internal libraries.&amp;#34;&amp;#34;&amp;#34;  
+MESSAGE user &amp;#34;Write a Python function to connect to our internal database API&amp;#34;  
+MESSAGE assistant &amp;#34;def connect_db(api_key):...&amp;#34;  
+# Add more coding examples  
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Train Your Custom Model&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama create acme-coder -f deepseek-modelfile.txt  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Run and Test&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama run acme-coder  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; How &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt; I fetch user data from the database?  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The model should now generate code using your company’s conventions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;tips-for-fine-tuning-deepseek-r1&#34;&gt;&lt;strong&gt;Tips for Fine-Tuning DeepSeek-R1&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Focus on Code Structure&lt;/strong&gt;: Provide examples with clear input/output patterns.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Include Error Handling&lt;/strong&gt;: Train it to handle edge cases (e.g., &lt;code&gt;try/except&lt;/code&gt; blocks).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Small Batches&lt;/strong&gt;: Start with 10-15 high-quality code examples to avoid overload.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;advanced-use-cases-for-deepseek-r1&#34;&gt;&lt;strong&gt;Advanced Use Cases for DeepSeek-R1&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Documentation Generation&lt;/strong&gt;:&lt;br&gt;
+Fine-tune it to turn code comments into Markdown docs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Math Tutoring&lt;/strong&gt;:&lt;br&gt;
+Train it to solve and explain calculus problems step-by-step.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CI/CD Automation&lt;/strong&gt;:&lt;br&gt;
+Integrate with GitHub Actions to review pull requests locally.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;performance-notes&#34;&gt;&lt;strong&gt;Performance Notes&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hardware Requirements&lt;/strong&gt;: DeepSeek-R1 runs well on 16GB RAM, but GPU acceleration (e.g., NVIDIA) speeds up inference.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quantized Versions&lt;/strong&gt;: Look for &lt;code&gt;deepseek-r1:4b-q4&lt;/code&gt; for lighter-weight usage on low-end machines.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;final-thoughts&#34;&gt;&lt;strong&gt;Final Thoughts&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;DeepSeek-R1 turns your local machine into a coding powerhouse. Whether you’re automating workflows, tutoring yourself in math, or enforcing code standards, Ollama’s simplicity lets you experiment without cloud costs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pro Tip&lt;/strong&gt;: Combine DeepSeek-R1 with Ollama’s API (&lt;code&gt;http://localhost:11434&lt;/code&gt;) and tools like &lt;strong&gt;VS Code&lt;/strong&gt; or &lt;strong&gt;PyCharm&lt;/strong&gt; for a seamless coding assistant.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[Crusveder]&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>17. Developing a Vulnerability Scanner</title>
       <link>/posts/blog-17-network-vulnerability-scanner/</link>
@@ -4084,235 +4308,6 @@ For an Aggravate reaction, trigger Quicken and follow up with a strong Electro a
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; reports on OpenVAS, Nessus&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>18.How to Run Ai locally on Your Pc</title>
-      <link>/posts/blog-18-running-ai-on-your-local-pc-and-finetune-it/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/blog-18-running-ai-on-your-local-pc-and-finetune-it/</guid>
-      <description>&lt;hr&gt;
-&lt;h3 id=&#34;why-run-ai-locally&#34;&gt;&lt;strong&gt;Why Run AI Locally?&lt;/strong&gt;&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Privacy&lt;/strong&gt;: Your data stays on your machine.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cost&lt;/strong&gt;: No API fees or subscriptions.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Customization&lt;/strong&gt;: Tweak models to solve your unique problems.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Offline Access&lt;/strong&gt;: Use AI even without an internet connection.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;step-1-installing-ollama&#34;&gt;&lt;strong&gt;Step 1: Installing Ollama&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Ollama works on Windows, macOS, and Linux. Here’s how to set it up:&lt;/p&gt;
-&lt;h4 id=&#34;for-windows-preview&#34;&gt;&lt;strong&gt;For Windows (Preview)&lt;/strong&gt;:&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Download the &lt;a href=&#34;https://ollama.com/download&#34;&gt;Ollama Windows installer&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Run the &lt;code&gt;.exe&lt;/code&gt; file and follow the prompts.&lt;/li&gt;
-&lt;li&gt;Open PowerShell or Command Prompt and test with &lt;code&gt;ollama --version&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;for-macoslinux&#34;&gt;&lt;strong&gt;For macOS/Linux&lt;/strong&gt;:&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Terminal and run this command:
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -fsSL https://ollama.ai/install.sh | sh  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;Verify the install: &lt;code&gt;ollama --version&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;step-2-running-your-first-ai-model&#34;&gt;&lt;strong&gt;Step 2: Running Your First AI Model&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Ollama has a library of pre-trained models. Let’s start with &lt;strong&gt;Llama 2&lt;/strong&gt; (a popular open-source model by Meta):&lt;/p&gt;</description>
-      <content>&lt;hr&gt;
-&lt;h3 id=&#34;why-run-ai-locally&#34;&gt;&lt;strong&gt;Why Run AI Locally?&lt;/strong&gt;&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Privacy&lt;/strong&gt;: Your data stays on your machine.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cost&lt;/strong&gt;: No API fees or subscriptions.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Customization&lt;/strong&gt;: Tweak models to solve your unique problems.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Offline Access&lt;/strong&gt;: Use AI even without an internet connection.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;step-1-installing-ollama&#34;&gt;&lt;strong&gt;Step 1: Installing Ollama&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Ollama works on Windows, macOS, and Linux. Here’s how to set it up:&lt;/p&gt;
-&lt;h4 id=&#34;for-windows-preview&#34;&gt;&lt;strong&gt;For Windows (Preview)&lt;/strong&gt;:&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Download the &lt;a href=&#34;https://ollama.com/download&#34;&gt;Ollama Windows installer&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Run the &lt;code&gt;.exe&lt;/code&gt; file and follow the prompts.&lt;/li&gt;
-&lt;li&gt;Open PowerShell or Command Prompt and test with &lt;code&gt;ollama --version&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;for-macoslinux&#34;&gt;&lt;strong&gt;For macOS/Linux&lt;/strong&gt;:&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Terminal and run this command:
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -fsSL https://ollama.ai/install.sh | sh  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;Verify the install: &lt;code&gt;ollama --version&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;step-2-running-your-first-ai-model&#34;&gt;&lt;strong&gt;Step 2: Running Your First AI Model&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Ollama has a library of pre-trained models. Let’s start with &lt;strong&gt;Llama 2&lt;/strong&gt; (a popular open-source model by Meta):&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;In your terminal, run:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama run llama2  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;(This downloads the model—it’s ~4GB, so grab a coffee.)&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Chat with the model&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; Write a haiku about pizza  
-Crispy crust whispers,  
-Melting cheese hugs savory dreams—  
-Slice of heaven’s warmth.  
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Other models to try&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;mistral&lt;/code&gt;: Fast and lightweight.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;codellama&lt;/code&gt;: Specializes in code generation.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;phi3&lt;/code&gt;: Microsoft’s small but powerful model.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;step-3-fine-tuning-your-model&#34;&gt;&lt;strong&gt;Step 3: Fine-Tuning Your Model&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Fine-tuning lets you adapt a model to your specific tasks. For example, you could train it to:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Write in your brand’s voice.&lt;/li&gt;
-&lt;li&gt;Summarize medical reports.&lt;/li&gt;
-&lt;li&gt;Generate Python code for data analysis.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;how-to-fine-tune-with-ollama&#34;&gt;&lt;strong&gt;How to Fine-Tune with Ollama&lt;/strong&gt;:&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Prepare Your Data&lt;/strong&gt;:&lt;br&gt;
-Create a &lt;code&gt;.txt&lt;/code&gt; file with examples. For instance, if training a story-writing AI:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Prompt]: Write a fantasy story about a robot knight  
-[Response]: Sir Clank-a-Lot, a rusted but valiant robot, embarked on a quest to…  
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Create a Modelfile&lt;/strong&gt;:&lt;br&gt;
-This configures the base model and your training data. Save this as &lt;code&gt;modelfile.txt&lt;/code&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;FROM llama2  
-SYSTEM &amp;#34;&amp;#34;&amp;#34;You are a creative fantasy writer.&amp;#34;&amp;#34;&amp;#34;  
-MESSAGE user &amp;#34;Write a story&amp;#34;  
-MESSAGE assistant &amp;#34;Sir Clank-a-Lot...&amp;#34;  
-# Add more examples here  
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Train the Model&lt;/strong&gt;:&lt;br&gt;
-Run:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama create my-custom-model -f modelfile.txt  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Use Your Custom Model&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama run my-custom-model  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;tips-for-effective-fine-tuning&#34;&gt;&lt;strong&gt;Tips for Effective Fine-Tuning&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Start Small&lt;/strong&gt;: Fine-tune with 10-20 examples first.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Quality Over Quantity&lt;/strong&gt;: Use clear, diverse prompts/responses.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Iterate&lt;/strong&gt;: Test the model, find weaknesses, and add more data.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;advanced-integrate-ollama-with-other-tools&#34;&gt;&lt;strong&gt;Advanced: Integrate Ollama with Other Tools&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;LangChain&lt;/strong&gt;: Build AI workflows (e.g., connect Ollama to a PDF parser).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Docker&lt;/strong&gt;: Containerize your models for deployment.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Ollama API&lt;/strong&gt;: Use &lt;code&gt;http://localhost:11434&lt;/code&gt; to integrate with apps like Obsidian or VS Code.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;final-thoughts&#34;&gt;&lt;strong&gt;Final Thoughts&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Running AI locally isn’t just for tech wizards. Tools like Ollama democratize access to powerful models, letting you experiment without limits. Whether you’re automating tasks, analyzing data, or just having fun, the key is to &lt;strong&gt;start simple&lt;/strong&gt; and iterate.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Pro Tip&lt;/strong&gt;: Join the &lt;a href=&#34;https://ollama.ai/community&#34;&gt;Ollama Community&lt;/a&gt; to share models and troubleshoot.&lt;/p&gt;
-&lt;p&gt;Now go forth and make that AI sing show tunes, write your emails, or whatever else you dream up! 🚀&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;running-deepseek-r1-locally-with-ollama&#34;&gt;&lt;strong&gt;Running DeepSeek-R1 Locally with Ollama&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;DeepSeek-R1 is a standout model for technical tasks like code generation, debugging, and mathematical problem-solving. Here’s how to run and fine-tune it using Ollama:&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;step-2-updated-running-models-like-deepseek-r1&#34;&gt;&lt;strong&gt;Step 2 (Updated): Running Models like DeepSeek-R1&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;After installing Ollama, you can pull and run DeepSeek-R1 with ease:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Download DeepSeek-R1&lt;/strong&gt;:&lt;br&gt;
-Open your terminal and run:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama run deepseek-r1  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; If the model isn’t listed publicly yet, you might need to pull it directly using its full name (e.g., &lt;code&gt;ollama run deepseek-ai/deepseek-r1&lt;/code&gt;). Check the &lt;a href=&#34;https://ollama.ai/library&#34;&gt;Ollama model library&lt;/a&gt; for exact syntax.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Test Its Coding Skills&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; Write a Python function to calculate Fibonacci numbers recursively  
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The model should generate:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fibonacci&lt;/span&gt;(n):  
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; n &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:  
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; n  
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:  
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; fibonacci(n&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; fibonacci(n&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Why DeepSeek-R1?&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Excels at &lt;strong&gt;code generation&lt;/strong&gt; (Python, JavaScript, etc.).&lt;/li&gt;
-&lt;li&gt;Strong at &lt;strong&gt;math/logic problems&lt;/strong&gt; (e.g., SAT questions, algebra).&lt;/li&gt;
-&lt;li&gt;Compact size compared to giants like GPT-4, making it ideal for local use.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;step-3-updated-fine-tuning-deepseek-r1&#34;&gt;&lt;strong&gt;Step 3 (Updated): Fine-Tuning DeepSeek-R1&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Let’s say you want to specialize DeepSeek-R1 for your company’s internal APIs or a niche programming language. Here’s how:&lt;/p&gt;
-&lt;h4 id=&#34;example-training-it-for-internal-code-conventions&#34;&gt;&lt;strong&gt;Example: Training It for Internal Code Conventions&lt;/strong&gt;&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Prepare a Dataset&lt;/strong&gt;:&lt;br&gt;
-Create a &lt;code&gt;deepseek-data.txt&lt;/code&gt; file with examples of code snippets paired with prompts:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Prompt]: Write a Python function to connect to our internal database API  
-[Response]: def connect_db(api_key):  
-                from internal_db import Client  
-                return Client(api_key, timeout=30)  
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Create a Modelfile&lt;/strong&gt;:&lt;br&gt;
-Save this as &lt;code&gt;deepseek-modelfile.txt&lt;/code&gt;:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;FROM deepseek-r1  
-SYSTEM &amp;#34;&amp;#34;&amp;#34;You are a senior Python developer for Acme Corp. Follow PEP8 and use internal libraries.&amp;#34;&amp;#34;&amp;#34;  
-MESSAGE user &amp;#34;Write a Python function to connect to our internal database API&amp;#34;  
-MESSAGE assistant &amp;#34;def connect_db(api_key):...&amp;#34;  
-# Add more coding examples  
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Train Your Custom Model&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama create acme-coder -f deepseek-modelfile.txt  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Run and Test&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ollama run acme-coder  
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; How &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt; I fetch user data from the database?  
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The model should now generate code using your company’s conventions.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;tips-for-fine-tuning-deepseek-r1&#34;&gt;&lt;strong&gt;Tips for Fine-Tuning DeepSeek-R1&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Focus on Code Structure&lt;/strong&gt;: Provide examples with clear input/output patterns.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Include Error Handling&lt;/strong&gt;: Train it to handle edge cases (e.g., &lt;code&gt;try/except&lt;/code&gt; blocks).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Use Small Batches&lt;/strong&gt;: Start with 10-15 high-quality code examples to avoid overload.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;advanced-use-cases-for-deepseek-r1&#34;&gt;&lt;strong&gt;Advanced Use Cases for DeepSeek-R1&lt;/strong&gt;&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Documentation Generation&lt;/strong&gt;:&lt;br&gt;
-Fine-tune it to turn code comments into Markdown docs.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Math Tutoring&lt;/strong&gt;:&lt;br&gt;
-Train it to solve and explain calculus problems step-by-step.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;CI/CD Automation&lt;/strong&gt;:&lt;br&gt;
-Integrate with GitHub Actions to review pull requests locally.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;performance-notes&#34;&gt;&lt;strong&gt;Performance Notes&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Hardware Requirements&lt;/strong&gt;: DeepSeek-R1 runs well on 16GB RAM, but GPU acceleration (e.g., NVIDIA) speeds up inference.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Quantized Versions&lt;/strong&gt;: Look for &lt;code&gt;deepseek-r1:4b-q4&lt;/code&gt; for lighter-weight usage on low-end machines.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;final-thoughts-1&#34;&gt;&lt;strong&gt;Final Thoughts&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;DeepSeek-R1 turns your local machine into a coding powerhouse. Whether you’re automating workflows, tutoring yourself in math, or enforcing code standards, Ollama’s simplicity lets you experiment without cloud costs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Pro Tip&lt;/strong&gt;: Combine DeepSeek-R1 with Ollama’s API (&lt;code&gt;http://localhost:11434&lt;/code&gt;) and tools like &lt;strong&gt;VS Code&lt;/strong&gt; or &lt;strong&gt;PyCharm&lt;/strong&gt; for a seamless coding assistant.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;[Crusveder]&lt;/p&gt;
 </content>
     </item>
     
