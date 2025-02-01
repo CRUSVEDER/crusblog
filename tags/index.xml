@@ -6,13 +6,13 @@
     <description>Recent content in Tags on Crusblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Project</title>
-      <link>/tags/project/</link>
-      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <title>AIML</title>
+      <link>/tags/aiml/</link>
+      <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>/tags/project/</guid>
+      <guid>/tags/aiml/</guid>
       <description></description>
       <content></content>
     </item>
@@ -20,9 +20,29 @@
     <item>
       <title>Basic</title>
       <link>/tags/basic/</link>
-      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>/tags/basic/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Setup</title>
+      <link>/tags/setup/</link>
+      <pubDate>Sat, 25 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/setup/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>/tags/project/</link>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/project/</guid>
       <description></description>
       <content></content>
     </item>
@@ -58,31 +78,11 @@
     </item>
     
     <item>
-      <title>Setup</title>
-      <link>/tags/setup/</link>
-      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/setup/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
       <title>Starting</title>
       <link>/tags/starting/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>/tags/starting/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>AIML</title>
-      <link>/tags/aiml/</link>
-      <pubDate>Mon, 02 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/aiml/</guid>
       <description></description>
       <content></content>
     </item>
