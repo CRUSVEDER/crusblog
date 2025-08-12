@@ -108,7 +108,7 @@
 <body>
 
 
-<div class="container">
+<div class="container full">
 
   <header class="header">
   <div class="header__inner">
@@ -193,6 +193,182 @@
   <h1>Posts for: #Cybersec</h1>
   
   <div class="posts">
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="/posts/blog-19-nmap-cheat-sheet/"><ol start="19">
+<li>Nmap Cheat Sheet</li>
+</ol>
+</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2025-03-30</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="/tags/cybersec/">cybersec</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <hr>
+<p><strong>Scanning Options</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Option</th>
+          <th>What It Does</th>
+          <th>Example Command</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>10.10.10.0/24</code></td>
+          <td>Specifies the target network range.</td>
+          <td><code>nmap 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-sn</code></td>
+          <td>Skips port scanning.</td>
+          <td><code>nmap -sn 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-Pn</code></td>
+          <td>Disables ICMP Echo Requests (no ping).</td>
+          <td><code>nmap -Pn 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-n</code></td>
+          <td>Avoids DNS resolution.</td>
+          <td><code>nmap -n 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-PE</code></td>
+          <td>Ping scan using ICMP Echo Requests.</td>
+          <td><code>nmap -PE 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>--packet-trace</code></td>
+          <td>Shows detailed packet sending/receiving logs.</td>
+          <td><code>nmap --packet-trace 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>--reason</code></td>
+          <td>Displays the reason for a result.</td>
+          <td><code>nmap --reason 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>--disable-arp-ping</code></td>
+          <td>Disables ARP Ping.</td>
+          <td><code>nmap --disable-arp-ping 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>--top-ports=&lt;num&gt;</code></td>
+          <td>Scans the most common ports.</td>
+          <td><code>nmap --top-ports=100 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-p-</code></td>
+          <td>Scans all ports.</td>
+          <td><code>nmap -p- 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-p22-110</code></td>
+          <td>Scans ports between 22 and 110.</td>
+          <td><code>nmap -p22-110 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-p22,25</code></td>
+          <td>Scans only ports 22 and 25.</td>
+          <td><code>nmap -p22,25 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-F</code></td>
+          <td>Scans top 100 most common ports.</td>
+          <td><code>nmap -F 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-sS</code></td>
+          <td>Performs a TCP SYN scan.</td>
+          <td><code>nmap -sS 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-sA</code></td>
+          <td>Conducts a TCP ACK scan.</td>
+          <td><code>nmap -sA 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-sU</code></td>
+          <td>Runs a UDP scan.</td>
+          <td><code>nmap -sU 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-sV</code></td>
+          <td>Scans service versions.</td>
+          <td><code>nmap -sV 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-sC</code></td>
+          <td>Uses default scripts for scanning.</td>
+          <td><code>nmap -sC 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>--script &lt;script&gt;</code></td>
+          <td>Runs specified scripts during the scan.</td>
+          <td><code>nmap --script http-title 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-O</code></td>
+          <td>Identifies the target’s operating system.</td>
+          <td><code>nmap -O 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-A</code></td>
+          <td>OS, service, and traceroute detection.</td>
+          <td><code>nmap -A 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-D RND:5</code></td>
+          <td>Uses 5 random decoys for the scan.</td>
+          <td><code>nmap -D RND:5 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-e</code></td>
+          <td>Specifies the network interface for scanning.</td>
+          <td><code>nmap -e eth0 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-S 10.10.10.200</code></td>
+          <td>Sets the source IP address.</td>
+          <td><code>nmap -S 10.10.10.200 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>-g</code></td>
+          <td>Specifies the source port.</td>
+          <td><code>nmap -g 80 10.10.10.0/24</code></td>
+      </tr>
+      <tr>
+          <td><code>--dns-server &lt;ns&gt;</code></td>
+          <td>Uses a custom DNS server for resolution.</td>
+          <td><code>nmap --dns-server 8.8.8.8 10.10.10.0/24</code></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Output Options</strong></p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/blog-19-nmap-cheat-sheet/">Read more</a>
+          </div>
+        
+      </article>
     
       <article class="post on-list">
         <h1 class="post-title">
@@ -385,55 +561,6 @@
         
           <div>
             <a class="read-more button inline" href="/posts/blog-5-cyber-atk-cmds/">Read more</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h1 class="post-title">
-          <a href="/posts/blog-4-really-useful-tools/"><ol start="4">
-<li>Really useful AI &amp; CEH tools</li>
-</ol>
-</a>
-        </h1>
-        <div class="post-meta"><time class="post-date">2024-12-02</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="/tags/cybersec/">cybersec</a>&nbsp;
-            
-            #<a href="/tags/aiml/">AIML</a>&nbsp;
-            
-            #<a href="/tags/tips/tricks/">tips/tricks</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <hr>
-<h3 id="ai-tools-for-creativity-and-productivity"><strong>AI Tools for Creativity and Productivity</strong></h3>
-<p><strong>Text to Image</strong>:</p>
-<ul>
-<li><strong>Mind Journey</strong>: A tool that uses AI to transform textual descriptions into detailed, creative images. Ideal for visualizing abstract concepts or creative ideas.</li>
-</ul>
-<p><strong>Text to Music</strong>:</p>
-<ul>
-<li><strong>ChatGPT</strong>: An AI language model that can generate lyrics, suggest melodies, or help with music composition based on text input.</li>
-<li><strong>Uberduck AI</strong>: Specializes in converting text into music or vocal synthesis, offering various styles and voices.</li>
-<li><strong>Suno AI</strong>: A tool for generating music compositions from text prompts, helping artists create background scores or thematic music.</li>
-</ul>
-<p><strong>Text to Presentation</strong>:</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/posts/blog-4-really-useful-tools/">Read more</a>
           </div>
         
       </article>
