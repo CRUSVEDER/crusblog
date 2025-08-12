@@ -3,7 +3,7 @@ languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
 theme = "terminal"
-paginate = 5 #number of pages or posts per page
+paginate = 10 #number of pages or posts per page
 
 [params]
   # dir name of your main content (default is `content/posts`).
@@ -11,7 +11,7 @@ paginate = 5 #number of pages or posts per page
   contentTypeName = "posts"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 5
+  showMenuItems = 6
 
   # show selector to switch language
   showLanguageSelector = false
