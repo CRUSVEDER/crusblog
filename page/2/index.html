@@ -205,13 +205,13 @@
     
       <article class="post on-list">
         <h2 class="post-title">
-          <a href="/posts/blog-14-windows-commands-cheat-sheet/"><ol start="14">
-<li>windows command</li>
+          <a href="/posts/blog-9-docker-on-linux/"><ol start="9">
+<li>Docker on Linux</li>
 </ol>
 </a>
         </h2>
 
-        <div class="post-meta"><time class="post-date">2024-12-14</time></div>
+        <div class="post-meta"><time class="post-date">2024-12-07</time></div>
 
         
           <span class="post-tags">
@@ -227,229 +227,27 @@
         <div class="post-content">
           
             <hr>
-<h2 id="directory-navigation">Directory Navigation</h2>
-<ul>
-<li><code>c:</code> - Switch to the C:\ drive.</li>
-<li><code>d:</code> - Switch to the D:\ drive.</li>
-<li><code>CD c:\path\to\my_folder</code> - Change directory to <code>c:\path\to\my_folder</code>.</li>
-<li><code>CD ..</code> - Move to the parent directory.</li>
-<li><code>CD .\new_folder</code> - Move to the folder <code>new_folder</code> in the current directory.</li>
-<li><code>CD /D d:\videos\</code> - Switch to D:\ drive and go to <code>videos</code> folder.</li>
-<li><code>DIR</code> - List files and folders in the current directory.</li>
-<li><code>DIR /A c:\apps\</code> - Show files and folders in <code>c:\apps</code>.</li>
-<li><code>DIR /A:D</code> - Show only folders.</li>
-<li><code>DIR /A:-D</code> - Show only files.</li>
-<li><code>DIR /A:H</code> - Show hidden files and folders.</li>
-<li><code>DIR /O</code> - List files and folders alphabetically.</li>
-<li><code>DIR /O:S</code> - Sort by file size (smallest to largest).</li>
-<li><code>DIR /O:-S</code> - Sort by file size (largest to smallest).</li>
-<li><code>DIR /B</code> - Show only file and folder names.</li>
-<li><code>SORT</code> - Sort input alphabetically.</li>
-<li><code>MOVE c:\f1\text.txt c:\f2</code> - Move <code>text.txt</code> from <code>f1</code> to <code>f2</code>.</li>
-<li><code>MD new_folder</code> - Create a folder named <code>new_folder</code>.</li>
-<li><code>RD new_folder</code> - Remove a folder named <code>new_folder</code>.</li>
-<li><code>TREE</code> - Show directory structure.</li>
-<li><code>ATTRIB +H +S +R myItem</code> - Hide <code>myItem</code>.</li>
-<li><code>ATTRIB -H -S -R myItem</code> - Unhide <code>myItem</code>.</li>
-</ul>
-<hr>
-<h2 id="file-management">File Management</h2>
-<ul>
-<li><code>COPY text.txt C:\schoolwork</code> - Copy <code>text.txt</code> to <code>C:\schoolwork</code>.</li>
-<li><code>DEL text.txt</code> - Delete <code>text.txt</code>.</li>
-<li><code>REN text.txt script.bat</code> - Rename <code>text.txt</code> to <code>script.bat</code>.</li>
-<li><code>REPLACE .\src\hey.txt .\dest</code> - Replace <code>hey.txt</code> in <code>dest</code> with the one in <code>src</code>.</li>
-<li><code>XCOPY /S folder1 folder2</code> - Copy <code>folder1</code> and subfolders to <code>folder2</code>.</li>
-<li><code>ROBOCOPY</code> - Copy files/directories with advanced options.</li>
-<li><code>EXPAND gameData.cab</code> - Decompress <code>gameData.cab</code>.</li>
-<li><code>FC file1.ext file2.ext</code> - Compare contents of two files.</li>
-<li><code>FIND &quot;python&quot; run.bat</code> - Find lines containing <code>python</code> in <code>run.bat</code>.</li>
-<li><code>PRINT resume.txt</code> - Print <code>resume.txt</code>.</li>
-<li><code>TYPE test.txt</code> - Display <code>test.txt</code> contents.</li>
-<li><code>MORE</code> - Display file contents one screen at a time.</li>
-<li><code>NOTEPAD filename.ext</code> - Open <code>filename.ext</code> in Notepad.</li>
-</ul>
-<hr>
-<h2 id="disk-management">Disk Management</h2>
-<ul>
-<li><code>CHKDSK</code> - Check and repair disk issues.</li>
-<li><code>CIPHER /E folder</code> - Encrypt <code>folder</code>.</li>
-<li><code>CIPHER /D file</code> - Decrypt <code>file</code>.</li>
-<li><code>DEFRAG</code> - Defragment a disk.</li>
-<li><code>CHKNTFS</code> - Modify disk-checking on startup.</li>
-<li><code>FORMAT</code> - Format a disk.</li>
-<li><code>DISKPART</code> - Manage disk partitions.</li>
-<li><code>LABEL d:x</code> - Rename D:\ drive to X:.</li>
-<li><code>RECOVER d:\data.dat</code> - Recover <code>data.dat</code> from D:.</li>
-<li><code>VOL</code> - Show disk volume label and serial number.</li>
-<li><code>SFC /SCANNOW</code> - Scan and update protected system files.</li>
-</ul>
-<hr>
-<h2 id="system-info--networking">System Info &amp; Networking</h2>
-<ul>
-<li><code>VER</code> - Show OS version.</li>
-<li><code>SYSTEMINFO</code> - Show system configuration.</li>
-<li><code>HOSTNAME</code> - Show computer&rsquo;s hostname.</li>
-<li><code>DATE</code> - Display/set system date.</li>
-<li><code>IPCONFIG</code> - Show IP configuration.</li>
-<li><code>PING google.com</code> - Check connectivity to <code>google.com</code>.</li>
-<li><code>PATHPING</code> - Trace route with latency and packet loss.</li>
-<li><code>TRACERT</code> - Trace route to a host.</li>
-<li><code>NET</code> - Access network services.</li>
-<li><code>NETSTAT</code> - Show network connections and stats.</li>
-<li><code>NSLOOKUP</code> - Look up IP addresses.</li>
-<li><code>ROUTE</code> - Manage routing tables.</li>
-<li><code>GETMAC</code> - Show MAC addresses.</li>
-</ul>
-<hr>
-<h2 id="process-management">Process Management</h2>
-<ul>
-<li><code>SCHTASKS</code> - Create/edit scheduled tasks.</li>
-<li><code>SET</code> - List environment variables.</li>
-<li><code>PATH</code> - Display or modify the <code>PATH</code> environment variable.</li>
-<li><code>SHUTDOWN /R</code> - Restart the computer.</li>
-<li><code>SHUTDOWN /S /T 60</code> - Shut down in 60 seconds.</li>
-<li><code>TASKLIST</code> - List running tasks.</li>
-<li><code>TASKKILL /IM &quot;process_name&quot;</code> - Terminate tasks by name.</li>
-<li><code>TASKKILL /PID process_id</code> - Terminate tasks by process ID.</li>
-<li><code>REGEDIT</code> - Open Registry Editor.</li>
-<li><code>RUNAS /USER:username program</code> - Run a program as another user.</li>
-<li><code>POWERSHELL</code> - Open a PowerShell instance.</li>
-</ul>
-<hr>
-<h2 id="batch-scripting">Batch Scripting</h2>
-<ul>
-<li><code>REM</code> - Add a single-line comment.</li>
-<li><code>GOTO</code> - Jump to a labeled section.</li>
-<li><code>SET /A var=expression</code> - Perform arithmetic operations.</li>
-<li><code>TIMEOUT seconds</code> - Pause for a specified time.</li>
-<li><code>PAUSE</code> - Wait for user input.</li>
-<li><code>CHOICE</code> - Prompt for user selection.</li>
-<li><code>CLS</code> - Clear the screen.</li>
-<li><code>COLOR</code> - Set console colors.</li>
-<li><code>ECHO</code> - Display text.</li>
-<li><code>HELP</code> - Get help for a command.</li>
-<li><code>PROMPT</code> - Change the command prompt appearance.</li>
-<li><code>START</code> - Open a file or program in a new window.</li>
-<li><code>TITLE</code> - Set the console window title.</li>
-<li><code>EXIT</code> - Close the command prompt.</li>
-</ul>
-<hr>
-<h2 id="flow-control">Flow Control</h2>
-<ul>
-<li><code>IF condition command</code> - Execute a command if the condition is true.</li>
-<li><code>IF condition (command1) ELSE (command2)</code> - Execute one of two commands based on a condition.</li>
-<li><code>:label</code> - Define a marker for loops.</li>
-<li><code>GOTO label</code> - Jump to a marker.</li>
-</ul>
-<hr>
-<h2 id="shortcut-keys">Shortcut Keys</h2>
-<ul>
-<li><strong>Tab</strong> - Autocomplete commands and paths.</li>
-<li><strong>Ctrl+F</strong> - Search within the console.</li>
-<li><strong>F1, F3, F5, F8</strong> - Recall previous commands.</li>
-<li><strong>F7</strong> - Display command history.</li>
-<li><strong>F9</strong> - Execute a specific command from history.</li>
-</ul>
-<hr>
-<h2 id="1-line-common-commands">1 Line Common Commands</h2>
-<h3 id="files-and-folders-management">Files and Folders Management</h3>
-<ul>
-<li><strong>COPY</strong> - Copies files to another location</li>
-<li><strong>DIR</strong> – Displays files and folders in current directory</li>
-<li><strong>DEL or ERASE</strong> - Deletes files</li>
-<li><strong>EDIT</strong> - Starts file editor</li>
-<li><strong>CD</strong> - Changes directory</li>
-<li><strong>EXPAND</strong> - Decompresses compressed files</li>
-<li><strong>FC</strong> - Compares files and shows the differences between them</li>
-<li><strong>FIND</strong> - Finds a text string in the file</li>
-<li><strong>MD or MAKEDIR</strong> - Creates a folder</li>
-<li><strong>MOVE</strong> - Moves files from one folder to another</li>
-<li><strong>PRINT</strong> - Prints out the text file contents</li>
-<li><strong>RD or RMDIR</strong> - Deletes a folder</li>
-<li><strong>REN or RENAME</strong> - Renames a file or folder</li>
-<li><strong>REPLACE</strong> - Replaces files in one directory with files of the same name in another directory (overwrite)</li>
-<li><strong>ROBOCOPY</strong> - Uses an advanced tool to copy files and directories</li>
-<li><strong>TREE</strong> - Shows directory structure of a disk or folder</li>
-<li><strong>TYPE</strong> - Displays the contents of text files</li>
-<li><strong>OPENFILES</strong> – Manages opened local or network files</li>
-<li><strong>XCOPY</strong> - Copies files and directory trees</li>
-</ul>
-<h3 id="applications-and-processes">Applications and Processes</h3>
-<ul>
-<li><strong>SCHTASKS</strong> - Executes a command or start a scheduled application (Task Scheduler)</li>
-<li><strong>SHUTDOWN</strong> - Shutdowns or reboots your computer</li>
-<li><strong>TASKLIST</strong> - Lists the tasks being performed</li>
-<li><strong>TASKKILL</strong> - Stops or halts a task (to stop a task you use a PID which you can find out from TASKLIST)</li>
-<li><strong>REG</strong> – Starts registry editor</li>
-<li><strong>RUNAS</strong> - Launches the task as another user</li>
-</ul>
-<h3 id="disks-management">Disks Management</h3>
-<ul>
-<li><strong>CHKDISK</strong> - Checks disk and shows statistics</li>
-<li><strong>DEFRAG</strong> – Starts disk defragmentation</li>
-<li><strong>CHKNTFS</strong> - Displays or changes execution of disk check at boot</li>
-<li><strong>COMPACT</strong> - Displays and change the compression of files in NTFS partitions</li>
-<li><strong>CONVERT</strong> - Converts FAT disk volume to NTFS</li>
-<li><strong>DISKPART</strong> - Displays and adjusts disk partition properties</li>
-<li><strong>FORMAT</strong> - Formats the disk</li>
-<li><strong>FSUTIL</strong> - Displays and configures file system properties</li>
-<li><strong>LABEL</strong> - Creates, changes, or deletes a disk volume label</li>
-<li><strong>RECOVER</strong> - Recovers data from a bad or damaged disk</li>
-<li><strong>VOL</strong> - Displays volume label and serial number for the disk</li>
-</ul>
-<h3 id="system-information">System Information</h3>
-<ul>
-<li><strong>DATE</strong> - Outputs or sets the current date</li>
-<li><strong>TIME</strong> - Displays or sets the system time</li>
-<li><strong>DRIVERQUERY</strong> - Displays the current state and properties of the device driver</li>
-<li><strong>HOSTNAME</strong> - Displays name of the computer</li>
-<li><strong>SYSTEMINFO</strong> - Shows configuration information about your computer</li>
-<li><strong>VER</strong> - Allows you to view the Windows version</li>
-<li><strong>GPRESULT</strong> – Displays current applied group policies (RSoP)</li>
-<li><strong>GPUPDATE</strong> – Updates group policies</li>
-</ul>
-<h3 id="network">Network</h3>
-<ul>
-<li><strong>IPCONFIG</strong> - Shows information about network interfaces</li>
-<li><strong>PING</strong> – Sends ICMP requests to the target host, checks host availability</li>
-<li><strong>TRACERT</strong> - Finds the path for packets traveling over the network</li>
-<li><strong>NSLOOKUP</strong> - Finds IP address by resource name</li>
-<li><strong>ROUTE</strong> - Displays network route tables</li>
-<li><strong>ARP</strong>- Shows a table with IP addresses converted into physical addresses</li>
-<li><strong>NETSH</strong> – Starts is a network settings control program</li>
-<li><strong>GETMAC</strong> - Shows the MAC address of the network adapter</li>
-<li><strong>TFTP</strong> – Starts TFTP client in console</li>
-</ul>
-<h3 id="command-line-setup">Command Line Setup</h3>
-<ul>
-<li><strong>CLS</strong> - Clears screen</li>
-<li><strong>CMD</strong> - Displays another command prompt</li>
-<li><strong>COLOR</strong> - Sets the text and background color</li>
-<li><strong>PROMPT</strong> - Changes the command line prompt</li>
-<li><strong>TITLE</strong> - Assigns a title for the current session</li>
-<li><strong>HELP</strong> – Launches CMD help</li>
-<li><strong>EXIT</strong> - Exits the command line</li>
-</ul>
+<h3 id="docker-on-linux-and-windows-setting-up-and-running-your-first-container-with-real-life-use-case"><em>Docker on Linux and Windows: Setting Up and Running Your First Container with Real-Life Use Case</em></h3>
+<p>Docker has revolutionized how we deploy and manage applications, offering a consistent environment across various platforms. By creating containers, Docker allows developers and sysadmins to package their applications with all the dependencies they need, ensuring they run smoothly regardless of the environment. Whether you’re on Linux or Windows, setting up Docker and understanding its core concepts will make your life easier. In this blog, we’ll not only go through the installation process on both Linux and Windows but also dive into a real-life use case—deploying a web application using Docker.</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button inline" href="/posts/blog-14-windows-commands-cheat-sheet/">Read more</a>
+            <a class="read-more button inline" href="/posts/blog-9-docker-on-linux/">Read more</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h2 class="post-title">
-          <a href="/posts/blog-13-git-workflow-and-commands-explained/"><ol start="13">
-<li>Git Workflow and Commands Explained</li>
+          <a href="/posts/blog-8-introduction-to-shell-scripting/"><ol start="8">
+<li>Introduction to Shell Scripting</li>
 </ol>
 </a>
         </h2>
 
-        <div class="post-meta"><time class="post-date">2024-12-12</time></div>
+        <div class="post-meta"><time class="post-date">2024-12-06</time></div>
 
         
           <span class="post-tags">
@@ -464,53 +262,33 @@
 
         <div class="post-content">
           
-            <h1 id="git-workflow-and-commands-explained">Git Workflow and Commands Explained</h1>
-<h2 id="introduction">Introduction</h2>
-<p>Git is a <strong>distributed version control system</strong> for version tracking and collaboration. This guide covers essential Git commands and workflows, applicable to any project or file.</p>
-<hr>
-<h2 id="interfaces">Interfaces</h2>
-<ul>
-<li><strong>Command Line</strong>: Fastest and most versatile option.</li>
-<li><strong>GUI Options</strong>:
-<ul>
-<li><strong>GitKraken</strong>: Free for open-source projects.</li>
-<li><strong>Sourcetree</strong>: Free for Windows and macOS.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="initial-setup">Initial Setup</h2>
-<h3 id="check-git-version">Check Git Version</h3>
-<p>Verify the Git installation:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git --version
-</span></span></code></pre></div><h3 id="git-bash">Git Bash</h3>
-<p>Emulates a Linux terminal environment for Windows users, making it easier to use Git commands.</p>
+            <hr>
+<h1 id="introduction-to-shell-scripting-automating-daily-tasks-bash-and-powershell-edition">Introduction to Shell Scripting: Automating Daily Tasks (Bash and PowerShell Edition)</h1>
+<p>Alright, imagine this: you wake up, fire up your computer, and instead of wasting time organizing files or backing up data, you just hit a button, and boom—your computer does all that boring stuff for you. That’s the magic of shell scripting. It’s not just for Linux nerds; even Windows folks can automate tasks like a pro using PowerShell.</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button inline" href="/posts/blog-13-git-workflow-and-commands-explained/">Read more</a>
+            <a class="read-more button inline" href="/posts/blog-8-introduction-to-shell-scripting/">Read more</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h2 class="post-title">
-          <a href="/posts/blog-12-capture-the-flag-guide/"><ol start="12">
-<li>How to CTF</li>
+          <a href="/posts/blog-7-kali-linux-commands/"><ol start="7">
+<li>Kali, linux Commands</li>
 </ol>
 </a>
         </h2>
 
-        <div class="post-meta"><time class="post-date">2024-12-10</time></div>
+        <div class="post-meta"><time class="post-date">2024-12-05</time></div>
 
         
           <span class="post-tags">
             
-            #<a href="/tags/cybersec/">cybersec</a>&nbsp;
-            
-            #<a href="/tags/tips/">tips</a>&nbsp;
+            #<a href="/tags/basic/">basic</a>&nbsp;
             
             #<a href="/tags/tips/tricks/">tips/tricks</a>&nbsp;
             
@@ -523,42 +301,63 @@
         <div class="post-content">
           
             <hr>
-<h1 id="what-is-ctf">What is CTF?</h1>
-<p>CTF, or <strong>Capture The Flag</strong>, is a type of cybersecurity competition where participants solve challenges to find &ldquo;flags&rdquo; (specific pieces of text) hidden within systems, files, or code. These challenges test skills in areas like cryptography, web security, reverse engineering, forensics, and more. CTFs are popular in the cybersecurity community and are used for learning, practice, and fun.</p>
-<h3 id="types-of-ctfs">Types of CTFs</h3>
-<ol>
-<li>
-<p><strong>Jeopardy-Style</strong></p>
+<p><strong>Top 60 Linux Commands Cheat Sheet in one line</strong></p>
+<hr>
+<p><strong>A. File and Directory Management Commands</strong></p>
 <ul>
-<li>Participants solve challenges organized into categories (e.g., cryptography, forensics, etc.).</li>
-<li>Each solved challenge reveals a flag, earning points.</li>
-<li>Examples: Decoding encrypted messages, analyzing memory dumps, or identifying vulnerabilities.</li>
+<li><code>ssh</code>: Secure Shell, used for secure remote access to a system.</li>
+<li><code>ls</code>: List directory contents.</li>
+<li><code>pwd</code>: Print the current working directory.</li>
+<li><code>cd</code>: Change directory to a different folder.</li>
+<li><code>touch</code>: Create an empty file or update the modified timestamp of an existing file.</li>
+<li><code>echo</code>: Print a message or the value of a variable.</li>
+<li><code>nano</code>: A simple text editor.</li>
+<li><code>vim</code>: A more advanced text editor with many features.</li>
+<li><code>cat</code>: Print the contents of a file to the console.</li>
+<li><code>shred</code>: Securely delete a file by overwriting its contents.</li>
+<li><code>mkdir</code>: Create a new directory.</li>
+<li><code>cp</code>: Copy a file from one location to another.</li>
+<li><code>mv</code>: Move a file from one location to another, or rename a file.</li>
+<li><code>rm</code>: Remove a file.</li>
+<li><code>rmdir</code>: Remove a directory if it is empty.</li>
+<li><code>ln</code>: Create a link to a file or directory.</li>
+<li><code>head</code>: Display the first lines of a file.</li>
+<li><code>tail</code>: Display the last lines of a file.</li>
+<li><code>cmp</code>: Compare two files byte by byte.</li>
+<li><code>diff</code>: Display the differences between two files.</li>
+<li><code>sort</code>: Sort the lines of a file.</li>
+<li><code>find</code>: Search for files in a directory hierarchy.</li>
+<li><code>chmod</code>: Change the permissions of a file or directory.</li>
+<li><code>chown</code>: Change the owner of a file or directory.</li>
 </ul>
-</li>
-<li>
-<p><strong>Attack-Defense</strong></p>
+<hr>
+<p><strong>B. System Management Commands</strong></p>
           
         </div>
 
         
           <div>
-            <a class="read-more button inline" href="/posts/blog-12-capture-the-flag-guide/">Read more</a>
+            <a class="read-more button inline" href="/posts/blog-7-kali-linux-commands/">Read more</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h2 class="post-title">
-          <a href="/posts/blog-11-exploring-the-linux-file-system/"><ol start="11">
-<li>Exploring the Linux File System: A Beginner&rsquo;s Guide</li>
+          <a href="/posts/blog-6-hacking-environment-setup/"><ol start="6">
+<li>Setting up hacking Environment&hellip;</li>
 </ol>
 </a>
         </h2>
 
-        <div class="post-meta"><time class="post-date">2024-12-09</time></div>
+        <div class="post-meta"><time class="post-date">2024-12-04</time></div>
 
         
           <span class="post-tags">
+            
+            #<a href="/tags/setup/">setup</a>&nbsp;
+            
+            #<a href="/tags/starting/">starting</a>&nbsp;
             
             #<a href="/tags/cybersec/">cybersec</a>&nbsp;
             
@@ -573,31 +372,37 @@
         <div class="post-content">
           
             <hr>
-<p>When you first jump into Linux, one of the first things you’ll encounter is its file system. Unlike Windows, which uses drive letters like <code>C:</code>, Linux organizes everything under a single root directory (<code>/</code>). This organization might seem a bit daunting at first, but understanding it is key to navigating your system, troubleshooting problems, and managing files effectively. So, let’s break down the Linux file system hierarchy in a more approachable, human way, so you can start using it like a pro.</p>
+<h3 id="setting-up-your-hacking-environment-a-beginners-guide">Setting Up Your Hacking Environment: A Beginner’s Guide</h3>
+<p>If you’re curious about ethical hacking or just starting your journey into cybersecurity, the first step is creating a safe and functional environment for your experiments and learning. This guide will walk you through the process in a detailed and technical format, making it easy to understand—even for beginners (yes, you!).</p>
+<hr>
+<h3 id="1-start-with-the-right-hardware">1. <strong>Start with the Right Hardware</strong></h3>
+<p>Before you get your hacker on, make sure your computer can handle the demands of hacking tools and virtual machines. A good hacking environment requires hardware that can support multiple virtual machines, networks, and complex tools. Here&rsquo;s a more technical breakdown:</p>
           
         </div>
 
         
           <div>
-            <a class="read-more button inline" href="/posts/blog-11-exploring-the-linux-file-system/">Read more</a>
+            <a class="read-more button inline" href="/posts/blog-6-hacking-environment-setup/">Read more</a>
           </div>
         
       </article>
     
       <article class="post on-list">
         <h2 class="post-title">
-          <a href="/posts/blog-10-linux-networking-essentials/"><ol start="10">
-<li>Linux Networking Essentials</li>
+          <a href="/posts/blog-5-cyber-atk-cmds/"><ol start="5">
+<li>cyber attack commands (Network Attacks)</li>
 </ol>
 </a>
         </h2>
 
-        <div class="post-meta"><time class="post-date">2024-12-08</time></div>
+        <div class="post-meta"><time class="post-date">2024-12-03</time></div>
 
         
           <span class="post-tags">
             
-            #<a href="/tags/basic/">basic</a>&nbsp;
+            #<a href="/tags/cybersec/">cybersec</a>&nbsp;
+            
+            #<a href="/tags/tips/tricks/">tips/tricks</a>&nbsp;
             
           </span>
         
@@ -608,16 +413,269 @@
         <div class="post-content">
           
             <hr>
-<h3 id="linux-networking-essentials-from-ip-addresses-to-firewalls-in-depth-guide"><em>Linux Networking Essentials: From IP Addresses to Firewalls (In-Depth Guide)</em></h3>
-<p>Networking in Linux is an essential skill for anyone working with the operating system. It forms the backbone of all communication between systems, whether it&rsquo;s on the internet or within a local network. In this detailed guide, we’ll dive deep into essential networking concepts, from understanding IP addresses and subnetting to configuring IPs and setting up firewalls.</p>
-<h3 id="1-what-is-networking-on-linux"><strong>1. What is Networking on Linux?</strong></h3>
-<p>Networking on Linux refers to the process of connecting your Linux system to other devices and systems via different network interfaces. This could involve connecting to the internet, setting up local networks, managing network configurations, or securing your system with firewalls. Linux provides a flexible and powerful environment for managing these tasks.</p>
+<p><em>note: its my personal research so there can be errors or more fast and powerful method available to do same attacks</em></p>
+<hr>
+<h2 id="commands-related-to-network-attacks">Commands Related to Network Attacks:</h2>
+<p>packet sniffing : airodump-ng [monitor mode interface]</p>
+<p><em>first enable monitor mode;  then..</em></p>
+<ul>
+<li>
+<p><code>ifconfig wlan0 down</code></p>
+</li>
+<li>
+<p><code>airmon-ng check kill</code> ( to kill the manager)</p>
+</li>
+<li>
+<p><code>iwconfig wlan0 mode monitor</code></p>
+</li>
+<li>
+<p><code>ifconfig wlan0 up</code></p>
+</li>
+<li>
+<p><code>iwconfig</code> ( to check)</p>
+</li>
+</ul>
+<hr>
+<h2 id="network-preconnection-attacktxt">network preconnection attack.txt</h2>
+<p><em>note: need monitor mode on</em></p>
+<ul>
+<li><code>airodump-ng wlan0 ( discover all wireless network and info around it)</code></li>
+</ul>
+<p><em>sniff and discover 5Ghz networks</em></p>
           
         </div>
 
         
           <div>
-            <a class="read-more button inline" href="/posts/blog-10-linux-networking-essentials/">Read more</a>
+            <a class="read-more button inline" href="/posts/blog-5-cyber-atk-cmds/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="/posts/blog-4-really-useful-tools/"><ol start="4">
+<li>Really useful AI &amp; CEH tools</li>
+</ol>
+</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2024-12-02</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="/tags/cybersec/">cybersec</a>&nbsp;
+            
+            #<a href="/tags/aiml/">AIML</a>&nbsp;
+            
+            #<a href="/tags/tips/tricks/">tips/tricks</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <hr>
+<h3 id="ai-tools-for-creativity-and-productivity"><strong>AI Tools for Creativity and Productivity</strong></h3>
+<p><strong>Text to Image</strong>:</p>
+<ul>
+<li><strong>Mind Journey</strong>: A tool that uses AI to transform textual descriptions into detailed, creative images. Ideal for visualizing abstract concepts or creative ideas.</li>
+</ul>
+<p><strong>Text to Music</strong>:</p>
+<ul>
+<li><strong>ChatGPT</strong>: An AI language model that can generate lyrics, suggest melodies, or help with music composition based on text input.</li>
+<li><strong>Uberduck AI</strong>: Specializes in converting text into music or vocal synthesis, offering various styles and voices.</li>
+<li><strong>Suno AI</strong>: A tool for generating music compositions from text prompts, helping artists create background scores or thematic music.</li>
+</ul>
+<p><strong>Text to Presentation</strong>:</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/blog-4-really-useful-tools/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="/posts/blog-3-cybersecurity/"><ol start="3">
+<li>cybersec tips &amp; tricks</li>
+</ol>
+</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2024-12-01</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="/tags/cybersec/">cybersec</a>&nbsp;
+            
+            #<a href="/tags/tips/tricks/">tips/tricks</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <hr>
+<h1 id="cybersecurity-tips-and-tools-for-beginners-hackers-hate-these-simple-tricks"><strong>Cybersecurity Tips and Tools for Beginners: Hackers Hate These Simple Tricks</strong></h1>
+<p>So, you’ve stumbled into the world of cybersecurity, huh? Good choice! Whether you&rsquo;re here to keep your personal data safe or dreaming of becoming the internet&rsquo;s Batman, you&rsquo;re in the right place. This blog is your crash course—no fluff, just actionable tips and beginner-friendly tools. Let’s jump in!</p>
+<hr>
+<h2 id="step-1-know-your-enemies-yes-there-are-many"><strong>Step 1: Know Your Enemies (Yes, There Are Many)</strong></h2>
+<p>Cyber threats come in all shapes and sizes, from sneaky scammers to sophisticated hacking groups. Here are the main culprits you’ll face:</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/blog-3-cybersecurity/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="/posts/blog-2-genshin-elemental-reaction-guide/"><ol start="2">
+<li>The Ultimate Guide to Elemental Reactions in Genshin Impact</li>
+</ol>
+</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2024-11-30</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="/tags/genshin/">genshin</a>&nbsp;
+            
+            #<a href="/tags/gacha/">gacha</a>&nbsp;
+            
+            #<a href="/tags/reactions/">reactions</a>&nbsp;
+            
+            #<a href="/tags/tips/tricks/">tips/tricks</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <hr>
+<h2 id="introduction-understanding-the-power-of-elemental-reactions">Introduction: Understanding the Power of Elemental Reactions</h2>
+<p>Mastering elemental reactions is essential for any Genshin Impact player looking to maximize their damage potential. These reactions not only add depth to gameplay but also allow for creative team compositions that can handle even the toughest foes. In this guide, we&rsquo;ll cover every elemental reaction, explain how to trigger them effectively, provide the formulas for their damage increases, and share insights on the best team combinations.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/blog-2-genshin-elemental-reaction-guide/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="/posts/blog-1-first-blog-cicd-pipeline/"><ol>
+<li>My Awesome First Blog CI/CD Pipeline</li>
+</ol>
+</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2024-11-29</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="/tags/firsrblog/">firsrblog</a>&nbsp;
+            
+            #<a href="/tags/genshin/">genshin</a>&nbsp;
+            
+            #<a href="/tags/games/">games</a>&nbsp;
+            
+            #<a href="/tags/cybersec/">cybersec</a>&nbsp;
+            
+            #<a href="/tags/hsr/">hsr</a>&nbsp;
+            
+            #<a href="/tags/leaks/">leaks</a>&nbsp;
+            
+            #<a href="/tags/aiml/">AIML</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <hr>
+<p><img alt="Image Description" src="/images/crus-high-resolution-logo-transformed%201.png"></p>
+<h1 id="welcome-to-my-blog">Welcome to My Blog!</h1>
+<p>Hello there, and welcome to my corner of the internet!</p>
+<p>Whether you stumbled in during a late-night browsing session or deliberately tracked this blog down (major kudos to you for that), I’m thrilled you’re here. This is a space where curiosity meets creativity—a digital lab, journal, and playground all in one.</p>
+<hr>
+<h2 id="whats-this-blog-about">What’s This Blog About?</h2>
+<p>At its heart, this blog is about exploration—of ideas, technologies, hobbies, and everything in between. I’ll be sharing insights from my personal and professional journey, diving deep into the topics that light me up and (hopefully) inspire you too.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/blog-1-first-blog-cicd-pipeline/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="/posts/blog-0-to-do-list/"><ol start="0">
+<li>To-Do List</li>
+</ol>
+</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2024-01-01</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="/tags/starting/">starting</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <hr>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> google cs crtification</li>
+<li><input checked="" disabled="" type="checkbox"> CTF (pico ctf solve)</li>
+<li><input checked="" disabled="" type="checkbox"> advent of cyber 2024</li>
+<li><input disabled="" type="checkbox"> reports on Network Security</li>
+<li><input disabled="" type="checkbox"> reports on OpenVAS, Nessus</li>
+</ul>
+<hr>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/blog-0-to-do-list/">Read more</a>
           </div>
         
       </article>
@@ -631,11 +689,6 @@
         <span class="button__text">Newer posts</span>
       </a>
     
-    
-      <a href="/page/3/" class="button next">
-        <span class="button__text">Older posts</span>
-        <span class="button__icon">→</span>
-      </a>
     
   </div>
 </div>
