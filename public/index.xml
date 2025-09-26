@@ -4610,35 +4610,52 @@ Password reuse is like leaving your front door key under the mat—it’s an ope
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>&lt;p&gt;Heyyy! I&amp;rsquo;m Crus, a tech enthusiast deeply engaged in cybersecurity, machine learning (ML), and AI-driven projects. My primary focus is on applying cutting-edge technologies to real-world problems, particularly through Python programming and interactive website development.&lt;/p&gt;
-&lt;p&gt;I have a growing expertise in cybersecurity, where I explore defensive strategies, ethical hacking, and securing digital environments. Additionally, I enjoy delving into AI, from creating personalized bots to building many kinds of tools and interactive web platforms.&lt;/p&gt;</description>
-      <content>&lt;p&gt;Heyyy! I&amp;rsquo;m Crus, a tech enthusiast deeply engaged in cybersecurity, machine learning (ML), and AI-driven projects. My primary focus is on applying cutting-edge technologies to real-world problems, particularly through Python programming and interactive website development.&lt;/p&gt;
-&lt;p&gt;I have a growing expertise in cybersecurity, where I explore defensive strategies, ethical hacking, and securing digital environments. Additionally, I enjoy delving into AI, from creating personalized bots to building many kinds of tools and interactive web platforms.&lt;/p&gt;
-&lt;p&gt;While I have a keen interest in gaming, which inspires some of my creative projects, my core passion lies in sharing my experiences with cybersecurity and AI technologies. Currently, I&amp;rsquo;m developing a blog to provide insights into these fields, alongside practical tips for enthusiasts.&lt;/p&gt;
-&lt;p&gt;Whether it’s creating an AI summarization site, enhancing my knowledge of Python, or solving cybersecurity challenges, I’m always excited to tackle new opportunities and share what I learn along the way!&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;m &lt;strong&gt;Crus&lt;/strong&gt;, a cybersecurity student and aspiring red teamer pursuing a B.E. in Computer Engineering at Mumbai University (2021–2025). My focus areas include ethical hacking, network security, and digital forensics, with a growing interest in offensive security and system defense.&lt;/p&gt;
+&lt;p&gt;I’ve built tools like malware scanners, password vaults, and steganography utilities — all designed to improve security and privacy. I also enjoy solving CTFs on platforms like PicoCTF and recently completed &lt;strong&gt;Advent of Cyber 2024&lt;/strong&gt;.&lt;/p&gt;</description>
+      <content>&lt;p&gt;I&amp;rsquo;m &lt;strong&gt;Crus&lt;/strong&gt;, a cybersecurity student and aspiring red teamer pursuing a B.E. in Computer Engineering at Mumbai University (2021–2025). My focus areas include ethical hacking, network security, and digital forensics, with a growing interest in offensive security and system defense.&lt;/p&gt;
+&lt;p&gt;I’ve built tools like malware scanners, password vaults, and steganography utilities — all designed to improve security and privacy. I also enjoy solving CTFs on platforms like PicoCTF and recently completed &lt;strong&gt;Advent of Cyber 2024&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I hold the &lt;strong&gt;Google Cybersecurity Professional Certificate&lt;/strong&gt; and am pursuing &lt;strong&gt;CRTA, CEH&lt;/strong&gt;, with plans for &lt;strong&gt;OSCP&lt;/strong&gt; to further strengthen my red teaming skills.&lt;/p&gt;
+&lt;p&gt;From analyzing network traffic to reversing malware, I take a hands-on, detail-driven approach. I’m open to opportunities that challenge me and contribute to building safer, more resilient systems.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Links:&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-i-do&#34;&gt;What I Do&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://crusblog.vercel.app&#34;&gt;My Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/CRUSVEDER&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://myportfolio-yash.vercel.app&#34;&gt;portfolio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://crusbpost.vercel.app&#34;&gt;Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ethical hacking, CTF solving, OSINT investigations&lt;/li&gt;
+&lt;li&gt;Full-stack development (Python, TypeScript, Svelte)&lt;/li&gt;
+&lt;li&gt;Security tools — malware scanners, steganography, encryption&lt;/li&gt;
+&lt;li&gt;AI-powered bots for documents &amp;amp; PDF Q&amp;amp;A&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Key Interests:&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;featured-projects&#34;&gt;Featured Projects&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Cybersecurity&lt;/li&gt;
-&lt;li&gt;Machine Learning &amp;amp; AI&lt;/li&gt;
-&lt;li&gt;Python Programming&lt;/li&gt;
-&lt;li&gt;Game Development&lt;/li&gt;
-&lt;li&gt;Gaming Tips &amp;amp; Guides&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ScanForge:&lt;/strong&gt; Custom TCP scanner &amp;amp; banner grabber (Scapy + CLI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password Vault:&lt;/strong&gt; Local password manager with 2FA in Python&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI PDF Bot:&lt;/strong&gt; Document summarization &amp;amp; Q&amp;amp;A (DeepSeek-R1 + Ollama)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MD5 Malware Scanner:&lt;/strong&gt; GUI-based malicious file detection using hash comparison&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Image Steganography Tool:&lt;/strong&gt; Hide/extract messages in images with LSB (Python + Pillow)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Projects:&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;certifications--education&#34;&gt;Certifications &amp;amp; Education&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Spiral Abyss Guide&lt;/strong&gt;: A detailed site for Spiral Abyss strategies.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AI Summarization Website&lt;/strong&gt;: A project for summarizing documents and interacting with uploaded data.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Wordle Game Website&lt;/strong&gt;: A custom Wordle game featuring Genshin Impact characters and items.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;B.E. Computer Science &amp;amp; Engineering&lt;/strong&gt; (Specialization in Cybersecurity, IoT, Blockchain technology) — Mumbai University&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Google Cybersecurity Professional Certificate:&lt;/strong&gt; SOC operations, incident response, threat detection&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CRTA (in-progress):&lt;/strong&gt; Certified Red Team Analyst&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CRT-ID (in-progress):&lt;/strong&gt; Certified Red Team Infra Dev&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CEH (in-progress):&lt;/strong&gt; Certified Ethical Hacker&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Google Cybersecurity Professional Certificate:&lt;/strong&gt; Threat detection, incident response, SOC operations, intrusion detection &amp;amp; prevention, cyber attacks, vulnerability assessments, incident management, network security, threat management, system hardening, Bash scripting, SQL&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Specialized Courses:&lt;/strong&gt; Wireshark Analysis, SSRF, SQLi, Authentication Exploits, Bug Bounty Hunting, Web Pentesting&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hands-on Challenges:&lt;/strong&gt; Advent of Cyber 2024, Tata Cybersecurity Analyst Simulation, ANZ Cybersecurity Management Simulation, Mastercard Cybersecurity Simulation&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Feel free to reach out to me via any of the links above!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;connect-with-me&#34;&gt;Connect with Me&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:yashgholap777@gmail.com&#34;&gt;yashgholap777@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/CRUSVEDER&#34;&gt;CRUSVEDER&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Twitter/X:&lt;/strong&gt; &lt;a href=&#34;https://x.com/yashg31&#34;&gt;@yashg31&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://www.linkedin.com/in/yashgholap/&#34;&gt;yashgholap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Blog:&lt;/strong&gt; &lt;a href=&#34;https://crusblog.vercel.app&#34;&gt;crusblog.vercel.app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Portfolio:&lt;/strong&gt; &lt;a href=&#34;https://crus.website&#34;&gt;crus.website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Always open to collaborations and challenging projects. Let’s connect!&lt;/p&gt;
 </content>
     </item>
     
@@ -4648,28 +4665,57 @@ Password reuse is like leaving your front door key under the mat—it’s an ope
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       
       <guid>/showcase/</guid>
-      <description>&lt;p&gt;Welcome to my showcase, where I highlight some of my key projects and work in progress. This space is dedicated to demonstrating the skills and technologies I’ve been working on, from web development to AI implementations. Here are a few of the projects I’ve been involved in:&lt;/p&gt;
+      <description>&lt;h1 id=&#34;showcase&#34;&gt;Showcase&lt;/h1&gt;
+&lt;p&gt;Welcome to my showcase, where I highlight some of my key projects and work in progress.&lt;br&gt;
+This space is dedicated to demonstrating the skills and technologies I’ve been working on,&lt;br&gt;
+from web development to AI implementations. Here are a few of the projects I’ve been involved in:&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Projects:&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Gacha Guide Site&lt;/strong&gt;&lt;br&gt;
-A comprehensive platform for Spiral Abyss strategies, offering tips and tricks for progressing through the game’s challenging floors. Features detailed guides and character suggestions.&lt;br&gt;
-&lt;a href=&#34;/&#34;&gt;Visit the site&lt;/a&gt;&lt;/p&gt;</description>
-      <content>&lt;p&gt;Welcome to my showcase, where I highlight some of my key projects and work in progress. This space is dedicated to demonstrating the skills and technologies I’ve been working on, from web development to AI implementations. Here are a few of the projects I’ve been involved in:&lt;/p&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;h3 id=&#34;crusbloghttpscrusblogvercelapp&#34;&gt;&lt;a href=&#34;https://crusblog.vercel.app&#34;&gt;CrusBlog&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A blog dedicated to CTF writeups, showcasing my journey in Capture The Flag competitions.&lt;br&gt;
+&lt;a href=&#34;https://crusblog.vercel.app/posts/blog-1-first-blog-cicd-pipeline/&#34;&gt;Read More&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Tech:&lt;/strong&gt; React, Next.js, Vercel&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Projects:&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ai-pdf-summarizer--qa-toolhttpsgithubcomcrusvederpdf_sum_tool&#34;&gt;&lt;a href=&#34;https://github.com/CRUSVEDER/pdf_sum_tool&#34;&gt;AI PDF Summarizer &amp;amp; Q&amp;amp;A Tool&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;AI-powered web app to summarize PDFs and answer questions using fine-tuned BART/T5 and DeepSeek-R1 via Ollama.&lt;br&gt;
+&lt;strong&gt;Tech:&lt;/strong&gt; Python&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;showcase&#34;&gt;Showcase&lt;/h1&gt;
+&lt;p&gt;Welcome to my showcase, where I highlight some of my key projects and work in progress.&lt;br&gt;
+This space is dedicated to demonstrating the skills and technologies I’ve been working on,&lt;br&gt;
+from web development to AI implementations. Here are a few of the projects I’ve been involved in:&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;h3 id=&#34;crusbloghttpscrusblogvercelapp&#34;&gt;&lt;a href=&#34;https://crusblog.vercel.app&#34;&gt;CrusBlog&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A blog dedicated to CTF writeups, showcasing my journey in Capture The Flag competitions.&lt;br&gt;
+&lt;a href=&#34;https://crusblog.vercel.app/posts/blog-1-first-blog-cicd-pipeline/&#34;&gt;Read More&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Tech:&lt;/strong&gt; React, Next.js, Vercel&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;ai-pdf-summarizer--qa-toolhttpsgithubcomcrusvederpdf_sum_tool&#34;&gt;&lt;a href=&#34;https://github.com/CRUSVEDER/pdf_sum_tool&#34;&gt;AI PDF Summarizer &amp;amp; Q&amp;amp;A Tool&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;AI-powered web app to summarize PDFs and answer questions using fine-tuned BART/T5 and DeepSeek-R1 via Ollama.&lt;br&gt;
+&lt;strong&gt;Tech:&lt;/strong&gt; Python&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;image-steganography-toolhttpsgithubcomcrusvederimage-steganography-tool&#34;&gt;&lt;a href=&#34;https://github.com/CRUSVEDER/Image-Steganography-Tool&#34;&gt;Image Steganography Tool&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Command-line tool to encode and decode messages in images using LSB steganography and Pillow.&lt;br&gt;
+&lt;strong&gt;Tech:&lt;/strong&gt; Python&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;md5-malware-scannerhttpsgithubcomcrusvedermalware-scanner&#34;&gt;&lt;a href=&#34;https://github.com/CRUSVEDER/Malware-Scanner&#34;&gt;MD5 Malware Scanner&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Python/Tkinter GUI scanner that compares file hashes against known malware signatures.&lt;br&gt;
+&lt;strong&gt;Tech:&lt;/strong&gt; Python&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;scanforge-tcp-port-scannerhttpsgithubcomcrusvederscanforge-advanced-tcp-port-scanner&#34;&gt;&lt;a href=&#34;https://github.com/CRUSVEDER/ScanForge-Advanced-TCP-Port-Scanner&#34;&gt;ScanForge: TCP Port Scanner&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Scapy-based port scanner with multithreading, banner grabbing, and command-line target selection.&lt;br&gt;
+&lt;strong&gt;Tech:&lt;/strong&gt; Python&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;password-manager-with-sha256--2fahttpsgithubcomcrusvederpasswordmanager&#34;&gt;&lt;a href=&#34;https://github.com/CRUSVEDER/PasswordManager&#34;&gt;Password Manager with SHA256 &amp;amp; 2FA&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Secure password vault with encryption, SHA256, password generation, and two-factor authentication.&lt;br&gt;
+&lt;strong&gt;Tech:&lt;/strong&gt; Python&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;gachasitehttpsgacha-sitevercelapp&#34;&gt;&lt;a href=&#34;https://gacha-site.vercel.app/&#34;&gt;GachaSite&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Genshin Impact is an expansive open-world action RPG that requires strategic planning and resource management.&lt;br&gt;
+&lt;strong&gt;Tech:&lt;/strong&gt; JavaScript&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;additional-highlights&#34;&gt;Additional Highlights&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Gacha Guide Site&lt;/strong&gt;&lt;br&gt;
-A comprehensive platform for Spiral Abyss strategies, offering tips and tricks for progressing through the game’s challenging floors. Features detailed guides and character suggestions.&lt;br&gt;
-&lt;a href=&#34;/&#34;&gt;Visit the site&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;AI Summarization Website&lt;/strong&gt;&lt;br&gt;
-A tool to upload PDFs, DOC files, and plain text for automatic summarization. It also allows for a Q&amp;amp;A interaction with the uploaded content, making it easy to extract key information.&lt;br&gt;
-&lt;a href=&#34;/&#34;&gt;Explore the AI Summarizer&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Wordle Game Website - Genshin Impact Edition&lt;/strong&gt;&lt;br&gt;
 A custom Wordle game tailored to Genshin Impact characters and items. With options for different word lengths, players can challenge themselves with Genshin-related words.&lt;br&gt;
@@ -4682,21 +4728,21 @@ An engaging, game-like interactive portfolio showcasing my projects and skills. 
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Tech Stack:&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Programming: Python (Flask, Django, FastAPI), JavaScript, TypeScript ShellScript, Bash, Go&lt;/li&gt;
-&lt;li&gt;Web Development: HTML/CSS, Tailwind CSS, Bootstrap, React, Next.js&lt;/li&gt;
-&lt;li&gt;Databases: PostgreSQL, MySQL, MongoDB, Redis&lt;/li&gt;
-&lt;li&gt;AI/ML: TensorFlow, PyTorch, NLP (spaCy, NLTK), OpenCV&lt;/li&gt;
-&lt;li&gt;Cybersecurity: Wireshark, Metasploit, Burp Suite, Nmap, Aircrack-ng, OpenVAS, Snort, Maltego&lt;/li&gt;
-&lt;li&gt;DevOps: Docker, Kubernetes, Git, CI/CD&lt;/li&gt;
-&lt;li&gt;Testing: Pytest, Postman, OWASP ZAP&lt;/li&gt;
-&lt;li&gt;Other Tools: Selenium, Scrapy, AWS, Kali Linux&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Programming:&lt;/strong&gt; Python (Flask, Django, FastAPI), JavaScript, TypeScript, ShellScript, Bash, Go&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Web Development:&lt;/strong&gt; HTML/CSS, Tailwind CSS, Bootstrap, React, Next.js&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Databases:&lt;/strong&gt; PostgreSQL, MySQL, MongoDB, Redis&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI/ML:&lt;/strong&gt; TensorFlow, PyTorch, NLP (spaCy, NLTK), OpenCV&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cybersecurity:&lt;/strong&gt; Wireshark, Metasploit, Burp Suite, Nmap, Aircrack-ng, OpenVAS, Snort, Maltego&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DevOps:&lt;/strong&gt; Docker, Kubernetes, Git, CI/CD&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Testing:&lt;/strong&gt; Pytest, Postman, OWASP ZAP&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Other Tools:&lt;/strong&gt; Selenium, Scrapy, AWS, Kali Linux&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Collaborations:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Collaborating with other developers and designers to bring new ideas to life. If you&amp;rsquo;re interested in working together, don&amp;rsquo;t hesitate to contact me!&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;collaborations&#34;&gt;Collaborations&lt;/h2&gt;
+&lt;p&gt;Collaborating with other developers and designers to bring new ideas to life.&lt;br&gt;
+If you&amp;rsquo;re interested in working together, don’t hesitate to contact me!&lt;/p&gt;
 &lt;p&gt;Feel free to explore my work and reach out if you have any questions or suggestions!&lt;/p&gt;
 </content>
     </item>
